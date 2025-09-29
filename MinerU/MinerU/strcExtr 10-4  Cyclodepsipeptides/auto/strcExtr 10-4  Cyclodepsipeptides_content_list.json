@@ -1,0 +1,798 @@
+[
+    {
+        "type": "text",
+        "text": "Bioactive Cyclodepsipeptides from Cocultured Mangrove-Derived Aspergillus sp.and Penicillium sp. ",
+        "text_level": 1,
+        "bbox": [
+            82,
+            135,
+            899,
+            182
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Yu Wang Guang-Ping Cao, Xin-Jian Qu, Yong-Hong Liu, Xiang-Xi Yi, Cheng-Hai Gao,\\* and Meng Bai ",
+        "bbox": [
+            77,
+            187,
+            902,
+            207
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Cite This: J. Nat. Prod. 2025,88,2239-2246 ",
+        "bbox": [
+            121,
+            222,
+            372,
+            235
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ACCESS | ",
+        "text_level": 1,
+        "bbox": [
+            84,
+            261,
+            172,
+            280
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "④ Supporting Information ",
+        "bbox": [
+            710,
+            266,
+            873,
+            280
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/18baf2dfcacb95150cfb52be6f74f45e4a2c888455f2850e37f6c6a8bc1c24f7.jpg",
+        "image_caption": [
+            "Article Recommendations ",
+            "ABSTRACT: Three new arthrichitin derivatives I-K (1-3) and three known congeners $\\left( 4 \\mathrm { - } 6 \\right)$ were isolated from a coculture of mangrove-derived fungi Aspergillus sp. and Penicillum sp. using $^ 1 \\mathrm { H }$ NMR-guided fractionation. Their structures were determined by comprehensive spectroscopic analysis (1D/2D NMR，HRESIMS，ESI-MS/MS)，Marfey's analysis， $\\mathrm { D P 4 + }$ probability， and experimental/computed ECDcomparison.All compounds wereevaluated forantibacterial efectsand cytotoxicity.Notably, compounds 1 and 5 showed weak cytotoxicity against MHCC-97H cels $\\mathrm { ( I C } _ { 5 0 } = 2 0 . 1 \\pm 0 . 9$ and $2 5 . 8 \\pm 0 . 4 \\mu \\mathrm { M }$ ，respectively). Compound 4 exhibited potent anti-BPH activity $\\left( \\mathrm { I C } _ { 5 0 } = 0 . 3 6 \\pm 0 . 0 2 \\mu \\mathrm { M } \\right)$ ： "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            247,
+            296,
+            751,
+            462
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ribf ranging bioactivities， making them crucial for drug discovery and biotechnology.12 Recent data reveal a striking predominance of fungal-derived natural products over bacterial counterparts,with the ratio increasing from 2.4:1 (2020） to 4.4:1 (2022),underscoring the exceptional potential of fungal resources in natural product discovery.³ Nevertheless,conventional laboratory cultivation methods often fail to mimic native microbial community interactions，potentially restricting the biosynthetic output of fungal SMs.4 Despite extensive exploration of fungal SMs the field now contends with high rediscovery rates of known compounds and diminishing returns in identifying structurally novel bioactive molecules.5,6 ",
+        "bbox": [
+            84,
+            582,
+            481,
+            780
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Over the past decade, numerous innovative strategies have emerged to activate silent biosynthetic pathways in fungi, among which coculture techniques have proven particularly effective for inducing novel metabolite production via genetic regulatory mechanisms.7 Microbial coculture involves the cultivation of two or more microbial strains within a shared, controlled environment. Optimized coculture systems demonstrate enhanced stability,robustness,and functional performance relative to conventional monoculture approaches.8 Currently，most coculture studies focus on strains from completely different environments，while coculturing microorganisms from the same or similar habitats remainsa worthwhile direction with unforeseen implications.9,10 ",
+        "bbox": [
+            84,
+            781,
+            481,
+            935
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            517,
+            582,
+            915,
+            610
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In previously published works,we described isolation and identification of four new cyclic pentapeptides avellanins $\\mathrm { D } { - } \\mathrm { G }$ from the mangrove-derived fungus Aspergillus sp. GXIMD 0309,11,12 and a new cyclic heptapeptide cadophorin C together with a known analogue cadophorin B from the mangrove-derived Penicillium sp. GXIMD 03101.13 To better explore their ability to produce structurally novel cyclic peptide SMs,we investigated the SMs produced by their coculture. ",
+        "bbox": [
+            518,
+            610,
+            915,
+            720
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A review of the fungal coculture literature reveals that studies explicitly reporting inoculation methods typically employ two distinct patterns: linear and cross inoculation.14-18 Notably，no direct comparisons between these inoculation methods typically appear to have been made,which prompted us to investigate whether enhanced interfacial contact through different inoculation geometries would differentially regulate SMs.To test this hypothesis,Aspergillus sp.GXIMD 03099 and Penicillium sp.GXIMD 03101 were cocultured using both linear(single-line，“I-shaped\"）and cross( $^ { * } \\mathrm { X }$ -shaped\") inoculation methods. Comparative HPLC-DAD analysis of SMs revealed significant differences in metabolite profiles between the X-shaped and I-shaped systems (Figure 1). The X-shaped approach exhibited greater chemical diversity, likely attributable to its expanded contact interface，potentially facilitating enhanced metabolic exchange between the species. Based on these findings,the subsequent coculture fermentations in this study were performed using the X-shaped inoculation approach. ",
+        "bbox": [
+            517,
+            721,
+            915,
+            830
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/54c7ef34a5e67643b54305095e544238e6e2540a612711c332cdfdf71d328cda.jpg",
+        "image_caption": [
+            "Figure1.HPLCanalysfextractsfrom Aspergilussp.GXIM3099,eniciliumsp.GXIMD3101andtherCculture (incuding $^ { \\omega } \\mathbf { X }$ -shapedand “I-shaped\")."
+        ],
+        "image_footnote": [],
+        "bbox": [
+            247,
+            75,
+            742,
+            395
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/516b58ecfcff680a8b22367d60b64d621409d77498c70ad00abe0d8938be8519.jpg",
+        "image_caption": [
+            "Figure 2. $^ { 1 } \\mathrm { H }$ NMR spectra ofthe EtOAc extract,the target fraction,and atargetcompound fromthefungus Aspergilus sp. GXIMD 03099 Penicillium sp. GXIMD 03101,and Coculture. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            79,
+            442,
+            919,
+            753
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            82,
+            800,
+            481,
+            942
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            517,
+            801,
+            914,
+            828
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Comparative analysis of the $^ 1 \\mathrm { H }$ NMR spectra (Figure 2) between monoculture and cross-shaped coculture metabolites revealed significantly enhanced spectral complexity in the ethyl acetate extract of cocultured fungi. The coculture extract exhibited numerous additional resonance peaks absent in monoculture samples,indicating the potential presence of novel metabolites.Further analysis of the coculture metabolite $^ 1 \\mathrm { H }$ NMR spectra revealed characteristic signals indicative of a tryptophan moiety, notably including a singlet corresponding to the NH proton of the indole nitrogen $\\left( \\bar { \\delta } _ { \\mathrm { H } } \\sim 8 . 4 8 , \\ \\bar { \\mathrm { s } } , \\ \\mathrm { H } \\cdot 8 \\right) $ and four mutually coupled aromatic protons $( \\delta _ { \\mathrm { H } } \\sim 7 . 2 3 , \\mathrm { m } , \\mathrm { H } .$ 11/12; ${ \\sim } 7 . 5 1$ ,m，H-13; ${ \\sim } 8 . 1 7$ ,m,H-10).9,20Basedonthese diagnostic NMR signatures,we developed a targeted NMRguided isolation protocol for tryptophan-containing derivatives.This methodology enabled the successful isolation and structural elucidation of six arthrichitin derivatives,including three previously undescribed arthrichitin analogs arthrichitins I-K $( \\mathbf { 1 } \\mathbf { - } 3 )$ . Additionally， the antibacterial activity，cytotoxic activity and benign prostatic hyperplasia (BPH） inhibitory activities of these arthrichitin derivatives were evaluated. Herein,the isolation，structure elucidation,and bioactivities of compounds ${ \\bf 1 } { - } 3$ are described. ",
+        "bbox": [
+            518,
+            828,
+            915,
+            942
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/10a9faf975beef4b5b09123c09336841e588d24103ef3c303619926c5a19fbb1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            88,
+            76,
+            912,
+            307
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            84,
+            318,
+            479,
+            511
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Compound 1 was isolated as light-yellow powder and assigned the molecular formula $\\mathrm { C _ { 3 6 } H _ { 5 0 } N _ { 4 } O _ { 1 1 } }$ based on HRESIMS $\\mathrm { ( [ M + N a ] ^ { + } }$ at $m / z ~ 7 3 7 . 3 3 7 0$ ，as well as indicated the presence of 14 degrees of unsaturation (Figure S8). Carefully analysis of the $\\bar { } \\mathrm { ^ { 1 } \\bar { H } }$ NMR and HSQC spectra (Table 1, Figure S1 and S4) revealed the presence of a free hydroxy group $[ \\delta _ { \\mathrm { H } } 4 . 8 2 ,$ $\\left( \\mathrm { t } , J = 5 . 0 \\mathrm { H z } \\right) _ { \\mathrm { - } } ^ { \\mathrm { - } }$ , three amide protons $[ \\delta _ { \\mathrm { H } } 9 . 0 0 $ $\\left( \\mathrm { d } , J = 6 . 5 \\ : \\mathrm { H z } \\right)$ ,8.60（ $\\mathrm { \\Delta } \\mathrm { d } , J = 7 . 5 \\mathrm { \\ : H z } )$ ,and 6.98 $\\left( \\mathrm { d } , J = 6 . 0 \\ \\mathrm { H z } \\right)$ ], five aromatic protons $[ \\delta _ { \\mathrm { H } } 8 . 4 8$ (s),8.17 (dd, $J = 7 . 0 , 2 . 0 \\ \\mathrm { H z } )$ 7.51 $\\left( \\mathrm { d } , J = 7 . 0 \\mathrm { H z } \\right)$ ,7.24 (m),and $7 . 2 4 \\ : ( \\mathrm { m } ) ]$ ,and four methyl protons $[ \\delta _ { \\mathrm { H } } 3 . 5 7$ (s),2.04 (s),1.08 ( $\\mathrm { \\Phi } ^ { \\mathrm { ' } } \\mathrm { d } , J = 7 . 0 \\mathrm { H z } )$ ,and 0.85 (t, $J = 6 . 0 \\ \\mathrm { H z } )$ ]. The spectrum also displayed three $\\alpha \\cdot$ -amino protons $[ \\delta _ { \\mathrm { H } } 5 . 6 3 $ ( $\\mathrm { d } , J { \\bar { = } } 6 . 5 \\operatorname { H z } ,$ ,4.46 $( \\bar { \\mathrm { q } } , \\bar { J } = 7 . 5 \\mathrm { H z } )$ , and 3.94 $\\mathrm { { ( m ) ] } }$ ，indicative of three amino acid residues within this structure. The $^ { 1 3 } \\mathrm { C }$ NMR and DEPT spectrum exhibited 36 carbon signals (Table 1, Figure S2 and S3),including seven carbonyl carbon signals ( $[ \\delta _ { \\mathrm { C } }$ 185.0,174.7, 172.6, 171.9, 170.5, 169.1,and 167.5)，eight $\\mathsf { s p } ^ { 2 }$ -hybridized carbons( $\\mathrm { \\Delta } \\delta _ { \\mathrm { C } }$ 137.1, 136.7，125.6，123.4，122.5，121.2，113.5，and 112.6)，six methines [including three $\\alpha$ -amino carbons ( $\\left( \\delta _ { \\mathrm { C } } \\ : 6 2 . 1 \\right.$ ,55.0,and 51.9)，one oxygenated $\\left( \\delta _ { \\mathrm { C } } \\ 7 6 . 3 \\right)$ ， $\\delta _ { \\mathrm { C } }$ 41.4,and 38.0]，11 methylenes (including two oxygenated)，along with four methyls ( $\\mathrm { \\Delta } \\delta _ { \\mathrm { C } }$ 51.4,20.8,16.1,and 14.0).Additionally,a broad singlet at $\\delta _ { \\mathrm { H } }$ 12.27(NH）and the observed $\\mathsf { s p } ^ { 2 }$ carbon chemical shifts suggested the presence of an indole moiety. Further analysis confirmed the presence of one serine (Ser), one glutamic acid $\\left( \\operatorname { G l u } \\right)$ ,and one modified fatty acid with an oxygen-bound carbon $( \\delta _ { \\mathrm { C } } 7 6 . 3 )$ . The amino acid sequence was unambiguously determined through comprehensive analysis of $\\mathrm { ^ { 1 } H - ^ { 1 } H }$ COSY，HMBC，and NOESY correlation spectra (Figure 3， S5， S6,and S7). There are four spin systems supported by the $\\mathrm { ^ { 1 } H - ^ { 1 } H }$ COSY interactions of $\\mathrm { H } { - } 2 / \\mathrm { H } { - } 3$ ,H$1 0 \\mathrm { ^ { - } F ^ { - 1 1 / H \\mathrm { - } 1 2 / H \\mathrm { - } 1 3 } }$ $\\mathrm { H } { - } 1 6 / \\mathrm { H } { - } 1 7$ ，and $\\mathrm { H } { - } 2 0 / \\mathrm { H } { - } 2 1 / \\mathrm { H } { - } 2 2 / \\mathrm { H } { - }$ $2 3 / \\mathrm { H } { - } 2 4 / \\mathrm { H } { - } 2 5 / \\mathrm { H } { - } 2 6 / \\mathrm { H } { - } 2 7 / \\mathrm { H } { - } 2 8 / \\mathrm { H } { - } 2 9 / \\mathrm { H } { - } 3 0$ The key sequential connectivity was established as follows: the $\\alpha$ -proton $\\left( \\delta _ { \\mathrm { H } } 3 . 9 4 , \\mathrm { H } - 2 \\right)$ and 2-NH $\\left( \\delta _ { \\mathrm { H } } 6 . 9 8 \\right)$ of Ser exhibited a distinct HMBC correlation to the carbonyl carbon $\\left( \\delta _ { \\mathrm { C } } 1 6 7 . 5 , \\mathrm { C } \\cdot 4 \\right)$ of Trp, while the $\\alpha$ -proton $\\left( \\delta _ { \\mathrm { H } } 5 . 6 3 , \\mathrm { H } { - 5 } \\right)$ and 5-NH $\\left( \\delta _ { \\mathrm { H } } 9 . 0 0 \\right)$ of Trp showed connectivity to the carbonyl carbon $\\left( \\delta _ { \\mathrm { C } } 1 7 1 . 9 \\mathrm { C } \\right.$ 14)of Glu, thereby confirming the partial sequence Ser-TrpGlu.Further sequence extension to Ser-Trp-Glu-fatty acid were evidenced by the HMBC correlations from H-15( $\\cdot \\delta _ { \\mathrm { H } }$ 4.46) and 15-NH $( \\delta _ { \\mathrm { H } } 8 . 6 0 )$ to C-19 $\\left( \\delta _ { \\mathrm { C } } 1 7 4 . 7 \\right)$ . and H-21 ( $\\cdot \\delta _ { \\mathrm { H } }$ 5.05） to C-1 $\\left( \\delta _ { \\mathrm { C } } \\quad 1 6 9 . 1 \\right)$ (Figure 3). Finally，NOESY correlations between the $\\alpha$ -protons of Ser，Trp，Glu，and fatty acid, the ESI-MS/MS fragment ions at $m / z$ 430 (loss of fatty acid),and $m / z 2 8 7$ (loss of Glu) (Figure 3 and S7),and combined with degree of unsaturation analysis, unambiguously demonstrated cyclization through an amide/ester bond between Ser,Trp,Glu,and fatty acid residues，forming the observed macrocyclic peptide structure (Figure 3). Thus, the planar structure of 1 was elucidated as a cyclodepsipeptide containing a 4-(acetoxymethyl)-3-hydroxy-2-methyldodecanoic acid moiety. ",
+        "bbox": [
+            84,
+            512,
+            481,
+            942
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            517,
+            317,
+            915,
+            636
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The absolute configurations of the two natural acids (Glu and Ser) in 1 were determined by HPLC-MS analysis of their acid hydrolysates following derivatization with Marfey's reagent.21 The results showed that the Glu and Ser were identified as D-Glu and L-Ser (Figure S13). Furthermore, the spectroscopic data of 1 closely matched those of arthrichitin E (4)，differing only by an additional methyl group.This structural assignment was further corroborated by the HMBC correlation from ${ \\mathrm { - O C H } } _ { 3 }$ （ $\\mathrm { \\Delta } \\delta _ { \\mathrm { C } }$ 51.4 and $\\delta _ { \\mathrm { H } } 3 . 5 7 \\rangle$ ）to C-18. Considering the configuration of fatty acid, which was presence of three consecutive stereocenters at C-20/C-21/C-22. Previous studies have demonstrated that the $J { \\mathrm { - } }$ -coupling constants of the trisubstituted dodecanoic acid moiety at C10/C-21/C-22 serve as key diagnostic parameters for determining anti or syn configurations between contiguous chiral centers.2 s.22,23 The large vicinal coupling constant between H-20 and H-21 $( J = 9 . 5 ~ \\mathrm { H z } )$ ）indicated an anti-relationship between the contiguous chiral centers C-20 and C-21,while the small coupling constant $\\left( J = 1 . 5 \\ : \\mathrm { H z } \\right)$ between H-21 and H22 suggested a syn-arrangement. This $J$ -based configurational analysis established the relative configuration of 1 as $2 0 S ^ { * } , 2 1 S ^ { * } , 2 2 S ^ { * }$ ,which was also assigned by $\\mathrm { D P 4 + }$ calculations with a probability of $9 7 . 5 9 \\%$ (Figure S14). Given the previously determined absolute configurations of the amino acid constituents,we further confirmed the complete absolute configuration of 1 through ECD calculations.The calculated ECD spectra for (2S,5S,15R,20S,21S,22S)-1 were exhibited the closest agreement with the experimental ECD data (Figure S15).This assignment was further corroborated by comparative CD spectroscopy，which showed that the CD spectrum of 1 (Figure S15） matched precisely with those reported forarthrichitinsB-Hin theliterature.19,20 ",
+        "bbox": [
+            517,
+            638,
+            915,
+            942
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/9c01b069f82b11be1d4dde77547cf96ae24ec7518ca0f20ead9c233a34653a96.jpg",
+        "table_caption": [
+            "Table 1. $^ 1 \\mathbf { H }$ NMR ( $\\mathbf { 5 0 0 \\ M H z } ,$ and $^ { 1 3 } \\mathbf { C }$ NMR ( $\\bf { \\Psi } _ { 1 2 5 } \\bf { M H z }$ Data $( \\delta )$ for ${ \\bf 1 } { - } 3$ in DMSO- $\\mathbf { \\delta } _ { d _ { 6 } }$ (δ in ppm, J in Hz) "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\"> Residue</td><td rowspan=\"2\">Position</td><td colspan=\"2\">1</td><td colspan=\"2\">2</td><td colspan=\"2\">3</td></tr><tr><td>δc Type</td><td>δH (J in Hz)</td><td>δc Type</td><td>δH (J in Hz)</td><td>δc Type</td><td>δH (J in Hz)</td></tr><tr><td>L-Ser</td><td>1</td><td>169.1, C</td><td></td><td>169.3, C</td><td></td><td>169.2, C</td><td></td></tr><tr><td></td><td>2</td><td>55.0, CH</td><td>3.94,m</td><td>54.6,CH</td><td>4.39,m</td><td>54.2, CH</td><td>4.04,m</td></tr><tr><td></td><td>3</td><td>59.0, CH</td><td>3.39,m</td><td>61.9, CH</td><td>3.66, m; 3.51, m</td><td>59.2, CH</td><td>3.54, m; 3.47, m</td></tr><tr><td></td><td>-OH</td><td></td><td>4.82, t (5.0)</td><td></td><td>5.11, t (4.0)</td><td></td><td>4.83, brs</td></tr><tr><td></td><td>-NH</td><td></td><td>6.98, d (6.0)</td><td></td><td>7.70, d (9.5)</td><td></td><td>7.24, d (6.5)</td></tr><tr><td>D-Trp</td><td>4</td><td>167.5, C</td><td></td><td>167.0, C</td><td></td><td>171.8, C</td><td></td></tr><tr><td></td><td>5</td><td>62.1, CH</td><td>5.63, d (6.5)</td><td>60.4, CH</td><td>5.71, d (7.0)</td><td>56.1, CH</td><td>5.63, d (6.5)</td></tr><tr><td></td><td>6</td><td>185.0, C</td><td></td><td>186.1, C</td><td></td><td>26.4, CH</td><td>3.08,dd (14.5,5.0);2.99,d</td></tr><tr><td></td><td>-NH</td><td></td><td>12.27, brs</td><td></td><td>12.20, brs</td><td></td><td>(14.5,4.5) 10.80, s</td></tr><tr><td></td><td>8</td><td>137.1, CH</td><td>8.48, s</td><td>137.3, CH</td><td>8.80,s</td><td>123.4, CH</td><td>7.14, d (2.0)</td></tr><tr><td></td><td>9</td><td>113.5, C</td><td></td><td>114.3, C</td><td></td><td>110.3, C</td><td></td></tr><tr><td></td><td>9a 10</td><td>125.6, C</td><td></td><td>125.6, C</td><td></td><td>127.0, C</td><td></td></tr><tr><td></td><td></td><td>121.2, CH</td><td>8.17,dd (7.0, 2.0)</td><td>121.2, CH</td><td>8.18,dd (7.0, 2.0)</td><td>117.9, CH</td><td>7.51, d (8.0)</td></tr><tr><td></td><td>11</td><td>122.5, CH</td><td>7.24,m</td><td>122.3, CH</td><td>7.24,m</td><td>118.3, CH</td><td>6.97, d (8.0)</td></tr><tr><td></td><td>12</td><td>123.4, CH</td><td>7.24, m</td><td>123.3, CH</td><td>7.24, m</td><td>120.9, CH</td><td>7.06, d (8.0)</td></tr><tr><td></td><td>13</td><td>112.6, CH</td><td>7.51, d (7.0)</td><td>112.5, CH</td><td>7.50, d (7.0)</td><td>111.4, CH</td><td>7.32, d (8.0)</td></tr><tr><td></td><td>13a</td><td>136.7, C</td><td></td><td>136.7, C</td><td></td><td>136.1, C</td><td></td></tr><tr><td>D-Glu</td><td>-NH</td><td></td><td>9.00, d (6.5)</td><td></td><td>8.80,d (7.0)</td><td></td><td>8.62, d (8.5)</td></tr><tr><td></td><td>14</td><td>171.9, C</td><td></td><td>172.0, C</td><td></td><td>171.6, C</td><td></td></tr><tr><td></td><td>15</td><td>51.9, CH</td><td>4.46, q (7.5)</td><td>52.7, CH</td><td>4.34, q (7.5)</td><td>51.7, CH</td><td>4.20, q (8.0)</td></tr><tr><td></td><td>16 17</td><td>25.0,CH</td><td>1.82,m</td><td>25.5, CH</td><td>1.85,m</td><td>24.7, CH</td><td>1.74, m</td></tr><tr><td></td><td></td><td>29.8, CH</td><td>2.44, m; 2.36,m</td><td>29.5, CH</td><td>2.41, m; 2.18, m</td><td>29.5, CH</td><td>2.14, m; 2.17,m</td></tr><tr><td></td><td>18</td><td>172.6, C</td><td></td><td>172.5, C</td><td></td><td>172.5, C</td><td></td></tr><tr><td></td><td>-NH</td><td></td><td>8.60, d (7.5)</td><td></td><td>8.63, d (6.0)</td><td></td><td>8.43, d (8.5)</td></tr><tr><td>20-methyl-21-oxy-doudecanoyl-22-</td><td>-OMe</td><td>51.4,CH</td><td>3.57,s</td><td>51.4, CH</td><td>3.53, s</td><td>51.4, CH</td><td>3.57,s</td></tr><tr><td>ethyl acetate</td><td>19</td><td>174.7, C</td><td></td><td>177.1, C</td><td></td><td>174.6, C</td><td></td></tr><tr><td></td><td>20</td><td>41.4, CH</td><td>2.91,dq (9.5, 7.0）</td><td>41.3, CH</td><td>2.58,dq (9.5, 7.0)</td><td>41.3, CH</td><td>2.75,dd (10.0, 7.0)</td></tr><tr><td></td><td>21</td><td>76.3, CH</td><td>5.05,dd (9.5, 1.5)</td><td>76.2, CH</td><td>3.17,dd (10.5, 2.0)</td><td>78.1, CH</td><td>5.01, dd (10.0, 1.5)</td></tr><tr><td></td><td>-0H</td><td></td><td></td><td></td><td>4.56, d (11.0)</td><td></td><td></td></tr><tr><td></td><td>22</td><td>38.0, CH</td><td>1.95,m</td><td>41.0, CH</td><td>1.76,m</td><td>33.2, CH</td><td>1.71,m</td></tr><tr><td></td><td>23 24</td><td>28.4, CH 26.5,CH</td><td>1.24, m 1.42, m;</td><td>29.9, CH 26.4, CH</td><td>1.26,m 1.33, m; 1.28, m</td><td>33.4, CH 28.7,CH</td><td>1.30, m; 1.06,m 1.25,m</td></tr><tr><td></td><td></td><td></td><td>1.28,m</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>25</td><td>28.7, CH</td><td>1.24,m</td><td>28.8, CH</td><td>1.26, m</td><td>28.7,CH</td><td>1.25,m</td></tr><tr><td></td><td>26</td><td>28.9, CH</td><td>1.24, m</td><td>29.1, CH</td><td>1.26, m</td><td>29.1, CH</td><td>1.25,m</td></tr><tr><td></td><td>27</td><td>29.1, CH</td><td>1.24, m</td><td>29.2, CH</td><td>1.26, m</td><td>29.2, CH</td><td>1.25, m</td></tr><tr><td></td><td>28</td><td>31.3,CH</td><td>1.26,m</td><td>31.4, CH</td><td>1.26, m</td><td>31.3, CH</td><td>1.25, m</td></tr><tr><td></td><td>29</td><td>22.1, CH</td><td>1.26, m</td><td>22.1, CH</td><td>1.26,m</td><td>22.2, CH</td><td>1.25,m</td></tr><tr><td></td><td>30</td><td>14.0, CH</td><td>0.85, t (6.0)</td><td>14.0, CH</td><td>0.84, t (7.0)</td><td>14.0, CH</td><td>0.86, t (7.0)</td></tr><tr><td></td><td>31</td><td>16.1, CH</td><td>1.08, d (7.0)</td><td>15.6, CH</td><td>1.05, d (7.0)</td><td>16.1, CH</td><td>1.08, d (7.0)</td></tr><tr><td></td><td>32</td><td>63.3, CH</td><td>4.09,m; 3.85,m</td><td>65.1, CH</td><td>4.26, m; 3.65, m</td><td>13.4, CH</td><td>0.81, d (6.5)</td></tr><tr><td></td><td>33</td><td>170.5, C</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>34</td><td>20.8,CH</td><td>2.04,s</td><td></td><td></td><td></td><td></td></tr></table>",
+        "bbox": [
+            80,
+            92,
+            894,
+            788
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            82,
+            795,
+            481,
+            942
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Furthermore，comparative analysis of optical rotation data revealed consistency between 1 $( [ \\alpha ] 2 4 \\mathrm { ~ D ~ + ~ } 1 5 . 0 , \\ c \\ 0 . 1 ,$ MeOH）and arthrichitins $\\mathrm { B - H } , ^ { 1 9 , 2 0 }$ suggesting a shared stereochemical configuration among of these compounds. Collectively， these results confirm that the absolute configuration of 1 as comprising: $\\mathbf { \\pi } _ { \\mathrm { L } } { - } S \\mathbf { e r } _ { \\mathrm { } }$ $\\mathrm { { p } ^ { - \\mathrm { { T r p } } } }$ $\\mathrm { _ { D } } \\mathrm { ^ { - G l u , } }$ and 2S,4Sdimethyl-3S-oxidodecanoic acid, and named arthrichitin I. ",
+        "bbox": [
+            518,
+            795,
+            915,
+            898
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Compound 2 was obtained as white powder. The molecular formula was established as $\\mathrm { C _ { 3 4 } H _ { 4 8 } N _ { 4 } O _ { 1 0 } }$ (13 degrees of unsaturation） based on HRESIMS analysis,which showed a hydrogen adduct ion at $m / z \\ 6 7 3 . 3 4 3 8 \\ [ \\mathrm { M } \\ + \\ \\mathrm { H } ] ^ { + }$ (calcd for 673.3449) (Figure S23). Analysis of the $^ 1 \\mathrm { H }$ NMR spectrum (Figure S16) of 2 revealed the presence of two free hydroxy groups $[ \\delta _ { \\mathrm { H } } \\ 5 . 1 1 $ (t $, J = 4 . 0 ~ \\mathrm { H z } )$ and 4.56 (d, $J = 1 1 . 0 ~ \\mathrm { H z } ) _ { \\cdot } ^ { \\cdot }$ three amide protons $[ \\delta _ { \\mathrm { H } } 8 . 8 0$ ( $\\mathrm { d } , J = 7 . 0 \\ \\mathrm { H z }$ ，8.63 $\\left( \\mathrm { d } , J = 6 . 0 \\right)$ $\\mathrm { H z } )$ ,and 7.70 $\\left( \\mathrm { d } , J = 9 . 5 \\mathrm { H z } \\right)$ ], five aromatic protons $[ \\delta _ { \\mathrm { H } } 8 . 4 8$ (s),8.18 (dd, $J = 7 . 0$ $2 . 0 \\ \\mathrm { H z }$ 7.50( $\\mathrm { ~ d } , J = 7 . 0 \\ \\mathrm { H z } )$ ,7.24 (m)， and $7 . 2 4 \\ : ( \\mathrm { m } ) ]$ ,and three methyl protons $[ \\delta _ { \\mathrm { H } } 3 . 5 3 $ (s), 1.05 (d, $J = 7 . 0 ~ \\mathrm { H z } )$ ，and 0.84( $\\left( \\mathrm { t } , J = 7 . 0 ~ \\mathrm { H z } \\right)$ ]. The spectrum also displayed three $\\alpha$ -amino protons $[ \\delta _ { \\mathrm { H } } 5 . 7 1 $ $\\left( \\mathrm { d } , J = 7 . 0 \\mathrm { H z } \\right)$ ,4.39 $( \\mathbf { m } )$ , and 4.34 $\\left( \\mathbf { q } , J = 7 . 5 \\ : \\mathrm { H z } \\right) _ { . } ^ { \\cdot }$ ]. Additionally, the $^ { 1 3 } \\mathrm { C }$ NMR and DEPT spectrum exhibited 34 carbon signals (Table 1, Figures S17 and S18), including six carbonyl carbon signals ( $^ { \\prime } \\delta _ { \\mathrm { C } } 1 8 6 . 1 _  $ 177.1,172.5,172.0,169.3,and 167.0)，eight $\\mathsf { s p } ^ { 2 }$ -hybridized carbons ( $\\textstyle { \\left( \\delta _ { \\mathrm { C } } 1 3 7 . 3 \\right) }$ ,136.7,125.6,123.3,122.3,121.2,114.3,and 112.5), six methines (including three $\\alpha$ amino carbons and one oxygenated),11 methylene (two oxygenated),along with four methyl. Based on the characteristic UV spectrum (Figure S25) and NMR data, which were highly analogous to those of 1, the only obvious difference was the acetyl group at C-32 had been replaced by a hydroxyl group.Detailed analysis of the 1D NMR data for compounds 2 and 1 revealed that the resonance of C-32 shifted to downfield from $\\delta _ { \\mathrm { C } }$ 63.3 in 1 to 65.1 in 2, while the resonance of C-22 shifted to upfield from $\\delta _ { \\mathrm { C } } 3 8 . 0$ in 1 to 41.0 in 2 and C-23 from $\\delta _ { \\mathrm { C } } 2 8 . 4$ in 1 to 29.9 in 2. These spectroscopic features suggested that an ester linkage was established between the C-32 hydroxymethyl and C-1 carbonyl moieties in 2,which was supported by the COSY and HMBC data (Figure 3, Figures S20 and S21). The $\\mathrm { ^ { 1 } H - ^ { 1 } H }$ COSY cros-peaks of H-21 and 21-OH. Furthermore, the HMBC correlations from 21-OH to C-19, C-20,and C-21;and from H-21 to C-1, C-21,C-22,and C-23 further supported the preceding structural assignment. Thus, the planar structure of compound 2 was established, and the absolute configurations of 2 was determined by Marfey's analysis, $\\mathrm { D P 4 + }$ calculations, and experimental ECD spectrum (Figures S28, S29, and S30). Finally, the structure of2 was elucidated as $\\mathbf { \\pi } _ { \\mathrm { L } } - S \\mathbf { e r }$ $\\mathrm { D }$ -Trp, $\\mathrm { \\Delta _ { D } - G l u } ,$ and 2S,4R-dimethyl-3S-oxidodecanoic acid,and named as arthrichitin J. ",
+        "bbox": [
+            517,
+            900,
+            915,
+            942
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/ab30991b3827b212309c552e41240f88b03b516974033fa3657ca027a39c9b54.jpg",
+        "image_caption": [
+            "Figure 3. Key $\\mathrm { ^ { 1 } H - ^ { 1 } H }$ COSY, HMBC,and NESYcorrelations forcopounds $^ { 1 - 3 }$ "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            85,
+            73,
+            914,
+            225
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            84,
+            255,
+            481,
+            806
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Compound 3 was isolated as light-yellow powder. Its molecular formula was determined to be $\\mathrm { C _ { 3 4 } H _ { 5 0 } N _ { 4 } O _ { 8 } }$ (12 degrees of unsaturation）by HRESIMS analysis，which displayed a hydrogen adduct ion peak at $m / z \\ 6 4 3 . 3 6 9 8$ [M $+ \\bar { \\mathrm { ~ H ~ } } ] ^ { + }$ (calcd for 643.3707) (Figure S38). Analysis of the $^ 1 \\mathrm { H }$ NMR spectrum (Figure S31） of 3 revealed the presence of a free hydroxy groups $[ \\delta _ { \\mathrm { H } } 4 . 8 3 $ (brs)], three amide protons $[ \\delta _ { \\mathrm { H } }$ 8.62 $\\left( \\mathrm { d } , J = 8 . 5 ~ \\mathrm { H z } \\right)$ ,8.43 (d $, J = 8 . 5 \\ \\mathrm { H z } ,$ ,and 7.24 (d, $J = 6 . 5$ $\\mathrm { H z ) ] }$ , five aromatic protons $[ \\delta _ { \\mathrm { H } } 7 . 5 1$ （ $\\mathrm { 4 } , J = 8 . 0 \\mathrm { H z }$ ,7.32 (d,) $= 8 . 0 \\ \\mathrm { H z }$ ,7.14 $\\left( \\mathrm { d } , J = 2 . 0 \\ \\mathrm { H z } \\right)$ ,7.06 $\\left( \\mathrm { d } , J = 8 . 0 \\mathrm { H z } \\right)$ ,and 6.97 $\\left( \\mathrm { d } , J = 8 . 0 \\mathrm { H z } \\right) ] .$ ,and four methyl protons $[ \\delta _ { \\mathrm { H } } 3 . 5 7$ (s),1.08 (d, $J { = } 7 . 0 \\mathrm { H z } ,$ ,0.86 $\\left( \\mathrm { t } , J = 7 . 0 \\mathrm { H z } \\right)$ ,and 0.81 $\\left( \\mathrm { d } , J = 6 . 5 \\ : \\mathrm { H z } \\right)$ ]. The spectrum also displayed three $\\alpha$ -amino protons $[ \\delta _ { \\mathrm { H } } 5 . 6 3 ( \\mathrm { d } , J = $ $6 . 5 \\ : \\mathrm { H z } \\mathrm { , }$ ，4.20 $\\left( \\mathbf { q } , J = 8 . 0 \\ \\mathrm { H z } \\right)$ ,and $4 . 0 4 \\ ( \\mathrm { m } ) ]$ . Additionally, the $^ { 1 3 } \\mathrm { C }$ NMR and DEPT spectrum exhibited 34 carbon signals (Table 1, Figures S32 and S33),including five carbonyl carbon signals( $\\mathit { \\Delta } _ { \\delta _ { \\mathrm { C } } }$ 174.6,172.5,171.8,171.6,and 169.2),eight $\\mathsf { s p } ^ { 2 } .$ hybridized carbons( $\\mathrm { \\Delta } \\delta _ { \\mathrm { C } }$ 136.1，127.0，123.4，120.9，118.3, 117.9，111.4,and 1i0.3)，six methines (including three $\\alpha$ amino carbons and one oxygenated)，1l methylene (one oxygenated),along with four methyl. Based on the characteristic UV spectrum (Figure S40) and NMR data,which were highly analogous to those of 5,the major differences were the chemical shifts of C-6 ( $\\delta _ { \\mathrm { C } } 1 8 4 . 9$ in 5 vs $\\delta _ { \\mathrm { C } }$ 26.4 in 3) and H-6 (missing in 5 vs $\\delta _ { \\mathrm { H } } ~ 3 . 0 8 / 2 . 9 9$ in 3)，suggesting the carbonyl group at C-6 had been hydrogenated to a methylene group, which was supported by the COSY and HMBC data (Figure 3, Figure S35, and S36). The $\\mathrm { ^ { 1 } H - ^ { 1 } H }$ COSY cross-peaks of H-5, H-6,and 5-NH. Moreover, the HMBC correlations from H-6 to C-4，C-5，C-7，C-8，and ${ \\mathrm { C } } { \\cdot } { 9 } { \\mathrm { a } }$ further supported the preceding structural assignment. Consequently， the planar structure of 3 was full established.The absolute configurations of 3 was deduced to be the same as those of 1 and 2 according to the Marfey's analysis, $\\mathrm { D P 4 + }$ calculations,and experimental ECD spectrum (Figures S43, S44, and S45). Additionally, the structural assignment was further supported by biogenetic considerations and negative optical rotations.Finally，the structure of 3 was elucidated and named as arthrichitin K. ",
+        "bbox": [
+            84,
+            803,
+            481,
+            942
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            517,
+            258,
+            914,
+            657
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Three known compounds,arthrichitin E (4),19 arthrichitin C (5),20ad(6)，edo of their physical and spectroscopic data with literature reports. ",
+        "bbox": [
+            518,
+            658,
+            915,
+            701
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Compounds $\\mathbf { 1 - 6 }$ were evaluated for antimicrobial activity and cytotoxicity.Additionally，compounds 1，4，and 6 were assessed for inhibitory activity against benign prostatic hyperplasia (BPH). The results indicated that compounds 1 and 5 exhibited weak cytotoxicity against the MHCC-97H cell line,with $\\mathrm { I C } _ { 5 0 }$ values of $2 0 . 1 \\pm 0 . 9 \\mu \\mathrm { M }$ and $2 5 . 8 \\pm 0 . 4 \\mu \\mathrm { M } _ { \\hphantom { } }$ respectively. Compound 1 also showed weak cytotoxicity against KTC-1 cell line $\\left( \\mathrm { I C } _ { 5 0 } = 2 7 . 4 \\pm 0 . 1 ~ \\mu \\mathrm { M } \\right)$ . Cisplatin, used as a positive control, with the $\\mathrm { I C } _ { 5 0 }$ values of $4 . 6 \\pm 0 . 2 \\mu \\mathrm { M }$ (against MHCC-97H） and $1 9 . 3 \\pm 0 . 3 \\ \\mu \\mathrm { M }$ (against KTC-1), respectively. Compound 6 displayed a zone of inhibition against Bacillus subtilis measuring $3 . 5 2 \\pm 0 . 1 2 \\mathrm { { m m } }$ in diameter, while chloromycetin (positive control） yielded a zone of 5.74 $\\pm \\ 0 . 0 8 \\ \\mathrm { m m }$ in diameter. Notably,compound 4 demonstrated significant inhibitory activity against BPH,with an $\\mathrm { I C } _ { 5 0 }$ value of $0 . 3 6 ~ \\pm ~ 0 . 0 2 ~ \\mu \\mathrm { M } ,$ outperforming the positive control finasteride ( $\\mathrm { I C } _ { 5 0 }$ value of $0 . 4 9 \\pm 0 . 0 4 \\mu \\mathrm { M }$ ). ",
+        "bbox": [
+            518,
+            702,
+            915,
+            942
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In conclusion,we reported three new arthrichitin derivatives named arthrichitins $\\mathrm { I - K } \\left( \\mathbf { 1 } { - } 3 \\right)$ . The key structural distinction among compounds ${ \\bf 1 } { - } 3$ lies in the cyclization pattern of compound 2，which undergoes dehydration at the C-32 position to form the ring. The biological activity screening showed that only compounds 1,and 4-6 had antibacterial activity, cytotoxic activity,and inhibitory activity against BPH, respectively. ",
+        "bbox": [
+            84,
+            72,
+            481,
+            182
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "EXPERIMENTALSECTION ",
+        "text_level": 1,
+        "bbox": [
+            84,
+            193,
+            299,
+            207
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "General Experimental Procedures. Optical rotation measurements were acquired using an InsMark digi3oO polarimeter.Circular dichroism (CD) spectral analyses were conducted on a JASCO J-1500 digital polarimeter.Infrared spectroscopic data were collected with a PerkinElmer DTGS FT/IR-L1600400 spectrophotometer employing KBr pellets. Nuclear magnetic resonance (NMR） experiments including both 1D and 2D spectra were recorded on Bruker AV400 $( 4 0 0 ~ \\mathrm { ~ M H z } )$ ）and AV-500( $\\mathbf { \\zeta } 5 0 0 \\ \\mathbf { \\Lambda } \\mathbf { M H z } )$ spectrometers，with tetramethyl silane (TMS） serving as the internal reference. Semipreparative HPLC separations were achieved using a Shimadzu LC2030C system equipped with a DAD detector and a COSMOSIL $5 C _ { 1 8 ^ { - } } \\mathrm { M S ^ { - } I I }$ column ( $1 0 \\ \\mathrm { m m }$ i.d. $\\times \\ 2 5 0 \\ \\mathrm { m m }$ length, $7 ~ \\mu \\mathrm { m }$ particle size).Melting points were determined using an SGW X-4B micromelting apparatus without calibration.HR-ESI-MS was obtained on two instruments:a BrukerDaltonicsApex-Ultra 7.0 TFT-ICRMS and a Waters $\\mathrm { Q - T O F }$ Ultima Global GAA076 LC/MS system. ",
+        "bbox": [
+            84,
+            212,
+            479,
+            408
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Fungal Material. The fungal strains Aspergillus sp. GXIMD 03099 (GenBank accession No. ON668102）and Penicillium sp.GXIMD 03101(GenBank accession No.MZ971181) were obtained from the mangrove plant Acanthus ilicifolius L.collected in July 2020 from Guangxi Shankou Mangrove Nature Reserve,China.Taxonomic identification combined morphological characterization with ITS region sequencing and Blastn analysis against the NCBI database. Both strains have been deposited in the Marine Culture Collection of the Institute of Marine Drugs，Guangxi University of Chinese Medicine,Nanning, China. ",
+        "bbox": [
+            84,
+            410,
+            479,
+            533
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Fermentation and Isolation. The fungal strains Aspergillus sp. GXIMD 03099 and Penicillium sp.GXIMD 03101 were initially cultured on potato dextrose agar (PDA) for 3 days. Mycelial plugs were aseptically transferred to eight $5 0 0 ~ \\mathrm { m L }$ Erlenmeyer flasks,each containing $2 0 0 ~ \\mathrm { m L }$ of potato dextrose broth (PDB),and incubated at $3 7 ~ ^ { \\circ } \\mathrm { C }$ under shaking conditions $\\mathrm { 1 8 0 ~ r p m ) }$ for 3 days. Seed cultures $\\left( 2 ~ \\mathrm { m L } \\right)$ ）were inoculated via the cross-streak method into rice-based medium [ $_ { \\textrm { \\tiny 8 0 g } }$ rice, $1 0 0 ~ \\mathrm { m L }$ distilled water,and $_ { 0 . 5 \\mathrm { ~ g ~ } }$ sea salt per $^ { 1 \\mathrm { ~ L ~ } }$ flask],followed by static cultivation at $2 5 ~ ^ { \\circ } \\mathrm { C }$ for 30 days.The whole solid fermentation product of the fungi was dried and extracted with EtOAc $( 3 \\times 1 5 \\mathrm { L } )$ to yield $1 2 0 . 1 \\ { \\mathrm { g } } .$ Fractionation was carried out via silica gel $\\left( 2 0 0 { - } 3 0 0 ~ \\mathrm { m e s h } \\right)$ ）column chromatography (CC) employing stepwise gradients of petroleum ether (PE)/EtOAc ( $( 1 0 0 ; 0 \\to 0 ; 1 0 0$ $\\mathbf { v } / { \\bar { \\mathbf { v } } } )$ and subsequently EtOAc/MeOH ( $_ { 1 0 0 : 0  0 : 1 0 0 , \\mathrm { v / v } , }$ ,yielding 11 fractions (Fr.1-Fr.11). ",
+        "bbox": [
+            84,
+            535,
+            479,
+            718
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Fr.6 $\\left( 1 8 . 5 7 ~ \\mathrm { g } \\right)$ was subjected to stepwise gradient elution of $^ { 1 0 - }$ $1 0 0 \\%$ $\\mathrm { M e O H / H _ { 2 } O }$ to give 21 subfractions,fractions $6 { - } 1 { - } 6 { - } 2 1$ Fraction $^ { 6 - 1 7 }$ $( 2 . 6 7 \\ \\mathrm { g } )$ was further separated using with stepwise gradient elution of $1 0 { - } 1 0 0 \\%$ $\\mathrm { M e O H / H _ { 2 } O }$ to give 9 subfractions, fractions $6 { - } 1 7 { - } 1 { - } 6 { - } 1 7 { - } 9$ ，Subfraction $6 { - } 1 7 { - } 5$ was further separated by semipreparative HPLC $\\mathrm { ( M e O H / H _ { 2 } O , }$ $8 5 { : } 1 5 , \\ \\nu / \\nu ,$ ）to obtain1 ( $8 . 9 5 \\ \\mathrm { m g } ,$ $t _ { \\mathrm { R } } = 2 2 . 3 9 ~ \\mathrm { m i n }$ ).Subfraction $6 { - } 1 7 { - } 3$ was further separated by semipreparative HPLC $\\mathrm { ( M e O H / H _ { 2 } O , }$ $8 1 { : } 1 9 , \\ \\nu / \\nu \\mathrm { ~ , ~ }$ ）to obtain 2 ( $6 . 9 8 ~ \\mathrm { m g } ,$ $t _ { \\mathrm { R } } = 3 0 . 9 1 \\ \\mathrm { m i n }$ ).Subfraction $6 { - } 1 7 { - } 6$ was further separated by semipreparative HPLC $\\mathrm { ( M e O H / H _ { 2 } O , }$ $8 5 { : } 1 5 , \\ \\nu / \\nu )$ to obtain and 5 ( $3 . 5 8 ~ \\mathrm { m g }$ （号 $t _ { \\mathrm { R } } = 5 3 . 8 4 \\ \\mathrm { m i n }$ ，6 $\\left( 8 . 5 4 \\mathrm { ~ m g } , t _ { \\mathrm { R } } = 3 6 . 3 5 \\mathrm { ~ m i n } \\right)$ ） Fr. Seven $( 1 . 4 7 \\textrm { \\text g } )$ was fractionated by semipreparative HPLC $\\left( \\mathrm { M e O H } / \\mathrm { H } _ { 2 } \\mathrm { O } , 9 5 { : } 5 , \\nu / \\nu \\right)$ to give compound 4 (45.16 mg, $t _ { \\mathrm { R } } = 1 4 . 0 4$ min). Fr. Nine $( 0 . 2 5 \\ \\mathrm { g } )$ was fractionated by semipreparative HPLC $\\left( \\mathrm { M e O H } / \\mathrm { H } _ { 2 } \\mathrm { O } , 8 0 { : } 2 0 , \\nu / \\nu \\right)$ to give compound 3 ( $4 . 0 6 ~ \\mathrm { { m g } } ,$ $t _ { \\mathrm { R } } = 3 0 . 5 5$ min). ",
+        "bbox": [
+            84,
+            720,
+            479,
+            916
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Arthrichitin！ (1).light yellow powder. $[ \\alpha ] 2 4 \\mathrm { ~ D ~ + ~ } 1 5 . 0$ (c 0.1,MeOH)；UV (MeOH) $\\lambda _ { \\operatorname* { m a x } }$ $\\left( \\log \\ \\varepsilon \\right)$ ）209 (1.78),245 (0.75)，263(0.53),307 (0.63) $\\mathbf { n m }$ ;CD $\\mathrm { ( } c 7 . 5 \\times 1 0 ^ { - 4 } \\mathrm { m o l / L , }$ MeOH) $\\lambda _ { \\operatorname* { m a x } } \\left( \\Delta \\varepsilon \\right)$ 204 $( - 1 1 . 5 )$ ,214 $( - 0 . 7 )$ ,242 $\\left( - 3 0 . 8 \\right)$ ,261 $\\left( - 8 . 2 \\right)$ ,284 $\\left( - 9 . 8 \\right)$ ,314$\\left( + 2 0 . 4 \\right) \\mathrm { n m }$ ;IR $\\mathbf { \\Gamma } ( \\operatorname { K B r } )$ $\\nu _ { \\mathrm { m a x } }$ 3318,2925,2855,1741,1662,1518,1435,1365,1245, 1174, 1039, $7 4 4 ~ \\mathrm { c m ^ { - 1 } }$ $^ { 1 } \\mathrm { H }$ and $^ { 1 3 } \\mathrm { C }$ NMR data see Table1; HRESIMS $m / z 7 3 7 . 3 3 7 0 [ \\mathrm { M } + \\mathrm { N a } ] ^ { + }$ (calcd. for $\\mathrm { C } _ { 3 6 } \\mathrm { H } _ { 5 0 } \\mathrm { N } _ { 4 } \\mathrm { O } _ { 1 1 } \\mathrm { N a } ^ { + }$ 737.3374).",
+        "bbox": [
+            82,
+            917,
+            481,
+            942
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            518,
+            71,
+            915,
+            146
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Arthrichitin J(2).white powder. $[ \\alpha ] 2 4 \\mathrm { ~ D ~ + ~ } 1 4 . 0$ $\\left( c 0 . 1 , \\mathrm { M e O H } \\right)$ UV (MeOH) $\\lambda _ { \\operatorname* { m a x } }$ $( \\log \\varepsilon )$ 209 (2.18),245 (0.98),263 (0.71), 307 (0.84) nm; CD ( $c 7 . 5 \\times 1 0 ^ { - 4 } \\mathrm { m o l / L } , \\mathrm { N }$ [eOH) $\\lambda _ { \\operatorname* { m a x } } \\left( \\Delta \\varepsilon \\right)$ 203 $\\left( - 2 2 . 3 \\right)$ ， 212 $\\left( - 1 . 8 \\right)$ ,225 $\\left( - 4 . 8 \\right)$ ,238 $\\left( + 4 . 6 \\right)$ ,288 $\\left( - 2 . 3 \\right)$ ，312 $\\left( + 6 . 8 \\right) \\ \\mathrm { n m }$ IR (KBr) $\\nu _ { \\mathrm { m a x } }$ 3326,2925,2854,1726,1638,1514,1436,1374,1242, 1210,1093, $7 4 7 ~ \\mathrm { c m } ^ { - 1 }$ $^ 1 \\mathrm { H }$ and $^ { 1 3 } \\mathrm { C }$ NMR data see Table 1; HRESIMS $m / z \\ 6 7 3 . 3 4 3 8 \\ [ \\mathrm { M } + \\mathrm { H } ] ^ { + }$ (calcd. for $\\mathrm { C _ { 3 4 } H _ { 4 9 } N _ { 4 } O _ { 1 0 } } ^ { + }$ ,673.3449). ",
+        "bbox": [
+            518,
+            146,
+            915,
+            233
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Arthrichitin $K$ (3). light yellow powder. $[ \\alpha ] 2 4 \\mathrm { ~ D ~ + ~ } 1 2 . 5$ $\\left( { c \\ 0 . 1 } \\right)$ MeOH)；UV (MeOH) $\\lambda _ { \\operatorname* { m a x } }$ $\\left( \\log \\ \\varepsilon \\right)$ ）220 (2.10),266 (0.51),282 (0.44),290 (0.44) nm; CD $\\mathit { \\Omega } _ { c } ^ { \\prime } 7 . 5 \\times 1 0 ^ { - 4 } \\mathrm { m o l } / \\mathrm { L }$ MeOH) $\\lambda _ { \\mathrm { m a x } } \\left( \\Delta \\varepsilon \\right)$ 209 $\\left( - 1 1 . 8 \\right)$ ，228 $( - 1 . 7 )$ ，232 $( - 2 . 0 )$ ，252 $\\left( + 0 . 5 \\right)$ ，277 $\\left( + 0 . 2 \\right)$ ，312 $\\left( + 1 . 8 \\right)$ nm; IR (KBr) $\\nu _ { \\mathrm { m a x } }$ 3289,2923, 2854, 1736, 1648,1541,1438, 1382,1240,1174,1045, $7 4 7 ~ \\mathrm { c m ^ { - 1 } }$ $^ { 1 } \\mathrm { H }$ and $^ { 1 3 } \\mathrm { C }$ NMR data see Table 1；HRESIMS $m / z$ 643.3698 $[ \\mathbf { M } \\ + \\mathbf { \\nabla } \\mathbf { H } ] ^ { + }$ (calcd. for $\\mathrm { C _ { 3 4 } H _ { 5 1 } N _ { 4 } O _ { 8 } } ^ { + }$ 643.3707). ",
+        "bbox": [
+            518,
+            233,
+            915,
+            332
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Marfey's Analysis for Compounds 1-3.The configuration of the amino acid residues in compounds $^ { 1 - 3 }$ was determined by Marfey's analysis following acid hydrolysis.21 Each compound （100 $\\mu _ { \\mathrm { { g } } } )$ was dissolved in $1 0 0 \\mu \\mathrm { L }$ of 6 MHCl and hydrolyzed in pressureresistant reaction flasks at $1 1 0 ~ ^ { \\circ } \\mathrm { C }$ for $2 4 \\ \\mathrm { h }$ .Afterhydrolysis,the HCl was removed by evaporation under a stream of $\\Nu _ { 2 }$ gas.The hydrolysate was dissolved in $4 0 ~ \\mu \\mathrm { L }$ of $1 \\mathrm { ~ M ~ N a H C O } _ { 3 }$ $\\left( \\mathrm { p H } 7 - 8 \\right)$ and derivatized with $1 0 0 \\mu \\mathrm { L }$ of $1 \\%$ L-FDLA (1-fluoro $^ { \\cdot 2 , 4 }$ -dinitrophenyl-5- L-leucinamide in acetone）at $4 0 ~ ^ { \\circ } \\mathrm { C }$ for $^ { 1 \\mathrm { ~ h ~ } }$ .The reaction mixture was neutralized to $\\mathrm { p H } 2 - 3$ with $4 0 ~ \\mu \\mathrm { L }$ of $1 \\ \\mathrm { M } \\ \\mathrm { H C l }$ ，diluted withMeOH $\\left( 8 4 0 ~ \\mu \\mathrm { L } \\right)$ ，and filtered.Analysis was performed by UPLC-HRMS (Waters Xevo G2-S QTOF) using a linear gradient elution $( 2 0 - 5 0 \\%$ solvent B over $1 5 \\mathrm { m i n }$ ；solvent A: $\\mathrm { H } _ { 2 } \\mathrm { O } _ { 3 }$ ,solvent B:MeCN).Authentic samples of L-Ser,D-Trp,and D-Glu were separately derivatized with LFDLA and D-FDLA, then analyzed under identical chromatographic conditions. ",
+        "bbox": [
+            518,
+            333,
+            915,
+            530
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Computational Analysis. $\\mathrm { D P 4 + }$ probability analyses and ECD spectral calculations followed our established protocols.24 The absolute configurations of $^ { 1 - 3 }$ were assigned by statistical correlation of computed $^ { 1 3 } \\mathrm { C }$ NMR chemical shifts and ECD spectra with experimental data sets. ",
+        "bbox": [
+            517,
+            532,
+            914,
+            593
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Biological Assays.Antibacterial Activities.Antibacterial activity was assessed against five pathogenic bacteria,including the three Gram-positive bacteria methicillin-resistant Staphylococcus aureus (ATCC 43300)，Staphylococcus aureus (ATCC 6538)，and Bacillus subtilis (ATCC 21332）and the two Gram-negative bacteria Vibrio parahemolyticus (ATCC 17802） and Escherichia coli (ATCC 25922) by the agar disk-diffusion method.25 All compounds were prepared in pure DMSO at $\\mathrm { 5 ~ m g / m L }$ and chloromycetin (positive control） was prepared at $0 . 5 ~ \\mathrm { m g / m L }$ ",
+        "bbox": [
+            518,
+            593,
+            915,
+            706
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Cytotoxic Activity. Three human cancer cell lines (MHCC-97H, KTC-1,and DLD-1） were obtained from the Chinese Academy of Sciences (Shanghai, China).MHCC-97H and KTC-1 cells were cultured in DMEM medium (Solarbio,China),while DLD-1 cells were cultured in RPMI 1640 medium (Solarbio,China)；all media were supplemented with $1 0 \\%$ $\\left( \\nu / \\nu \\right)$ fetal bovine serum (Sigma, USA) and under standard conditions ${ } ^ { ( 3 7 ) } \\ ^ { \\circ } \\mathrm { C } _ { i }$ $5 \\%$ $\\mathrm { C O } _ { 2 } ,$ humidified environment).Compounds $\\mathbf { 1 } - { \\boldsymbol { 6 } }$ were tested at $4 0 ~ \\mu \\mathrm { M }$ concentration for cytotoxiceffects usingthe assay6with Cisplatineinga positive control (Selleck, China).For the assay,cells were seeded in 96-well plates ( $2 . 5 ~ \\times ~ 1 0 ^ { 5 }$ cells/well） and exposed to compound dilutions for $^ { 7 2 \\mathrm { ~ h ~ } }$ .Following incubation，culture supernatant was carefully removed and replaced with $1 0 0 ~ \\mu \\mathrm { L }$ MTT solution $( 0 . 5 ~ \\mathrm { m g / }$ mL）for $_ { 4 - 6 \\mathrm { ~ h ~ } }$ at $3 7 ~ ^ { \\circ } \\mathrm { C }$ The supernatant was removed,and $1 0 0 ~ \\mu \\mathrm { L }$ of DMSO was added to each well. The absorbance was then measured at $4 9 0 ~ \\mathrm { n m }$ using a microplate reader.All experiments were replicated thrice. ",
+        "bbox": [
+            518,
+            707,
+            915,
+            916
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Antibenign Prostatic Hyperplasia Activity. RWPE-1 human prostate epithelial cell lines were provided by the Chinese Academy of Sciences (Shanghai，China)．The cells were cultured with Keratinocyte-SFM(K-SFM,Gibco,USA） containing $0 . 2 \\%$ Gentamicin/Amphotericin Solution S0oX(Gibco,USA） in a $3 7 ~ ^ { \\circ } \\mathrm { C } ,$ $5 \\%$ $\\mathrm { C O } _ { 2 }$ incubator. Cell viability assessment was conducted using the CCK-8 assay following established protocols.27,28 Briefly,log-phase RWPE-1 cells were seeded into 96-well plates at a density of $\\bar { 5 \\times 1 0 ^ { 3 } }$ cells/well. Each treatment group included eight replicate wells with varying compound concentrations.Following $4 8 \\mathrm { - h }$ incubation, $1 0 ~ \\mu \\mathrm { L }$ CCK-8 reagent was added per well and incubated for $^ { 2 - 4 \\ \\mathrm { h } }$ ，Absorbance at $4 5 0 \\ \\mathrm { n m }$ was quantified using a microplate reader,with $\\mathrm { I C } _ { 5 0 }$ values derived from the resulting optical density measurements. All procedures strictly followed the manufacturer's guidelines for CCK8 implementation. ",
+        "bbox": [
+            517,
+            917,
+            914,
+            942
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            84,
+            71,
+            481,
+            232
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "ASSOCIATED CONTENT ",
+        "text_level": 1,
+        "bbox": [
+            84,
+            245,
+            286,
+            258
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Data Availability Statement ",
+        "text_level": 1,
+        "bbox": [
+            84,
+            262,
+            275,
+            275
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The NMR data for arthrichitins $\\mathrm { I { - } K }$ have been deposited in the Natural Products Magnetic Resonance Database (NPMRD；www.np-mrd.org) and can be found at NP0351137 (arthrichitin I),NP0351120 (arthrichitin J),and NP0351121 (arthrichitin K). ",
+        "bbox": [
+            84,
+            276,
+            479,
+            345
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$\\bullet$ Supporting Information ",
+        "text_level": 1,
+        "bbox": [
+            84,
+            348,
+            273,
+            361
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acs.jnatprod.5c00752. ",
+        "bbox": [
+            82,
+            362,
+            481,
+            388
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$^ 1 \\mathrm { H }$ NMR, $^ { 1 3 } \\mathrm { C }$ NMR,DEPT,HSQC,COSY, HMBC, NOESY spectra,and HRESIMS,ESI-MS/MS,UV, IR, Marfey's analysis, and ECD spectra of compounds 1-3 (PDF) ",
+        "bbox": [
+            121,
+            392,
+            481,
+            447
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "AUTHOR INFORMATION ",
+        "text_level": 1,
+        "bbox": [
+            85,
+            462,
+            293,
+            476
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Corresponding Authors ",
+        "text_level": 1,
+        "bbox": [
+            84,
+            480,
+            247,
+            492
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Cheng-Hai Gao- Guangxi Key Laboratory of Marine Drugs and Institute ofMarine Drugs, Guangxi University of Chinese Medicine,Nanning 530200,P.R. China; University Engineering Research Center of High-effcient Utilization of Marine Traditional Chinese Medicine Resources, Nanning 530200, P.R. China; Email: gaoch@gxtcmu.edu.cn Meng Bai - Guangxi Key Laboratory of Marine Drugs and Institute ofMarine Drugs, Guangxi University of Chinese Medicine,Nanning S30200,P.R. China; University Engineering Research Center of High-efficient Utilization of Marine Traditional Chinese Medicine Resources, Nanning 530200, P.R. China; $\\circledcirc$ orcid.org/0000-0002-1024-3458; Email: XXBai2014@163.com ",
+        "bbox": [
+            92,
+            493,
+            481,
+            671
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Authors ",
+        "text_level": 1,
+        "bbox": [
+            84,
+            682,
+            138,
+            693
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Yu Wang - Institute of Marine Drugs, Guangxi University of Chinese Medicine,Nanning S3020o,P.R. China Guang-Ping Cao - Institute of Marine Drugs, Guangxi University ofChineseMedicine,Nanning S30200,P.R.China Xin-Jian Qu - Guangxi Key Laboratory of Marine Drugs and Institute of Marine Drugs, Guangxi University of Chinese Medicine,Nanning S30200,P.R. China; University Engineering Research Center of High-effcient Utilization of Marine Traditional Chinese Medicine Resources, Nanning 530200,P.R. China Yong-Hong Liu - Guangxi Key Laboratory of Marine Drugs and Institute of Marine Drugs, Guangxi University of Chinese Medicine,Nanning S3020o,P.R. China; University Engineering Research Center of High-efficient Utilization of Marine Traditional Chinese Medicine Resources,Naning 530200, P.R. China; $\\textcircled { 1 }$ orcid.org/0000-0001-8327-3108 Xiang-Xi Yi - Guangxi Key Laboratory of Marine Drugs and Institute of Marine Drugs, Guangxi University of Chinese ",
+        "bbox": [
+            97,
+            693,
+            482,
+            943
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Medicine, Nanning S3020o, P.R. China; University Engineering Research Center of High-effcient Utilization of Marine Traditional Chinese Medicine Resources, Nanning 530200, P.R. China;  orcid.org/0000-0002-8251-8836 ",
+        "bbox": [
+            546,
+            72,
+            911,
+            127
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Complete contact information is available at: https://pubs.acs.org/10.1021/acs.jnatprod.5c00752 ",
+        "bbox": [
+            518,
+            132,
+            846,
+            160
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Author Contributions ",
+        "text_level": 1,
+        "bbox": [
+            518,
+            173,
+            667,
+            186
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Y.W. and G.-P.C. contributed equally. ",
+        "bbox": [
+            518,
+            188,
+            762,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Notes ",
+        "text_level": 1,
+        "bbox": [
+            518,
+            206,
+            560,
+            217
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The authors declare no competing financial interest. ",
+        "bbox": [
+            518,
+            220,
+            853,
+            233
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "ACKNOWLEDGMENTS ",
+        "text_level": 1,
+        "bbox": [
+            518,
+            246,
+            710,
+            258
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "This work was supported by the Natural Science Foundation of Guangxi (2023GXNSFAA026313)，Guangxi key research and development program (AB24010109), Guangxi University of Traditional Chinese Medicine Outstanding Young Scholars Fund Project (2024JQ001)，The Development Program of High-level Talent Team under the Qihuang Project of Guangxi University of Chinese Medicine (202404). ",
+        "bbox": [
+            517,
+            265,
+            915,
+            361
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "REFERENCES ",
+        "text_level": 1,
+        "bbox": [
+            520,
+            373,
+            640,
+            387
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "(1)Aly,A. H.; Debbab,A.; Proksch, P.Pharmazie. 2013,68,499- 505. (2) Gao,H.; Li, G.; Lou,H.-X. Molecules. 2018,23, 646. (3)Poynton,E.F.;vanSanten,J.A;inM;Contreras; McMann,E.；Parra,J；Showalter，B.；Zaroubi,L.；Duncan，KR; Linington, R. G. Nucleic. Acids.Res.2025, 53, D691-D699. (4) Netzker, T.; Flak,M.; Krespach, M. K.; Stroe,M. C.; Weber,J; Schroeckh, V.; Brakhage,A.A. Cur.Opin. Microbiol. 2018,45,11 123. (5) Oh,D.C.;Kauffman, C.A.; Jensen,P.R; Fenical, W. J. Nat. Prod.2007,70,515-520. (6) Marmann, A.; Aly,A.H.; Lin, W.; Wang, B.; Proksch,P.Mar Drugs. 2014,12, 1043-1065. (7)Ueda, K.; Beppu,T.J. Antibiot.2017,70,361-365. (8) Li, Y. Z.; Zhang W. Q; Hu, P.F.; Yang, Q $\\mathrm { Q . } ;$ Molnar, I.; Xu, P.； Zhang,B.B.Nat.Prod.Rep.2025,42,623-637. (9) Chagas,F.O.; Dias,L. G.; Pupo,M.T.J. Chem. Ecol.2013,39, 1335-1342. (10) Bertrad,S.; Bohni, N.; Schnee,S.; Schumpp,O.; Gindro,K; Wolfender,J.L.itechnol.Adv.14,3204. (11) Wang,Y.; Cao, G.P.; Gan, Y. M.; Lin,X.; Yi, X. X.; Zhao,L. Y.; Liu, Y.H.; Gao, C.H.; Bai, M.Mar.Drugs.2024,22, 282. (12) Xu, C.; Cao,G.P.; Zhang,H.; Bai,M.; Yi,X. X.; Qu, X.J. Mar. Drugs. 2024,22,275. (13) He,J. L.; Jiang, X. D.; Gan,Y. M.; Qu,X.J.; Yi, X. X.; Liu, Y. H.; Gao, C.H.; Bai, M. Nat. Prod.Res.2024,1-7. (14)Knowles,S.L.; Raja,H.A.; Isawi, I. H.; Flores-Bocanegra,L; Reggio,P.H.; Pearce, C.J.; Burdette,J. E.; Rokas,A.; Oberlies, N.H. Org. Lett. 2020,22,1878-1882. (15)Hwang,G.J.; Jang,M.; Son,S.; Kim,G.S.; Lee,B.; Heo, K. T.; Kim, G.J.; Choi,H.;Hur,J.S.;Jang,J. P.; Ko,S.K.; Hong,Y.S. Ahn, J.S.;Jang,J.H.J.Nat.Prod.2022852442453. (16) Peng, X Y.; Wu,J. T.; Shao,C.L; LiZ.Y.; Chen,M.; Wang, C.Y.Mar.Life Sci. Technol. 2021,3,363-374. (17) Xu,S.; LiM.S.; Hu, Z.; Shao,Y.L.; Ying,J. L.; Zhang, H. W. Microorganisms. 2023,11,464. (18) Wang,Z.J; Hong, Y.R; Wang, X.Y.; Wang,J. Z.; Zhai,Y.J; Cui,W.; Han,W.B.J. Nat.Prod.2024,87,2180-2193. (19)Mai, V.H; ChoiS.;Ponce-ZeaJ.E.; Nguyen,T.T.T.;Kang, H.S.; Yang,H.J.; Lee,H.B.;OhW.K.JNat.Prod.20258884 396. (20）Helaly，S.E.；Ashrafi， S.； Teponno，R.B.；Bernecker，S.; Dababat,A.A.; Maier,W; Stadler,M.J Nat.Prod.2018,81,2228- 2234. ",
+        "bbox": [
+            515,
+            386,
+            915,
+            942
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "(21)Lin, X.; Tang, Z.; Gan,Y.; LiZ.; Luo,X.;Gao,C.; Zhao,L.;  \nChai,L.; Liu, Y.J. Nat.Prod.2023,86,994-1002.  \n(22) Liu,F.; Qiao,X.; Li, Q; Zhou,J.; Gao,J.; He,F.; Wu,P.; Chen,C.； Sun,W.; Zhu, H.; Zhang, Y.J. Nat.Prod.2024,87, 753-763.  \n(23) Yuan,S.； Zhuang, S.; Qiao,Y.; Wu,Q;Ma,Y.; Chen,S.; Liu,L.; Yan, Y.; Gao, Z. J. Nat.Prod.2025,88,1605-1615.  \n(24) Xia,J. L.; Liu,J.Y.; Liu,K.; Li, Y.Y.; Bai,M.; Gao, C.H.; Yi,X.  \nX. J.Nat.Prod. 2025,88,1980-1987.  \n(25) Balouiri, M.; Sadiki, M.; Ibnsouda,S.K.J. Pharm.Anal.2016,6,71-79.  \n(26)Mosmann, T.J. Immunol. Methods.1983, 65,55-63.  \n(27) Choi, Y.J.; Fan, M.; Wedamulla,N.E.; Tang, Y.J.; Kim,E.K.  \nFood Sci. Hum.Well.2024,13,1698-1710.  \n(28) He,J.L.; Wang, Y.; Yi,X.X.; Gan, Y.M.; Liu, Y.H.; Gao, C.  \nH.; Liu,K.; Bai, M.J.Nat.Prod.2025,88,1201-1207.",
+        "bbox": [
+            82,
+            71,
+            482,
+            260
+        ],
+        "page_idx": 7
+    }
+]

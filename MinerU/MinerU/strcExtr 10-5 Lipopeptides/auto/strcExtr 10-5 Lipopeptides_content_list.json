@@ -1,0 +1,1064 @@
+[
+    {
+        "type": "text",
+        "text": "Glycinocins E-H, Antimicrobial Lipopeptides Produced by a Streptomyces Strain ",
+        "text_level": 1,
+        "bbox": [
+            84,
+            135,
+            828,
+            181
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Ignacio Fernandez-Pastor,\\* VictorGonzalez-Menendez,Ignacio Gonzalez, Pilar Sanchez, Rachel Serrano Thomas A Mackenzie, Daniel Oves-Costales, Manuel Casares Porcel, Olga Genilloud, and Fernando Reyes\\* ",
+        "bbox": [
+            82,
+            187,
+            914,
+            241
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Cite This: J. Nat.Prod. 2025,88,2127-2137 ",
+        "bbox": [
+            125,
+            256,
+            370,
+            271
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Read Online ",
+        "text_level": 1,
+        "bbox": [
+            555,
+            256,
+            635,
+            270
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ACCESS | ",
+        "text_level": 1,
+        "bbox": [
+            84,
+            296,
+            172,
+            315
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ll Metrics & More ",
+        "bbox": [
+            232,
+            301,
+            355,
+            315
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Article Recommendations ",
+        "bbox": [
+            451,
+            300,
+            632,
+            315
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "SI Supporting Information ",
+        "bbox": [
+            711,
+            301,
+            873,
+            315
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ABSTRACT: In an antifungal screening of extracts from microbial strains isolated from gypsum outcrops in Granada, Spain, four new cyclic lipopeptides, glycinocins EH (1-4)，were identified from Streptomyces sp. CA-297274 and exhibited potent activity against Zymoseptoria tritici, the causal agent of septoria tritici blotch of wheat. Isolation and structure elucidation performed using HR-MS/MS,1D and 2D NMR, and Marfey's analyses, revealed that structures contained an Asp-Gly-Asp-Gly motif in the peptide scaffold, typical of calcium-dependent antibiotics. Genome sequencing and bioinformatic analysis of the strain uncovered a biosynthetic gene cluster consistent with the production of these compounds and helped to correct the absolute configuration determined by Marfey's analysis of some amino acid residues. The isolated metabolites displayed notable antifungal activity against Z. tritici， with minimum inhibitory concentration values in the micromolar range (Compound 4, 9.5 $\\mu \\mathbf { M } ,$ ，and calcium-dependent antibacterial activity against methicilin-resistant ",
+        "bbox": [
+            84,
+            331,
+            627,
+            508
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8a886d347dec0ca2574b463b8a3008a1cad60622cd8b07b5fe7b9bf7f4b74d6f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            640,
+            332,
+            914,
+            498
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Staphylococcus aureus $( 5 . 2 ~ \\mu \\mathrm { M }$ for 4) and vancomycin-resistant Enterococcus faecium $( 3 . 0 ~ \\mu \\mathrm { M }$ for 4)，as anticipated by their structural analysis. Glycinocins $\\mathrm { E { - } H }$ displayed no cytotoxicity against the human liver cancer celline HepG2. These findings expandthechemical diversityof calcium-dependentantibioticsandhighlight theecologicaland therapeutic potentialof extremophile-derived actinomycetes as a source of novel bioactive compounds. ",
+        "bbox": [
+            80,
+            511,
+            919,
+            565
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "yclic lipopeptides have atracted significant attention as promising starting points for the development of novel antibiotics and antifungal drugs.1-3 The characterization of this structural class traces back to the 1950s when amphomycin was first isolated.4,5 Compounds of this structural class have been isolated from several bacterial and fungal genera and include compounds such as the calcium dependent antibiotics daptomycin and malacidin， broad spectrum antifungal compounds such hassallidins，laxaphycins，and pneumocandins，or the surfactins，one of the most effective biosurfactantsavailable.6-12 Acidic aminoacids in the peptide core confer to these compounds activity as biosurfactants due to the presence of a lipophilic acyl chain linked to a hydrophilic oligopeptide.Biological activity displayed by some acidic cyclic lipopeptides can be mostly ascribed to their amphipathic molecularnature.134Regarding theirantimicrobialactiity diferent modes of action, such as depolarization in the lipidic cell membrane or interaction with intracellular_ components, enzymes，or proteins, have been reported.15-17 A particular class of cyclic lipopeptides is those described as calciumdependent antibiotics (CDAs). Structurally， this classis characterized by the presence in their structures of a highly conserved Asp-X-Asp-Gly motif. This sequence plays a main role in calcium binding, which is essential for achieving optimal ",
+        "bbox": [
+            84,
+            595,
+            481,
+            935
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "antibacterial activity. In the absence of calcium, the activity of CDAs is significantly weakened.18-20It has been reported that organisms that evolved in high-calcium environments have developed a defensive tool producing this kind of bioactive metabolite.21 ",
+        "bbox": [
+            517,
+            595,
+            915,
+            666
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The arid zone located in the south of the Iberian Peninsula is characterized by its dry and warm climate with extensive Zones have marl and gypsum-marl soils.22 These extreme environmental conditions_can only be colonized by highly specialized organisms.235Extremophile microbes residing in these soils or added externally can adapt to such extreme environments, this success being related to a large biosynthetic versatility and the production of specialized metabolites.26-28 ",
+        "bbox": [
+            517,
+            667,
+            915,
+            786
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this sense, this hotspot constitutes a good starting point for the hunt for new compounds with antibiotic or agrochemical interest. ",
+        "bbox": [
+            517,
+            787,
+            915,
+            828
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "During our exploration of antifungal molecules from gypsum-soil-associated bacteria，a chemical investigation of Streptomyces sp. CA-297274 resulted in the isolation and identification four new cyclic lipopeptides included in the family ofthe glycinocins.Thesepeptidesare characterized by possessing a cyclic structure of nine amino acids linked via a 2,3-diaminopropionic acid (Dap） with an aspartic acid unit, which is in turn connected to a fatty acid moiety.All members of this family of compounds contain the canonical calcium binding motif Asp-Gly-Asp-Gly. The objective of this study was to characterize the chemical structures and biological activities of these new compounds and to assess their potential as antimicrobial agents. ",
+        "bbox": [
+            84,
+            72,
+            479,
+            251
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/d7efffa16465a5065dae44f826717cc82ec038514bad2406ffaf8c84e3507231.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            85,
+            261,
+            479,
+            562
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "RESULTS AND DISCUSSION ",
+        "text_level": 1,
+        "bbox": [
+            520,
+            71,
+            752,
+            86
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Glycinocins $\\mathrm { E { - } H }$ (1-4)were obtained by culturing the strain CA-297274 in medium M016 followed by extraction of the cultures with acetone.Antifungal assays of the crude acetone extracts revealed activity against Z. tritici, triggering further investigation of the metabolites produced by this strain.The crude extract was fractionated by semiprepative HPLC, antifungal activity of the fractions was determined，and bioactive fractions were analyzed by LC-HRMS/MS.Dereplication against public or commercial databases (Dictionary of Natural Products0,OCOUr $\\mathrm { G N P S } ^ { 3 2 }$ revealed no matches for the detected molecular formula associated to the main peaks.Mass spectra revealed a fragmentation pattern typical of a lipopeptide with a peptide core composed of 11 amino acids and an acyl side chain (Figure 1).The calculated molecular formulas for the four congeners differed only in successive methylene additions (Figures S2-S14). ",
+        "bbox": [
+            518,
+            92,
+            914,
+            313
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Glycinocin E(1) was obtained as a white,amorphous solid. A molecular formula of $\\mathrm { C } _ { 5 7 } \\mathrm { H } _ { 9 0 } \\mathrm { N } _ { 1 2 } \\mathrm { O } _ { 1 8 }$ was deduced by $\\left( + \\right)$ -ESI-TOFanalysis( $[ \\mathbf { M } + \\mathbf { H } ] ^ { + }$ at $m / z$ 1231.6567，calcd 1231.6574). Interpretation of the $^ 1 \\mathrm { H }$ and $^ { 1 3 } \\mathrm { C }$ NMR spectra (500 and $1 5 0 ~ \\mathrm { M H z } ,$ respectively， DMSO $\\cdot d _ { 6 } ,$ at $2 4 ~ ^ { \\circ } \\mathrm { C }$ ）in conjunction with bidimensional COSY，NOESY，TOCSY, HSQC，and HMBC NMR data allowed us to identify the presence of Asp,Dap,Pro, Ile,Val,Gly,and pipecolic acid (Pipe) (Tables 1 and 2). The $^ { 1 3 } \\mathrm { C }$ NMR spectrum displayed fifteen carbonyl carbon signals between $\\delta _ { \\mathrm { C } }$ 172.4 and 165.6; two $\\mathsf { s p } ^ { 2 }$ methine carbons at $\\delta _ { \\mathrm { C } }$ 143.7 and 124.4, eleven $\\mathsf { s p } ^ { 3 }$ methine signals (eight from the $\\alpha \\mathrm { C }$ of the chiral amino acids between $\\delta _ { \\mathrm { C } } 6 0 . 0$ and 47.6, two from the Val and Ile at $\\delta _ { \\mathrm { C } }$ 30.9 and 35.6,respectively,and one from the acyl side chain at $\\delta _ { \\mathrm { C } }$ 27.6), twenty-three $\\mathsf { s p } ^ { 2 }$ methylene signals (three from the $\\alpha \\mathrm { C }$ of the Gly residues and the remaining twenty assigned to the different amino acid side chains and the lipidic chain，all resonating at $\\delta _ { \\mathrm { C } }$ between 47.5 and 20.7),and finally six methyl signals (two from Ile,two from Val,and two from the fatty acid chain between $\\delta _ { \\mathrm { C } } 2 2 . 9$ and 10.8). The $^ 1 \\mathrm { H }$ spectra of compound 1 exhibited ten signals of amide exchangeable hydrogens between $\\delta _ { \\mathrm { H } } ~ 8 . 3$ and $7 . 7 \\ \\mathrm { p p m }$ ，The lipophilic moiety of the peptide was identified as E-12-methyltridec-2-enoic acid (MTEA） using COSY and HMBC correlations and comparison of the NMR data with those reported for other glycinocins.29 A coupling constant between the $\\mathsf { s p } ^ { 2 }$ methine hydrogens of $1 5 . 4 \\ \\mathrm { H z }$ confirmed an $E$ configuration for the double bond. The connection between amide hydrogens and $\\alpha \\mathrm { C }$ of the amino acids was deduced from the COSY spectrum. The chemical shifts of the side chain of each amino acid were determined by TOCSY NMR data, following the cross peaks from amide hydrogensand $\\alpha \\mathrm { C }$ hydrogens. Inter-residue connection and amino acid sequence were deduced from key NOESY correlations between the amide hydrogen of each amino acid and the $\\alpha \\mathrm { C }$ hydrogen of the adjacent amino acid (Figure 2).The link between the acyl side chain and the aspartic residue was established by the presence of a NOESY cross peak between the hydrogen of the αC of the acyl side chain at $\\delta _ { \\mathrm { H } }$ 5.92 and the amide hydrogen of the first Asp residue at $\\delta _ { \\mathrm { H } }$ 8.15.HMBC combined with NOESY spectra determined the atachment of the first Asp residue to Dap, linking the side chain with the cyclic peptidic core.HRMS/MS data additionally confirmed the following sequence MTEAAsp-Dap-Pipe-Gly-Asp-Gly-Asp-Gly-Val-Ile-Pro (Figure 1). The HSQC spectrum reveals the presence of two conformations for the Pipe residue (Figures S28 and S29). The presence of various conformers has been described for other similar peptides such as laspartomycin C,a diastereoisomer of glycinocin $\\mathbf { A } . ^ { 3 3 }$ A comparison of laspartomycin C with 1 revealed its high structural similarity.Key differences include the presence of D-Thr in laspartomycin C instead of D-Val in 1 and minor differences in the FA chain. According to the NMR data, the two tertiary amide bonds in cyclic amino acids were found to have a trans geometry for Pro and cis for Pipe in the major conformer. This was supported by the chemical shifts of $\\beta \\mathrm { C } \\left( \\delta _ { \\mathrm { C } } 2 9 . 7 \\right)$ and $\\gamma \\mathrm { C }$ $\\left( \\delta _ { \\mathrm { C } } 2 4 . 8 \\right)$ of the Pro residue.34 The NMR signals observed at $\\chi \\mathrm { C } \\delta _ { \\mathrm { H } } 4 . 7 5 / \\delta _ { \\mathrm { C } }$ 56.4 and εC $\\delta _ { \\mathrm { H } } 2 . 8 6 $ 4.33/ $\\delta _ { \\mathrm { C } }$ 39.9 positions of Pipe compared with rapamycin rotamers confirmed that it was in thecis configuration.3sOnly the chemical shifts for the main conformer are detailed in Tables 1 and 2. Chemical shifts for minor conformers are included in Tables S2 and S3. ",
+        "bbox": [
+            517,
+            315,
+            915,
+            578
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/0f091f34b41fbecfb3f0b0b339f4fc2aaf3e4d1adfc420e4d0d621e5daaacd3f.jpg",
+        "image_caption": [
+            "Figure 1. Scheme and MS/MS fragmentation of 1. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            123,
+            591,
+            876,
+            912
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/60e854b1c6201c030c93dd88d5ee6f2eda1b419ee0c6779cfde210f3a49aa511.jpg",
+        "table_caption": [
+            "Table 1. ${ \\mathbf { \\tau } } ^ { 1 } \\mathbf { H }$ and $^ { 1 3 } \\mathbf { C }$ NMR (500 MHz; 125 MHz; DMSO $\\mathbf { \\nabla } \\cdot d _ { 6 } \\mathbf { ; }$ $2 4 ^ { \\circ } \\mathbf { C }$ ）Data of Compounds 1 and 2 "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td colspan=\"3\">1</td><td colspan=\"3\">2</td></tr><tr><td>Residue</td><td>Position</td><td>1H NMR: δ in ppm, mult (J in Hz)</td><td>13C NMR: δ in ppm, type</td><td>Position</td><td>1H NMR: δ in ppm, mult (J in Hz)</td><td>13C NMR: δ in ppI</td></tr><tr><td>FA</td><td>Co</td><td></td><td>165.2, C</td><td>Co</td><td></td><td>165.3, C</td></tr><tr><td></td><td>2</td><td>5.92, d (15.4)</td><td>124.2, CH</td><td>2</td><td>5.92, d (15.4)</td><td>124.3, CH</td></tr><tr><td></td><td>3</td><td>6.63, dt (15.4, 8.6)</td><td>143.7, CH</td><td>3</td><td>6.63, dt (15.4, 8.6)</td><td>143.7, CH</td></tr><tr><td></td><td>4</td><td>2.12, (8.6, 6.8)</td><td>31.7, CH</td><td>4</td><td>2.12, (8.6, 6.8)</td><td>31.6, CH</td></tr><tr><td></td><td>5</td><td>1.35, m</td><td>28.1, CH</td><td>5</td><td>1.38, m</td><td>28.1,CH</td></tr><tr><td></td><td>6</td><td>1.24, m</td><td>29.3,CH</td><td>6</td><td>1.25, m</td><td>29.2, CH</td></tr><tr><td></td><td>7-9</td><td>1.23-1.25, m</td><td>29.1-29.7, CH</td><td>7-10</td><td>1.21-1.25, m</td><td>29.1-29.4,CH</td></tr><tr><td></td><td>10</td><td>1.23, m</td><td>26.8,CH</td><td>10</td><td>1.23, m</td><td>26.8,CH</td></tr><tr><td></td><td>11</td><td>1.12, m</td><td>38.8, CH</td><td>11</td><td>1.11, m</td><td>38.8, CH</td></tr><tr><td></td><td>12</td><td>1.46, hept</td><td>27.6, CH</td><td>12</td><td>1.27, m</td><td>34.2, CH</td></tr><tr><td></td><td>13,14</td><td>0.82, d</td><td>22.9, CH</td><td>12-Me</td><td>0.80,m</td><td>11.6, CH</td></tr><tr><td></td><td></td><td></td><td></td><td>13</td><td>1.05,m</td><td>36.3, CH</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td>1,25,m</td><td></td></tr><tr><td>Asp1</td><td></td><td></td><td></td><td>14</td><td>0.82</td><td>23.0, CH</td></tr><tr><td></td><td>NH</td><td>8.15</td><td></td><td>NH</td><td>8.15</td><td></td></tr><tr><td></td><td>Co</td><td></td><td>170.6, C</td><td>Co</td><td></td><td>170.5, C</td></tr><tr><td></td><td>a</td><td>4.60,m</td><td>49.6, CH</td><td>α</td><td>4.61, m</td><td>49.7, CH</td></tr><tr><td></td><td>β</td><td>2.49,m</td><td>36.4, CH</td><td>β</td><td>2.49,m</td><td>36.4,CH</td></tr><tr><td></td><td></td><td>2.62, m</td><td></td><td></td><td>2.65,m</td><td></td></tr><tr><td>Dap</td><td>Y</td><td></td><td>172.3, C</td><td>Y</td><td></td><td>172.3, C</td></tr><tr><td></td><td>NH</td><td>8.22, m</td><td></td><td>NH</td><td>8.22,m</td><td></td></tr><tr><td></td><td>Co</td><td></td><td>170.5, C</td><td>Co</td><td></td><td>170.5, C</td></tr><tr><td></td><td>α</td><td>4.65,m</td><td>49.1, CH</td><td>α</td><td>4.65,m</td><td>49.1, CH</td></tr><tr><td></td><td>B</td><td>3.09, m</td><td>40.1,CH</td><td>β</td><td>3.06,m</td><td>40.1,CH</td></tr><tr><td></td><td></td><td>3.55,m</td><td></td><td></td><td>3.54,m</td><td></td></tr><tr><td>Pipe</td><td>β NH</td><td>7.50,m</td><td></td><td>β NH</td><td>7.50,m</td><td></td></tr><tr><td></td><td>co</td><td></td><td>170.8, C</td><td>CO</td><td></td><td></td></tr><tr><td></td><td>α</td><td>4.75,m</td><td>56.4, CH</td><td>α</td><td>4.73, m</td><td>170.8, C 56.5, CH</td></tr><tr><td></td><td>β</td><td>1.50,m</td><td>27.0, CH</td><td>β</td><td>1.50,m</td><td>26.9, CH</td></tr><tr><td></td><td></td><td>2.18,m</td><td></td><td></td><td>2.18,m</td><td></td></tr><tr><td></td><td>Y</td><td>1.35,m</td><td>20.7,CH</td><td>Y</td><td>1.37,m</td><td>20.7, CH</td></tr><tr><td></td><td></td><td>1.52,m</td><td></td><td></td><td>1.54, m</td><td></td></tr><tr><td></td><td>8</td><td>1.21,m</td><td>24.7, CH</td><td>8</td><td>1.21, m</td><td>24.9, CH</td></tr><tr><td></td><td></td><td>1.51,m</td><td></td><td></td><td>1.51,m</td><td></td></tr><tr><td></td><td>m</td><td>2.83,m</td><td>40.2,CH</td><td>ε</td><td>2.84,m</td><td>40.2,CH</td></tr><tr><td></td><td></td><td>4.35, m</td><td></td><td></td><td>4.35, m</td><td></td></tr><tr><td>Gly4</td><td>NH</td><td>8.10,m</td><td></td><td>NH</td><td>8.08,m</td><td></td></tr><tr><td></td><td>Co</td><td></td><td>169.6, C</td><td>Co</td><td></td><td>169.6, C</td></tr><tr><td></td><td>α</td><td>3.62,m</td><td>42.1, CH</td><td>α</td><td>3.64, m</td><td>42.1, CH</td></tr><tr><td></td><td></td><td>3.99,m</td><td></td><td></td><td>3.80,m</td><td></td></tr><tr><td>AspS</td><td>NH</td><td>8.27,m</td><td></td><td>NH</td><td>8.27,m</td><td></td></tr><tr><td></td><td>Co</td><td></td><td>171.2, C</td><td>Co</td><td></td><td>171.2, C</td></tr><tr><td></td><td>a</td><td>4.63,m</td><td>48.7, CH</td><td>α</td><td>4.63,m</td><td>48.8, CH</td></tr><tr><td></td><td>β</td><td>2.54,m</td><td>36.1, CH</td><td>β</td><td>2.54, m</td><td></td></tr><tr><td></td><td></td><td></td><td>172.2, C</td><td></td><td></td><td>36.1, CH</td></tr><tr><td>Gly6</td><td>Y NH</td><td></td><td></td><td>Y NH</td><td></td><td>172.2, C</td></tr><tr><td></td><td></td><td>8.20,m</td><td>169.8, C</td><td></td><td>8.21,m</td><td></td></tr><tr><td></td><td>Co</td><td></td><td></td><td>CO</td><td></td><td>169.8, C</td></tr><tr><td>Asp7</td><td>α</td><td>3.75,m</td><td>40.7,CH</td><td>α</td><td>3.75,m</td><td>40.7, CH</td></tr><tr><td></td><td>NH</td><td>8.29,m</td><td></td><td>NH</td><td>8.29,m</td><td></td></tr><tr><td></td><td>Co</td><td></td><td>170.9, C</td><td>CO</td><td></td><td>170.9, C</td></tr><tr><td></td><td>α</td><td>4.49,m</td><td>50.3,CH</td><td>α</td><td>4.49,m</td><td>50.3,CH</td></tr><tr><td></td><td>β</td><td>2.53,m</td><td>36.7,CH</td><td>β</td><td>2.53,m 2.71, m</td><td>36.7,CH</td></tr><tr><td>Gly8</td><td>Y</td><td>2.73,m</td></table>",
+        "bbox": [
+            85,
+            83,
+            879,
+            937
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/490c6b2803af8ddf44aadb65d85e4bb28f749806b886b1c99f81ae5a823ce679.jpg",
+        "table_caption": [
+            "Table 1. continued "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\"></td><td colspan=\"3\">1</td><td colspan=\"3\">2</td></tr><tr><td>Residue Position</td><td>1H NMR: δ in ppm, mult (J in Hz)</td><td>13C NMR: δ in ppm, type</td><td>Position</td><td>1H NMR: δ in ppm, mult (J in Hz)</td><td>13C NMR: δ in ppm, type</td></tr><tr><td rowspan=\"10\">Ile</td><td>co</td><td></td><td>171.1, C</td><td>co</td><td></td><td>171.1, C</td></tr><tr><td>α</td><td>4.17, m</td><td>58.3,CH</td><td>α</td><td>4.18,m</td><td>58.1,CH</td></tr><tr><td>β</td><td>1.93, m</td><td>30.9, CH</td><td>β</td><td>1.93, m</td><td>30.9, CH</td></tr><tr><td>Y</td><td>0.82,m</td><td>18.6,CH</td><td>Y</td><td>0.82,m</td><td>18.6, CH</td></tr><tr><td>Y</td><td>0.82,m</td><td>19.4, CH</td><td>Y</td><td>0.82,m</td><td>19.4, CH</td></tr><tr><td>NH</td><td>7.88, m</td><td></td><td>NH</td><td>7.87,m</td><td></td></tr><tr><td>CO</td><td></td><td>170.7,CH</td><td>CO</td><td></td><td>170.7, C</td></tr><tr><td>a</td><td>4.30,m</td><td>54.4, CH</td><td>α</td><td>4.30,m</td><td>54.5, CH</td></tr><tr><td>β</td><td>1.78, m</td><td>35.6, CH</td><td>β</td><td>1.72, m</td><td>36.3,CH</td></tr><tr><td>Y</td><td>1.08,m</td><td>24.6, CH</td><td>Y</td><td>1.08,m</td><td>24.6, CH</td></tr><tr><td>8</td><td>1.45, m</td><td></td><td></td><td>1.45,m</td><td></td><td></td></tr><tr><td></td><td>β-Me</td><td>0.78,m</td><td>10.8, CH</td><td>8</td><td>0.78,m</td><td>10.7, CH</td></tr><tr><td>Pro</td><td></td><td>0.85,m</td><td>15.1, CH</td><td>β-Me</td><td>0.85,m</td><td>15.2, CH</td></tr><tr><td></td><td>Co</td><td></td><td>172.2, C</td><td>CO</td><td></td><td>172.3, C</td></tr><tr><td></td><td>a</td><td>4.15,m</td><td>59.9, CH</td><td>a</td><td>4.15, m</td><td>59.9, CH</td></tr><tr><td></td><td>β</td><td>1.74, m</td><td>29.7, CH</td><td>β</td><td>1.71, m</td><td>29.9, CH</td></tr><tr><td></td><td></td><td>2.01,m</td><td></td><td></td><td>1.98,m</td><td></td></tr><tr><td></td><td>Y</td><td>1.79,m</td><td>24.8,CH</td><td>Y</td><td>1.77,m</td><td>24.8,CH</td></tr><tr><td></td><td></td><td>1.93, m</td><td></td><td></td><td>1.90,m</td><td></td></tr><tr><td></td><td>8</td><td>3.52,m</td><td>47.5, CH</td><td>8</td><td>3.51,m</td><td>47.5, CH</td></tr><tr><td></td><td></td><td>3.79, m</td><td></td><td></td><td>3.78,m</td><td></td></tr></table>",
+        "bbox": [
+            84,
+            90,
+            917,
+            421
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            84,
+            425,
+            479,
+            942
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            518,
+            427,
+            915,
+            512
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The molecular formula of glycinocin F (2）was established as $\\mathrm { C } _ { 5 8 } \\mathrm { H } _ { 9 2 } \\mathrm { N } _ { 1 2 } \\mathrm { O } _ { 1 8 }$ by $\\left( + \\right)$ -ESI-TOFanalysis $\\mathbf { \\nabla } [ \\mathbf { M } + \\mathbf { H } ] ^ { + }$ at $m / z$ 1245.6710, calcd 1245.6730). This formula accounted for an additional $\\mathsf { s p } ^ { 3 }$ methine in the lipidic chain compared to 1; ESITOF analysis, together with COSY and HMBC correlations confirmed the presence of a E-12-methyltetradec-2-enoic acid unit in the molecule. ",
+        "bbox": [
+            518,
+            513,
+            915,
+            612
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Glycinocin G (3） presented the molecular formula $\\mathrm { C _ { 5 9 } H _ { 9 4 } N _ { 1 2 } O _ { 1 8 } }$ according to $\\left( + \\right)$ -ESI-TOFanalysis（ $[ \\textbf { M } +$ $\\mathrm { H } ] ^ { + }$ at $m / z ~ 1 2 5 9 . 6 8 8 3$ ,calcd 1259.6887). Compared to 2, the NMR spectra of 3 showed key signals in HSQC accounting for the absence of the $\\mathsf { s p } ^ { 3 }$ methylene signal of Dap and a new $\\mathsf { s p } ^ { 3 }$ methine signal, suggesting the replacement of Dap with a Dab residue，which was confirmed by COSY correlations. This replacement of a Dap with a Dab residue seems to provide additional rigidity to the structure，making the differences between the conformers more evident in the NMR spectra (Figure S45). Finally，glycinocin H (4） presented the molecular formula $\\mathrm { C } _ { 6 0 } \\mathrm { H } _ { 9 6 } \\mathrm { N } _ { 1 2 } \\mathrm { O } _ { 1 8 }$ （ $[ \\mathbf { M } ~ + ~ \\mathbf { H } ] ^ { + }$ at $m / z$ 1273.7018，calcd 1273.7043 according to $\\left( + \\right)$ -ESI-TOF data).Comparison of the HSQC NMR data obtained for 4 with those of 3 revealed that it possesses the same peptide core and a different lipidic chain,identified as E-14-methylpentadec2-enoic acid,as confirmed by analysis of the ESI-TOF and COSY data. ",
+        "bbox": [
+            518,
+            612,
+            914,
+            870
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A comparison of 1-4 with the previously described glycinocins A-D (5-8） revealed key differences including the presence of $\\scriptstyle \\mathrm { { D - V a l } } _ { 9 }$ in $_ { 1 - 4 }$ instead of D-allo $\\mathbf { \\nabla } \\cdot \\mathrm { T h } \\mathbf { r } _ { 9 }$ conserved in glycinocins $\\mathrm { A - D }$ ； in addition compounds 3 and 4 exhibit a residue of 2,3-diaminobutanoic acid (Dab） replacing the Dap moiety present in glycinocins A-D，together with minor differences in the FA chain. ",
+        "bbox": [
+            518,
+            872,
+            914,
+            942
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/6100596736d4058c5b58415129ed77aa7c406e95666a934c0126e1c7e8084237.jpg",
+        "table_caption": [
+            "Table 2. ${ \\mathbf { \\tau } } ^ { 1 } \\mathbf { H }$ and $^ { 1 3 } \\mathbf { C }$ NMR (500 MHz; 125 MHz; DMSO $\\mathbf { \\nabla } \\cdot d _ { 6 } \\mathbf { ; }$ $2 4 ^ { \\circ } \\mathbf { C }$ ）Data of Compounds 3 and 4 "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\">Residue</td><td colspan=\"3\">3</td><td colspan=\"3\">4</td></tr><tr><td>Position</td><td>1H NMR: δ in ppm, mult (J in Hz)</td><td>13C NMR: δ in ppm, type</td><td>Position</td><td>1H NMR: δ in ppm, mult (J in Hz)</td><td>13C NMR: δ in pp</td></tr><tr><td>FA</td><td>Co</td><td></td><td>165.3, C</td><td>Co</td><td></td><td>165.2, C</td></tr><tr><td></td><td>2</td><td>5.92, d (15.4)</td><td>124.3, CH</td><td>2</td><td>5.92, d (15.4)</td><td>124.2, CH</td></tr><tr><td></td><td>3</td><td>6.63, dt (15.4, 8.6)</td><td>143.7, CH</td><td>3</td><td>6.63, dt (15.4, 8.6)</td><td>143.9, CH</td></tr><tr><td></td><td>4</td><td>2.12, (8.6, 6.8)</td><td>31.6, CH</td><td>4</td><td>2.12, (8.6, 6.8)</td><td>31.6, CH</td></tr><tr><td></td><td>5</td><td>1.38, m</td><td>28.1, CH</td><td>5</td><td>1.35, m</td><td>28.2, CH</td></tr><tr><td></td><td>6</td><td>1.25, m</td><td>29.3, CH</td><td>6</td><td>1.24,m</td><td>29.1, CH</td></tr><tr><td></td><td>7-10</td><td>1.21-1.25, m</td><td>29.1-29.4, CH</td><td>7-11</td><td>1.23-1.25, m</td><td>29.1-29.7, C</td></tr><tr><td></td><td>10</td><td>1.23, m</td><td>26.8,CH</td><td>12</td><td>1.23, m</td><td>26.9, CH</td></tr><tr><td></td><td>11</td><td>1.11, m</td><td>38.8, CH</td><td>13</td><td>1.12, m</td><td>38.8, CH</td></tr><tr><td></td><td>12</td><td>1.27,m</td><td>34.2, CH</td><td>14</td><td>1.46, hept</td><td>27.7, CH</td></tr><tr><td></td><td>12-Me</td><td>0.80,m</td><td>11.6, CH</td><td>15,16</td><td>0.82,d</td><td>22.8, CH</td></tr><tr><td></td><td>13</td><td>1.05, m</td><td>36.4, CH</td><td></td><td></td><td></td></tr><tr><td></td><td>14</td><td>1,25,m</td><td></td><td></td><td></td><td></td></tr><tr><td>Asp1</td><td>NH</td><td>0.82, t</td><td>23.0, CH</td><td></td><td></td><td></td></tr><tr><td></td><td>Co</td><td>8.15,m</td><td></td><td>NH</td><td>8.16,m</td><td></td></tr><tr><td></td><td>α</td><td></td><td>170.9, C</td><td>CO</td><td></td><td>171.8, C</td></tr><tr><td></td><td></td><td>4.71,m</td><td>49.8, CH</td><td>α</td><td>4.68,m</td><td>49.8, CH</td></tr><tr><td></td><td>β</td><td>2.49, m</td><td>36.2, CH</td><td>β</td><td>2.50,m</td><td>36.3,CH</td></tr><tr><td>Dab</td><td>Y</td><td>2.65,m</td><td></td><td></td><td>2.68,m</td><td></td></tr><tr><td></td><td>NH</td><td></td><td>171.9, C</td><td>Y</td><td></td><td>170.7, C</td></tr><tr><td></td><td>CO</td><td>8.02, m</td><td></td><td>NH</td><td>8.01,m</td><td></td></tr><tr><td></td><td>α</td><td>4.96, m</td><td>170.5, C 53.3,CH</td><td>CO α</td><td></td><td>n.d., C</td></tr><tr><td></td><td>β</td><td>4.27,m</td><td></td><td>β</td><td>4.94, m</td><td>53.2, CH</td></tr><tr><td></td><td></td><td></td><td>45.8, CH</td><td></td><td>4.25,m</td><td>45.9, CH</td></tr><tr><td></td><td>β-Me</td><td>0.97,d</td><td>17.7, CH</td><td>β-Me</td><td></td><td>17.6, CH</td></tr><tr><td></td><td>β NH</td><td></td><td></td><td></td><td>0.97, d</td><td></td></tr><tr><td>Pipe</td><td>Co</td><td>7.42, m</td><td></td><td>βNH</td><td>8.03,m</td><td></td></tr><tr><td></td><td></td><td></td><td>170.8, C</td><td>Co</td><td></td><td>170.8, C</td></tr><tr><td></td><td>α</td><td>4.98,m</td><td>57.3, CH</td><td>α</td><td>4.97,m</td><td>56.5,CH</td></tr><tr><td></td><td>β</td><td>1.50, m</td><td>26.9, CH</td><td>β</td><td>1.47,m</td><td>27.1, CH</td></tr><tr><td></td><td></td><td>2.23,m</td><td></td><td></td><td>2.21,m</td><td></td></tr><tr><td></td><td>Y</td><td>1.37, m</td><td>20.7, CH</td><td>Y</td><td>1.28, m</td><td>20.7, CH</td></tr><tr><td></td><td></td><td>1.54 m</td><td></td><td></td><td>1.47,m</td><td></td></tr><tr><td></td><td>8</td><td>1.21, m</td><td>24.9,CH</td><td>8</td><td>1.21, m</td><td>25.1, CH</td></tr><tr><td></td><td></td><td>1.51, m</td><td></td><td></td><td>1.51,m</td><td></td></tr><tr><td></td><td>m</td><td>3.16,m</td><td>43.8, CH</td><td>m</td><td>3.16,m</td><td>43.7, CH</td></tr><tr><td>Gly4</td><td></td><td>3.83,m</td><td></td><td></td><td>3.82,m</td><td></td></tr><tr><td></td><td>NH</td><td>8.08, m</td><td></td><td>NH</td><td>8.08,m</td><td></td></tr><tr><td></td><td>Co</td><td></td><td>169.6, C</td><td>Co</td><td></td><td>n.d., C</td></tr><tr><td></td><td>α</td><td>3.64,m</td><td>42.1, CH</td><td>α</td><td>3.64,m</td><td>42.5, CH</td></tr><tr><td>Asp5</td><td></td><td>3.80,m</td><td></td><td></td><td>3.80,m</td><td></td></tr><tr><td></td><td>NH</td><td>8.27,m</td><td></td><td>NH</td><td>8.27,m</td><td></td></tr><tr><td></td><td>CO</td><td></td><td>171.2, C</td><td>CO</td><td></td><td>170.9, C</td></tr><tr><td></td><td>α</td><td>4.53, m</td><td>49.9, CH</td><td>a</td><td>4.60,m</td><td>49.6, CH</td></tr><tr><td></td><td>β</td><td>2.54,m</td><td>36.1, CH</td><td>β</td><td>2.50,m</td><td>36.1, CH</td></tr><tr><td></td><td></td><td></td><td>172.2, C</td><td></td><td>2.71,m</td><td></td></tr><tr><td>Gly6</td><td>Y NH</td><td></td><td></td><td>Y NH</td><td>8.22, m</td><td>172.2, C</td></tr><tr><td></td><td>Co</td><td>8.21, m</td><td>169.8, C</td><td>CO</td><td></td><td>n.d., C</td></tr><tr><td>Asp7</td><td>α</td><td>3.75,m</td><td>42.3, CH</td><td>α</td><td>3.75,m</td><td>40.7, CH</td></tr><tr><td></td><td>NH</td><td>8.29,m</td><td></td><td>NH</td><td>8.28,m</td><td></td></tr><tr><td></td><td>Co</td><td></td><td>170.9, C</td><td>CO</td><td></td><td>170.9, C</td></tr><tr><td></td><td>α</td><td></td><td>50.2, CH</td><td>α</td><td>4.47,m</td><td>50.2, CH</td></tr><tr><td></td><td>β</td><td>4.44, m 2.53,m</td><td>36.7, CH</td><td>β</td><td>2.53,m</td><td>36.70, CH</td></tr><tr><td>Gly8</td></table>",
+        "bbox": [
+            88,
+            92,
+            878,
+            942
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/97462716f5403144b25ba1435d93c499514a5f6de27f1af351e5961e1fc47be1.jpg",
+        "table_caption": [
+            "Table 2.continued "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\"></td><td colspan=\"3\">3</td><td colspan=\"3\">4</td></tr><tr><td></td><td></td><td></td><td></td><td>ResiduePositionHNR:δinppm,mult (JinHz)CN:δinppm,tyePitionHNR:δinppm,ult (JinHz)CNR:δinpm,type</td><td></td></tr><tr><td>Val</td><td></td><td>3.79, m</td><td></td><td>3.80, m</td><td></td><td></td></tr><tr><td rowspan=\"6\"></td><td>NH</td><td>7.85, m</td><td></td><td>NH</td><td>7.85,m</td><td></td></tr><tr><td>Co</td><td></td><td>171.5, C</td><td>CO</td><td></td><td>171.0, C</td></tr><tr><td>α</td><td>4.16,m</td><td>58.4, CH</td><td>α</td><td>4.17, m</td><td>58.3, CH</td></tr><tr><td>β</td><td>1.90, m</td><td>31.0, CH</td><td>β</td><td>1.94, m</td><td>30.7, CH</td></tr><tr><td>Y</td><td>0.81,m</td><td>18.5, CH</td><td>Y</td><td>0.79,m</td><td>18.4, CH</td></tr><tr><td>Y NH</td><td>0.81,m</td><td>19.5, CH</td><td>Y</td><td>0.80,m</td><td>19.5, CH</td></tr><tr><td>Ile</td><td>7.88,m</td><td></td><td></td><td>NH</td><td>7.86,m</td><td></td></tr><tr><td rowspan=\"10\"></td><td>Co</td><td></td><td>170.7, C</td><td>CO</td><td></td><td>170.5, C</td></tr><tr><td>α</td><td>4.30, m</td><td>54.5, CH</td><td>α</td><td>4.28, m</td><td>54.7, CH</td></tr><tr><td>β</td><td>1.72, m</td><td>36.3, CH</td><td>β</td><td>1.77,m</td><td>35.5,CH</td></tr><tr><td>Y</td><td>1.08, m</td><td>24.8, CH</td><td>Y</td><td>1.11, m</td><td>24.8, CH</td></tr><tr><td></td><td>1.45,m</td><td></td><td></td><td>1.45,m</td><td></td></tr><tr><td>8</td><td>0.79, m</td><td>10.7, CH</td><td>8</td><td>0.77,m</td><td>10.9, CH</td></tr><tr><td>β-Me</td><td>0.91,m</td><td>15.2, CH</td><td>β-Me</td><td>0.90, m</td><td>15.3, CH</td></tr><tr><td>CO</td><td></td><td>172.3, C</td><td>CO</td><td></td><td>n.d., C</td></tr><tr><td>α</td><td>4.06,m</td><td>60.5, CH</td><td>α</td><td>4.15, m</td><td>59.9, CH</td></tr><tr><td>β</td><td>1.62,m</td><td>29.9, CH</td><td>β</td><td>1.74, m</td><td>29.7, CH</td></tr><tr><td rowspan=\"4\"></td><td></td><td>2.08, m</td><td></td><td></td><td>1.99, m</td><td></td></tr><tr><td>Y</td><td>1.76,m</td><td>25.3, CH</td><td>Y</td><td>1.76,m</td><td>25.0, CH</td></tr><tr><td></td><td>1.88,m</td><td></td><td></td><td>1.86,m</td><td></td></tr><tr><td></td><td>3.43,m</td><td>47.5, CH</td><td>8</td><td>3.43,m</td><td>47.7, CH</td></tr><tr><td>8</td><td>3.73,m</td><td></td><td></td><td></td><td>3.78,m</td><td></td></tr></table>",
+        "bbox": [
+            84,
+            91,
+            912,
+            447
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/f79c5bcb19c29e5e5e1c06067310d99fc629e558914985944c60e8b82931b00e.jpg",
+        "image_caption": [
+            "Figure 2. Key NOESY correlations observed for compounds 1-4. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            82,
+            456,
+            479,
+            603
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            82,
+            648,
+            479,
+            675
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The absolute configuration of 1 was determined by Marfey's analysis allowing us to establish absolute configuration of all chiral centers in the peptide as L-Asp-L-Dap-D-Pipe-Gly-L-AspGly-L-Asp-Gly-D-Val-L-Ile-L-Pro (Figures SS1 and SS2). In an initial attempt to determine its absolute configuration, compound 1 was hydrolyzed at $1 2 0 ~ ^ { \\circ } \\mathrm { C } ,$ obtaining a 2:1 ratio of L-Asp and D-Asp,not in agreement with the prediction of configuration indicated by Biosynthetic Gene Cluster (BGC) analysis (Figure S53). Marfey's analysis hydrolysiswas therefore performed at $8 0 ~ ^ { \\circ } \\mathrm { C } ,$ which avoided racemization, obtaining only a single peak of L-Asp.Assuming that the S configuration determined for the $\\alpha \\mathrm { C }$ in Dab is conserved in the $\\alpha \\mathrm { C }$ of the Dap,the configuration of the Dab $\\beta \\mathrm { C }$ chiral center was determined as S by the coupling constant between $\\alpha \\mathrm { H }$ and $\\beta \\mathrm { H }$ $\\mathrm { ~ H ~ } \\left( J = 7 . 7 \\ \\mathrm { H z } \\right)$ and a NOESY correlation observed between β-Me and α-NH.36-38 ",
+        "bbox": [
+            84,
+            676,
+            479,
+            745
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            517,
+            455,
+            915,
+            605
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In addition, the absolute configuration of both chiral centers in the Ile residue was determined by analysis of the HSQC spectrum of an aliquot of the hydrolysate of 1，previously prepared for the Marfey's analysis，and comparison with standards of $\\mathrm { L }$ -Ile and L-allo-Ile.This experiment confirmed the presence of L-Ile in the molecule (Figures S54 and S55). ",
+        "bbox": [
+            517,
+            607,
+            915,
+            688
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "To independently confirm the configuration of the peptidebased backbone, we performed whole genome sequencing of the producing microorganism. The genome sequence of strain Streptomyces sp. CA-297274 was deposited at NCBI (Bio",
+        "bbox": [
+            517,
+            690,
+            915,
+            745
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/6937c4efac3e08af4c9069cb06b62d2eb94c0f3eaf30a4e9e4f680b03ca2a306.jpg",
+        "image_caption": [
+            "Figure3.ProposedNRPSassemblylineforglycinocinbosythesisTheadenylatondomainsubstratespecifitypredictedbyntiMASHis included in each of the modules. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            128,
+            757,
+            873,
+            901
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Sample accession number SAMN50185168).Identification of the putative BGC responsible for glycinocin production was straightforward due to the high level of similarity to that of laspartomycin.9 Bioinformatic analysis of the BGC,specifically of the non-ribosomal peptide synthetases (NRPSs) (Figure 3), allowed us to identify epimerization domains (E) in modules 3 (pipecolic acid selection) and9 (valine selection).As expected, the condensation domains from modules 4 and 10 belong to the $^ { \\mathrm { D } } { \\mathbf { C } } _ { \\mathrm { L } }$ subtype and catalyze the condensation of an upstream T-loaded D-amino acid with a downstream T-loaded L-amino acid.The starter condensation domain from module 1 is responsible for the attachment of the fatty acid chain to the free amino group from the aspartic residue loaded in module 1. The other condensation domains belong to the $^ \\mathrm { L } { \\bf C } _ { \\mathrm { L } }$ subtype, in accordance with the expected S configuration for the remaining amino acids, as determined in the Marfey's analysis. ",
+        "bbox": [
+            84,
+            72,
+            479,
+            292
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The cytotoxic activity of compounds $\\mathbf { 1 - 4 }$ was evaluated against five human tumoral cell lines,and no activity was observed at the highest concentration tested ( ${ \\bf \\zeta } ^ { \\bf 4 0 } ~ \\mu \\bf { g } / m L$ for ${ \\bf 1 } { - } 3$ and $\\mathsf { \\Omega } \\lesssim \\mu \\mathrm { g / m L }$ for 4). Characterization of the antifungal properties of glycinocins $\\mathrm { E { - } H }$ was carried out by testing fungal growth inhibition (absorbance）and cell viability (fluorescence) against Z. tritici CBS 115943 (Table 3). The antifungal compound amphotericin B was used as a positive control. Compound 4 with the longer fatty acid chain and a Dap residue in its structure displayed the highest potency of the series,with a MIC against Z.tritici of $9 . 5 \\ \\mu \\mathrm { M }$ based on fungal growth inhibition and $7 . 2 ~ \\mu \\mathrm { M }$ based on cell viability. Compound 3 displayed weaker activity (Table 3)，and compounds 1 and 2,with a Dap instead of a Dab residue in their structure displayed even weaker antifungal potency against Z. tritici (Table 3). ",
+        "bbox": [
+            84,
+            293,
+            479,
+            388
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/e19e8d30671696854320d049a50e811f8fae6f6480280e3d54b5696289f781be.jpg",
+        "table_caption": [
+            "Table 3. Minimum Inhibitory Concentration (MIC） Values in $\\pmb { \\mu } \\mathbf { M }$ for Compounds $\\mathbf { 1 - 4 }$ and Amphotericin $\\mathbf { B }$ against $\\boldsymbol { Z }$ tritici Based on Absorbance and Fluorescence In Vitro Assays "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Compound</td><td>Absorbance (growth inhibition)</td><td>Fluorescence (cell viability)</td></tr><tr><td>1</td><td>86.3</td><td>63.3</td></tr><tr><td>2</td><td>82.9</td><td>69.1</td></tr><tr><td>3</td><td>39.8</td><td>32.5</td></tr><tr><td>4</td><td>9.5</td><td>7.2</td></tr><tr><td>amphotericin B</td><td>1.5</td><td>1.3</td></tr></table>",
+        "bbox": [
+            82,
+            465,
+            481,
+            568
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            84,
+            598,
+            479,
+            722
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Glycinocins A-D have been reported as acidic cyclolipopeptide antibiotics structurally related to the clinically approved drug daptomycin. These compounds exhibit calciumdependent antimicrobial activity against Staphylococcus aureus and Bacillus subtilis，but no antifungal activity has been reported earlier for these compounds.40 ",
+        "bbox": [
+            84,
+            723,
+            479,
+            805
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The most widely used fungicides to control Z. tritici have a single target site mode of action, including azoles,succinate dehydrogenase inhibitors,and quinone outside inhibitors,all of which have resistance events documented, highlighting the current need to discover new effective antifungals against this pathogen.41 In this sense, compound 4 is an acidic cyclolipopeptide representing a novel structure with an unknown mode of action suggesting that other structural classes of compounds could be explored as an alternative solution to treat infections associated the causal agent of septoria tritici blotch,one of the European Union's most devastating foliar diseases of wheat. ",
+        "bbox": [
+            84,
+            806,
+            481,
+            942
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            517,
+            72,
+            914,
+            98
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Because glycinocins $\\mathrm { A - D }$ are compounds with a proven calcium-dependent antimicrobial activity against Gram positive bacteria and due to the presence of an Asp-Gly-Asp-Gly motif in the peptide scaffold of glycinocins $\\mathrm { E { - } H }$ ，we evaluated their antibacterial activity against methicillin-resistant Staphylococcus aureus (MRSA) and vancomycin-resistant Enterococcus faecium Van A (VRE）in the presence or absence calcium to confrm and compare their calcium-dependent antimicrobial activity (Table 4). ",
+        "bbox": [
+            518,
+            101,
+            915,
+            226
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/cc58b3a5fe9720daff4904af49775a705ea5f3a21238b3315e5ae5ffd177193a.jpg",
+        "table_caption": [
+            "Table 4. Minimum Inhibitory Concentration (MIC) Values in $\\pmb { \\mu } \\mathbf { M }$ for Compounds 1-4 against Methicillin-Resistant S. aureus (MRSA) and Vancomycin-Resistant E. faecium (VRE) "
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Compound</td><td></td><td> MRSAMRSA + CaCl2ä</td><td>VRE</td><td> VRE + CaCl2a</td></tr><tr><td>1</td><td>94.0</td><td>9.5</td><td>&gt;205</td><td>18.7</td></tr><tr><td>2</td><td>35.0</td><td>2.5</td><td>71.7</td><td>3.9</td></tr><tr><td>3</td><td>11.3</td><td>4.8</td><td>25.9</td><td>3.1</td></tr><tr><td>4</td><td>12.0</td><td>5.2</td><td>21.3</td><td>3.0</td></tr><tr><td>daptomycin</td><td>33.0</td><td>8.5</td><td>&gt;155</td><td>6.1</td></tr><tr><td colspan=\"5\">&quot;[CaCl2] = 3.0 mM.</td></tr></table>",
+        "bbox": [
+            515,
+            303,
+            914,
+            411
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The compounds exhibited moderate antibacterial activities against methicillin-resistant S. aureus (MRSA MB5393）and vancomycin-resistant E.faecium (VanA-VRE) in the absence of ${ \\mathrm { C a } } ^ { 2 + }$ ions.However， the antibacterial activity of all of the compounds tested was strongly improved in the presence of $\\mathrm { C a C l } _ { 2 }$ . Interestingly，compounds 2-4 displayed higher potency than the daptomycin control in these assays.These findings are in agreement with the reported activity of synthesized glycinocins $\\mathrm { A - C }$ ，which exhibited calciumdependent antimicrobial activity against Staphylococcus aureus with MIC values ranging from 5.5 to $1 7 \\mu \\mathrm { { \\bar { M } } }$ 42 These results clearly confirmed the calcium-dependent antibacterial activity of glycinocins $\\mathrm { E { - } H }$ The structural differences among glycinocins $\\mathrm { E - H } \\ \\left( \\mathbf { 1 - 4 } \\right)$ ，particularly in the length of the fatty acid chain and the substitution of Dap with Dab in the peptide core, although seemingly minor, have notable impacts onbiological activity. Glycinocin H (4)，which contains a longer fatty acid tail and a Dab residue,exhibited the most potent antimicrobial activity, suggesting that increased hydrophobicity enhances the membrane interaction and calciumdependent activity. In contrast，analogs with shorter or saturated fatty acid chains or those containing Dap instead of Dab showed reduced potency,highlighting the critical role of both lipid tail composition and basic amino acid identity in modulating antimicrobial efficacy. A similar structure-activity relationship has been reported for other lipopeptides,such as daptomycin，whose antimicrobial activity is abolished in analogs with shorter lipid chains but retained or enhanced when the chain length is increased.43-45 ",
+        "bbox": [
+            518,
+            421,
+            914,
+            817
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "In this study, the discovery of four new cyclic lipopeptides, glycinocins E-H (1-4)， from Streptomyces sp. CA-297274, isolated from gypsum-rich soil in Granada, Spain, is reported. Identified through LC/HRMS-guided antifungal screening, these compounds showed potent activity against Zymoseptoria tritici. Structural elucidation using HR-MS/MS,NMR,and Marfey's analysis revealed a conserved Asp-Gly-Asp-Gly motif typical of calcium-dependent antibiotics (CDAs), and genome analysis confirmed a matching biosynthetic gene cluster and refined configuration assignments. Glycinocins $\\mathrm { E { - } H }$ displayed antifungal and calcium-dependent antibacterial activity against resistant strains like MRSA and VRE，with no observed cytotoxicity toward the HepG2 cancer cell line. ",
+        "bbox": [
+            518,
+            818,
+            914,
+            942
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            84,
+            72,
+            479,
+            127
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The discovery of calcium-dependent antibiotics from an actinomycete strain found in gypsum-rich soil might be coincidental; it is a noteworthy observation that complements ongoing efforts to understand the ecological factors influencing secondary metabolite production.46 This work highlights the potential of extremophile-derived actinomycetes as a source of novel bioactive compounds.This environmental adaptation could offer a selective advantage， fine-tuning the biological activity of secondary metabolites such as CDAs in situ. Glycinocins $\\mathrm { E { - } H }$ expand the growing class of CDAs with dual antifungal and antibacterial properties，reinforcing their potential relevance in both medical and agricultural applications. ",
+        "bbox": [
+            84,
+            127,
+            479,
+            305
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "EXPERIMENTALSECTION ",
+        "text_level": 1,
+        "bbox": [
+            84,
+            318,
+            298,
+            332
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "General Experimental Procedures.All solvents employed were of HPLC grade.Optical rotations were measured on a Jasco P-2000 polarimeter.IR spectra were recorded with a JASCO FT/IR-4100 spectrometer. LC-UV-LRMS analyses were performed on an Agilent 1260 Infinity II single quadrupole LC-MS system.HR-ESIMS and MS/MS spectra were acquired using a Bruker maXis QTOF mass spectrometer coupled to an Agilent 12oo Rapid Resolution HPLC. The mass spectrometer was operated in positive and negative mode. Preparative or semi-preparative HPLC purifications were performed on a Gilson GX-281 322H2 HPLC using a PrepHT Zorbax $S \\mathrm { B - C _ { 1 8 } }$ $( 2 1 . 2 \\times 2 5 0 ~ \\mathrm { m m } ^ { 2 } ,$ $7 ~ \\mu \\mathrm { m } )$ and SemiPrepHt Agilent Zorbax, $\\mathrm { R X - C _ { 1 8 } }$ $( 1 0 \\times 1 5 0 ~ \\mathrm { m m } ^ { 2 } , 5 ~ \\mu \\mathrm { m } )$ columns.Mono- and bidimensional Nuclear Magnetic Resonance (NMR） spectra were recorded at 297 K on a Bruker Avance III spectrometer (Soo and $1 2 5 ~ \\mathrm { M H z }$ for $^ 1 \\mathrm { H }$ and $^ { 1 3 } { \\mathrm { C } } ,$ respectively）equipped with_a $1 . 7 ~ \\mathrm { \\ m m }$ TCI MicroCryoProbe. Chemical shifts from $^ { 1 } \\mathrm { H }$ and $^ { 1 3 } \\mathrm { C }$ were reported in parts per million using the signals of the residual non-deuterated solvent as internal reference $\\cdot \\delta _ { \\mathrm { H } } 2 . 5 0$ and $\\hat { 5 } _ { \\mathrm { C } } 3 9 . 5 2 \\ \\mathrm { p p m }$ forDMSO- $\\cdot d _ { 6 }$ ） ",
+        "bbox": [
+            84,
+            337,
+            481,
+            558
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Producing Microorganisms_and Large-Scale Fermentation of Streptomyces sp. CA-297274. The strain CA-297274 was isolated from a gypsum outcrop sample collcted beneath specimens of the lichen Gyalolechia fulgida in a dry area in Esczar (Granada, Spain).Based on its complete $1 6 S \\ \\mathrm { r D N A }$ sequence ( $( 1 4 9 2 ~ \\mathrm { b p } )$ ，the strain CA-297274 was associated to the species Streptomyces apricus SUN51(T) $\\left( 9 8 . 9 6 \\% \\right)$ ）according to the EzTaxon server result (https://eztaxon-e.ezbiocloud.net/).47 ",
+        "bbox": [
+            84,
+            560,
+            479,
+            656
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "For the cultivation of the strain CA-297274,a first seed culture was prepared by inoculating $1 0 \\ \\mathrm { m L }$ of seed medium (ATCC-2）which consists of soluble starch $\\left( 2 0 ~ \\mathrm { g / L } \\right)$ ，dextrose ${ \\mathrm { ( 1 0 ~ g / L ) } }$ ，NZ amine EKC (Sigma) $( 5 ~ \\mathrm { g } / \\mathrm { L } )$ ,Difco beef extract $\\left( 3 \\ g / \\mathrm { L } \\right)$ , Bacto peptone (5 $\\mathbf { g } / \\mathrm { L } )$ ， yeast extract $( 5 \\mathrm { \\ g / L ) }$ ，and $\\mathrm { C a C O } _ { 3 }$ $\\left( 1 ~ \\ g / \\mathrm { L } \\right)$ ， adjusted to $\\mathrm { p H } 7 . 0$ with $\\mathrm { \\Delta N a O H }$ before addition of ${ \\mathrm { C a C O } } _ { 3 } ,$ in a $5 0 ~ \\mathrm { m L }$ tube with frozen agar plugs of the producing strain and incubating the tube at $2 8 ~ ^ { \\circ } \\mathrm { C }$ with shaking at $2 2 0 ~ \\mathrm { r p m }$ for about $4 8 \\ \\mathrm { h }$ 、A second seed culture was prepared by inoculating ${ 5 0 } \\mathrm { m L }$ of seed medium in a $2 5 0 ~ \\mathrm { m L }$ flask with $2 . 5 ~ \\mathrm { m L }$ of the first seed.A $5 \\%$ aliquot of the second seed culture was transferred to eight $5 0 0 ~ \\mathrm { m L }$ flasks filled with $1 2 5 \\ \\mathrm { m L }$ each of the production medium Mo16 which consisted of glucose $\\left( 1 0 \\ \\mathrm { \\ g / L } \\right)$ soluble starch from potato $\\left( 1 0 \\ \\mathrm { \\ g / L } \\right)$ ，maltose $\\left( 1 0 \\ \\mathrm { \\ g / L } \\right)$ ，soytone peptone $( \\boldsymbol { 5 } ~ \\mathrm { g / L } )$ ， tryptone ${ \\left( 4 \\ \\mathrm { g / L } \\right) }$ ，yeast extract $\\left( 1 ~ \\ g / \\mathrm { L } \\right)$ ， ${ \\mathrm { K H } } _ { 2 } { \\mathrm { P O } } _ { 4 }$ $\\left( 0 . 1 \\ { \\ g } / \\mathrm { L } \\right)$ ， ${ \\mathrm { K } } _ { 2 } { \\mathrm { H P O } } _ { 4 }$ $( 0 . 2 ~ \\mathrm { g / L } )$ ， $\\mathrm { M g S O } _ { 4 } { \\cdot } 7 \\mathrm { H } _ { 2 } \\mathrm { O }$ ${ \\mathrm { \\Omega } } ^ { \\prime } 0 . 0 5 { \\mathrm { \\ g / L } } { \\mathrm { \\Omega } }$ ） $\\mathrm { \\bf N a C l }$ (0.02 $\\mathbf { g } / \\mathrm { L } \\mathbf { \\epsilon }$ ， $\\mathrm { C a C l } _ { 2 } { \\cdot } 2 \\mathrm { H } _ { 2 } \\mathrm { O }$ $\\left( 0 . 0 5 { \\ g } / \\mathrm { L } \\right)$ ,and $1 ~ \\mathrm { m L }$ of trace salts solution $\\left( { \\mathsf { S n C l } } _ { 2 } \\right.$ $\\left( 0 . 0 0 5 \\textrm { g } / \\mathrm { L } \\right)$ ， $\\mathrm { H } _ { 3 } \\mathrm { B O } _ { 3 }$ $\\left( 0 . 0 1 \\ \\mathrm { \\ g / L } \\right)$ ， ${ \\mathrm { N a M o O } } _ { 4 }$ $\\left( 0 . 0 1 2 \\mathrm { \\ g / L } \\right)$ ， $\\mathrm { C u S O _ { 4 } }$ $\\left( 0 . 0 1 5 ~ \\mathrm { g / L } \\right)$ ， $\\mathrm { C o C l } _ { 2 }$ $\\left( 0 . 0 2 ~ \\mathrm { g / L } \\right)$ ，KCl $( 0 . 0 2 \\ \\mathrm { g / L } )$ ， $\\mathrm { Z n C l } _ { 2 }$ $\\left( 0 . 0 2 ~ \\mathrm { g / L } \\right)$ $\\mathrm { M n S O } _ { 4 }$ 0 $\\mathrm { \\langle 0 . 1 \\ g / L \\rangle }$ ，HCl( $\\cdot 2 \\ \\mathrm { m L } )$ ，and $\\mathrm { F e C l } _ { 3 }$ ${ \\bf \\zeta } \\cdot 8 \\ \\bf { g } / L )$ ）， $\\mathrm { p H } ~ 5 . 8 ,$ and the vials were incubated at $2 8 ~ ^ { \\circ } \\mathrm { C }$ for 7 days in a rotary shaker at 220 rpm and $7 0 \\%$ humidity before harvesting. ",
+        "bbox": [
+            84,
+            658,
+            479,
+            917
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Isolation and Identification of Glycinocins.A $1 . 0 \\mathrm { ~ L ~ }$ fermentation of the strain CA-297274 was extracted by the addition of an equal volume of acetone and agitation at $2 0 0 ~ \\mathrm { r p m }$ for $1 8 0 ~ \\mathrm { m i n }$ The mixture was centrifuged,and the pellet was discarded. The acetone was evaporated under a $\\Nu _ { 2 }$ stream at room temperature.The aqueous residue was loaded onto a HP2O resin column $\\left( 1 4 ~ \\mathrm { g } , 1 4 0 \\times \\right.$ $1 \\bar { 5 } \\ \\mathrm { m m } ^ { 2 }$ )and was eluted with acetone,MeOH,and DMSO.Acetone and MeOH eluates were pooled and subjected to preparative reversephase chromatography (Agilent Zorbax $S \\mathrm { B - C _ { 1 8 } } ,$ $\\bar { 2 1 . 2 } \\times 2 5 0 ~ \\mathrm { m m } ^ { 2 }$ 7 $\\mu \\mathrm { m } )$ applying gradient elution and $_ \\mathrm { H _ { 2 } O - C H _ { 3 } C N }$ with $0 . 1 \\%$ TFA as mobile phase $\\left( 3 . 6 ~ \\mathrm { m L / m i n } \\right.$ $5 0 \\%$ to $1 0 0 \\%$ $\\mathrm { C H } _ { 3 } \\mathrm { C N }$ for $4 0 \\ \\mathrm { m i n }$ ；UV detection at $2 1 0 ~ \\mathrm { \\ n m }$ ).Compounds ${ \\bf 1 } { - \\bf 4 }$ were eluted within a retention time range of 9.0 to 13.0 minutes.Fractions containing each of these four compounds of interest were pooled and further purifed by semi-preparative RP-HPLC (Agilent Zorbax, ${ \\mathrm { R X - C } } _ { 1 8 } ,$ $1 0 \\times 1 5 0$ $\\mathrm { m m } ^ { 2 }$ $5 \\mu \\mathrm { m } \\dot { }$ ）applying gradient elution with $_ \\mathrm { H _ { 2 } O - C H _ { 3 } C N }$ as mobile phase ( $\\mathbf { 3 . 6 \\ m L / m i n } ;$ $4 0 \\%$ to $6 0 \\%$ $\\mathrm { \\ C H } _ { 3 } \\mathrm { C N }$ for $4 0 \\mathrm { { m i n } }$ ; UV detection at $2 1 0 ~ \\mathrm { { n m } }$ ).Elution times for the compounds were 15.0,22.0,25.0,and $2 7 . 0 \\ \\mathrm { m i n }$ for 1-4. The organic solvent was evaporated under a $\\Nu _ { 2 }$ stream，and the resulting aqueous solution was freeze-dried. Compounds $\\mathbf { 1 - 4 }$ were thus obtained as amorphous white powder in all cases ${ \\big ( } 1 0 . 2 ~ \\mathrm { ~ m g } , ~ 8 . 7 ~ \\mathrm { ~ m g } , ~ 1 2 . 3 ~ \\mathrm { ~ m g } , ~ $ and $6 . 0 ~ \\mathrm { \\ m g }$ of ${ \\bf 1 - 4 }$ respectively). ",
+        "bbox": [
+            82,
+            917,
+            479,
+            941
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            517,
+            72,
+            915,
+            332
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Glycinocin E (1):white amorphous solid; $\\alpha _ { \\mathrm { ~ \\mathrm { ~ D ~ } ~ } } ^ { 2 5 } - 1 6 . 5$ $\\left( { \\_ c \\ \\ 0 . 2 } , \\right.$ MeOH); IR (ATR) $\\nu _ { \\mathrm { m a x } }$ 3299,3069,2927,1660,1537,1432,and $1 1 9 4 ~ \\mathrm { { c m } ^ { - 1 } }$ $^ 1 \\mathrm { H }$ and $^ { 1 3 } \\mathrm { C }$ NMR data see Table 1; $\\left( + \\right)$ -HR-ESIMS $m / z$ 1231.6567 $[ \\mathbf { M } + \\mathbf { H } ] ^ { + }$ (calcd for $\\mathrm { C _ { 5 7 } H _ { 9 1 } N _ { 1 2 } O _ { 1 8 } } ^ { + }$ ,1231.6574). ",
+        "bbox": [
+            518,
+            333,
+            914,
+            382
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Glycinocin $\\mathrm { F }$ (2):white amorphous solid; $\\alpha _ { \\mathrm { ~ \\mathrm { ~ D ~ } ~ } } ^ { 2 5 } - 5 . 0$ 0 $\\acute { \\iota } c \\enspace 0 . 2 ,$ MeOH)；IR(ATR $\\nu _ { \\mathrm { m a x } }$ 3301,3073,2929,1666,1536,1443,and $1 1 9 2 ~ \\mathrm { { c m } ^ { - 1 } }$ $^ 1 \\mathrm { H }$ and $^ { 1 3 } \\mathrm { C }$ NMR data see Table 1; $\\left( + \\right)$ -HR-ESIMS $m / z$ 1245.6710 $[ \\mathbf { M } + \\mathbf { H } ] ^ { + }$ (calcd for $\\mathrm { C _ { 5 8 } H _ { 9 3 } N _ { 1 2 } O _ { 1 8 } } ^ { + }$ ,1245.6730). ",
+        "bbox": [
+            518,
+            383,
+            915,
+            432
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "GlycinocinG(3):whiteamorphoussolid; $\\alpha _ { \\mathrm { ~ \\textsc ~ { ~ D ~ } ~ } } ^ { 2 5 } - 1 3 . 0$ $\\stackrel { \\cdot } { c } 0 . 1 $ MeOH); IR (ATR) $\\nu _ { \\mathrm { m a x } }$ 3306,3073,2929,2855 1660,1535,1446, 1244, and $1 2 0 1 ~ \\mathrm { { c m } ^ { - 1 } }$ $^ { 1 } \\mathrm { H }$ and $^ { 1 3 } \\mathrm { C }$ NMR data see Table 2; $\\left( + \\right)$ -HRESIMS $m / z$ 1259.6883 $[ \\mathbf { M } ~ + ~ \\mathbf { H } ] ^ { + }$ (calcd for $\\mathrm { C _ { 5 9 } H _ { 9 5 } N _ { 1 2 } O _ { 1 8 } } ^ { + }$ 1259.6887). ",
+        "bbox": [
+            517,
+            433,
+            915,
+            495
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Glycinocin H (4):white amorphous solid; $\\alpha _ { \\mathrm { ~ \\mathrm { ~ D ~ } ~ } } ^ { 2 5 } - 1 7 . 7$ (c0.1, $\\scriptstyle \\mathrm { M e O H } )$ ; IR (ATR) $\\nu _ { \\mathrm { m a x } }$ 3294,3071,2928,1656,1529,and 1199 $\\mathrm { c m } ^ { - 1 }$ ; $^ 1 \\mathrm { H }$ and $^ { 1 3 } \\mathrm { C }$ NMR data see Table 2; $\\left( + \\right)$ -HR-ESIMS $m / z$ 1273.7018 $[ \\mathbf { M } + \\mathbf { H } ] ^ { + }$ (calcd for $\\mathrm { C _ { 6 0 } H _ { 9 7 } N _ { 1 2 } O _ { 1 8 } } ^ { + }$ 1273.7043). ",
+        "bbox": [
+            517,
+            495,
+            914,
+            545
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Marfey's Analysis of Glycinocins.A sample of compound 1 (0.1 mg) was dissolved in $0 . 1 ~ \\mathrm { m L }$ of $^ { 6 \\mathrm { { N } } }$ HCl and heated at $8 0 ~ ^ { \\circ } \\mathrm { C }$ for 16 hours.The resulting crude hydrolysate was dried under a $\\Nu _ { 2 }$ stream and resuspended in $1 0 0 ~ \\mu \\mathrm { L }$ of water. The solution was neutralized with $2 0 ~ \\mu \\mathrm { L }$ ofa ${ \\mathrm { N a H C O } } _ { 3 }$ 1 M solution,and $0 . 1 \\mathrm { \\ m L }$ of $\\mathrm { L }$ -FDVA (Marfey'sreagent, $N _ { ☉ }$ (2,4-dinitro-5-fluorophenyl)-L-valinamide）in acetone( $\\mathrm { ^ { ( 1 0 ~ \\mathrm { ~ m g / m L } ) } }$ ）was added.This step was repeated with solutions of each amino acid standard $\\left( \\mathrm { D } , \\ \\mathrm { L } , \\right)$ or DL mixture).The reaction mixtures were incubated at $4 0 ~ ^ { \\circ } \\mathrm { C }$ for $8 0 ~ \\mathrm { m i n }$ ,then quenched by adding $2 0 \\mu \\mathrm { L }$ ofa $1 \\ : \\mathrm { N } \\ : \\mathrm { H C l }$ solution.For the HPLC analysis, $1 0 \\mu \\mathrm { L }$ of the derivative solution was added to $4 0 ~ \\mu \\mathrm { L }$ of acetonitrile and analyzed by HPLC/MS on an Agilent 126O Infinity II single quadrupole instrument. Separations were carried out on a Waters X-Bridge C18 column $( 4 . 6 \\mathrm { \\dot { \\times } } 1 5 0 \\mathrm { m m } ^ { 2 } , \\boldsymbol { \\updownarrow }$ $5 \\mu \\mathrm { m } )$ ）usinga mobile phase consisting of a mixture of two solvents, $H _ { 2 } O - C _ { \\mathrm { { H _ { 3 } C N } } }$ ，both containing $0 . 1 \\%$ TFA,anda linear gradient of $2 5 \\%$ to $5 5 \\%$ $\\mathrm { C H } _ { 3 } \\mathrm { C N }$ $+ ~ 0 . 1 \\%$ TFA over $5 0 \\ \\mathrm { \\ m i n }$ with a flow rate of $1 . 0 \\ \\mathrm { \\ m L / m i n }$ .The retention times of the $\\mathrm { L }$ -FDVA derivatives of the different amino acid standards were as follows: D-Asp:10.08;L-Asp: 8.49; D-Dap: $3 3 . 3 2 ; \\mathrm { L } \\cdot$ Dap:31.93; D-Ile:38.97; L-Ile: 24.37;D-Pipe:24.71; L-Pipe:27.70; DPro:18.32;L-Pro:13.43; D-Val: 31.03; L-Val: 18.94. The retention time of the peaks from the L-FDVA derivatives of the hydrolysate of 1 were as follows: L-Asp: 8.48; L-Pro: 13.41; L-Ile:24.44; D-Pipe: 24.64; LDap:32.09;D-Val:32.23. ",
+        "bbox": [
+            518,
+            545,
+            914,
+            841
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Genome Sequencing and Bioinformatic Analysis. Genomic DNA from strain Streptomyces sp. CA-297274 was extracted and purified following a protocol previously described48 from cultures grown in the ATCC-2 seed medium. De novo whole genome sequencing of the strain was carried out using a combination of paired-end Illumina sequencing and single molecule long-read PacBio sequencing (Macrogen, Seoul,Korea).PacBio reads were assembled with Flye,and Illumina reads were then employed to polish the genome using Pilon,obtaining a single contig with 9,719,504 bp and $7 0 . 4 ~ \\%$ GC content. ",
+        "bbox": [
+            518,
+            843,
+            914,
+            942
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            82,
+            71,
+            481,
+            96
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The draft genome was analyzed using antiSMASH 6.1.1 to identify putative biosynthetic gene clusters.Only one of the regions identified byantiSMASH matched the requirements,in terms of the number of NRPS modules and specificities of the adenylation domains,expected for the biosynthesis of glycinocins $\\mathrm { E - H }$ ",
+        "bbox": [
+            82,
+            97,
+            479,
+            158
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Antifungal Activity.The evaluation of the antifungal activity was carried out using phytopathogenic strain Zymoseptoria tritici CBS 115943.The microdilution assay was performed from conidia solution $\\mathrm { ~ \\AA ~ } ^ { \\cdot } 1 \\times 1 0 ^ { 6 }$ conidia/ $^ \\prime \\mathrm { m L }$ ）obtained after culturing Z.tritici CBS 115943 on YM agar plates for7 days.This conidia solution was incubated in 96 well plates with pure compounds in an RPMI liquid-based assay for $^ { \\textrm { \\scriptsize 1 2 0 ~ h } }$ at $2 5 \\ ^ { \\circ } \\mathrm { C } ,$ and activities were scored using absorbance differences at $6 0 0 \\ \\mathrm { n m }$ between the final and the initial incubation times as an indicator of growth inhibition and resazurin fluorescence as an indicator of cell viability.Pure compounds were tested in 2-fold dilutions (10 points） starting at $1 6 0 \\ : \\mu \\mathrm { g / m L } ,$ except for 4, whose curve started at $2 0 ~ \\mu \\mathrm { g / m L } ,$ dissolved in $1 0 0 \\%$ DMSO and $2 ~ \\mu \\mathrm { L }$ of each point was dispensed in each assay plate in triplicate. $\\mathrm { I C } _ { 5 0 }$ values (dose/concentration that induces half-maximum response） were calculated based on the dose-response curves obtained from both readouts.The results obtained were analyzed using Genedata Screener software (Genedata Inc., Basel, Switzerland). ",
+        "bbox": [
+            84,
+            160,
+            479,
+            368
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Antibacterial Activity.The antibacterial activity was evaluated by microdilution assays with and without the addition of $\\mathrm { C a C l } _ { 2 }$ $\\left( 3 \\mathrm { m M } \\right)$ using the Gram-positive bacteria vancomycin-resistant Enterococcus faecium(VRE-VanA ATCC 15167）and methicilin-resistant Staphylococcus aureus (MRSA MB5393)., Thawed stock inocula suspensions from cryovials of each microorganism (MRSA or VRE-VanA) were inoculated into $2 5 ~ \\mathrm { m L }$ of Brain Heart Infusion broth $\\left( \\mathrm { B H I } 3 7 \\ : \\mathrm { g } / \\right.$ L)in $2 5 0 ~ \\mathrm { m L }$ Erlenmeyer flasks and incubated overnight at $3 7 ~ ^ { \\circ } \\mathrm { C }$ shaking at $2 2 0 ~ \\mathrm { r p m }$ and then diluted in order to obtain assay inocula of $1 . 1 \\times 1 0 ^ { 6 } \\mathrm { C F U / m L }$ (MRSA) or $5 \\times 1 0 ^ { 5 } \\mathrm { C F U / m L }$ (E. faecium VAN A).Using 96-well plates, $9 0 ~ \\mu \\mathrm { L }$ /well of the diluted inoculum was mixed with $1 . 6 \\ \\mu \\mathrm { L } ,$ /well of each compound dissolved in DMSO and $8 . 4 ~ \\mu \\mathrm { L } ,$ /well of BHI medium.Daptomycin was used as the assay control with and without the addition of $\\mathrm { C a C l } _ { 2 }$ $( 3 ~ \\mathrm { m M } )$ ).Absorbance at $6 1 2 \\ \\mathrm { n m }$ was measured with an Envision spectrophotometer at $T _ { 0 }$ (zero time)，and immediately after that，plates were statically incubated at $3 7 ~ ^ { \\circ } \\mathrm { C }$ for 18-20 hours.After this period,the assay plates were shaken,and once more,the absorbance was measured at $T _ { \\mathrm { f } }$ (final time). Percentage inhibition of growth was calculated using the following equation: ",
+        "bbox": [
+            84,
+            368,
+            481,
+            617
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "img_path": "images/c2593f9a0def575a26e08575ff9aa5193ebc25c5c275be6ca99bc17bd20f88b0.jpg",
+        "text": "$$\n\\% \\mathrm { \\ p h i b i t i o n } = 1 0 0 \\times \\frac { 1 - [ \\left( T _ { \\mathrm { f , s a m p l e } } - T _ { \\mathrm { 0 , s a m p l e } } \\right) - ( T _ { \\mathrm { f , b l a n k } } - T _ { \\mathrm { 0 , b l a n k } } ) ] } { [ \\left( T _ { \\mathrm { f , g r o w t h } } - T _ { \\mathrm { 0 , g r o w t h } } \\right) - ( T _ { \\mathrm { f , b l a n k } } - T _ { \\mathrm { 0 , b l a n k } } ) ] }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            100,
+            626,
+            467,
+            658
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The data were analyzed using Genedata Screener software (Genedata Inc.,Basel, Switzerland). ",
+        "bbox": [
+            82,
+            670,
+            479,
+            693
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Cytotoxicity.Pure compounds (1-4）were tested against 5 human cancer cell lines,A549 (ATCC CCL-185)，A2058 (ATCC CRL-3601),HepG2 (ATCC HB-8065),MCF7 (DSMZ ACC 115), and MIA PaCa-2 (ATCC CRL-1420),by means of an MTT viability assay. Compounds were assayed in triplicate as lO-point curves with $1 / 2$ dilution starting at $4 0 \\mu \\mathrm { g / m L } ,$ except for 4, whose curve started at $5 ~ \\mu \\mathrm { g / m L }$ 、A549,A2058,and MIA $\\mathrm { P a C a } { - 2 }$ cells were seeded at 4000 cells/well,whereas HepG2 and MCF7 cells were seeded at 8000 cells/well in 384-well plates (Corning 3701） and incubated overnight at $3 7 ^ { \\circ } \\mathrm { C }$ and $5 \\% \\mathrm { C O } _ { 2 }$ .Nanoliters of the corresponding concentrations of pure compounds were added by means of a Beckman Echo $5 5 0 , ^ { 4 9 }$ and cells were further incubated for 72 hours.MMS (methylmethanesulfonate,Sigma-Aldrich 129925), $2 \\ \\mathrm { m M }$ ，was used as positive control,and D $0 . 5 \\%$ was used as the negative control. Finally, MTT dye (thiazolyl blue tetrazolium bromide,ACROS Organics 158990050, $0 . 5 ~ \\mathrm { m g / m L }$ )was added to each well, cells were incubated for $^ { 2 - 3 \\ \\mathrm { h } , }$ supernatant was removed, $2 5 ~ \\mu \\mathrm { L }$ of DMSO $\\left( 1 0 0 \\% \\right)$ was added,and absorbance was measured at $5 7 0 \\mathrm { n m }$ .The results obtained were analyzed using Genedata Screener software (Genedata Inc., Basel, Switzerland). ",
+        "bbox": [
+            84,
+            693,
+            481,
+            941
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "ASSOCIATED CONTENT ",
+        "text_level": 1,
+        "bbox": [
+            520,
+            71,
+            721,
+            86
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Data Availability Statement ",
+        "text_level": 1,
+        "bbox": [
+            518,
+            93,
+            708,
+            106
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1D/2D NMR spectra for compounds 1-4 have been deposited to the NP-MRD database (NP0350612, NP0350613, NP0350614, and NP0350615). ",
+        "bbox": [
+            518,
+            108,
+            915,
+            150
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$\\bullet$ Supporting Information ",
+        "text_level": 1,
+        "bbox": [
+            520,
+            155,
+            708,
+            168
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acs.jnatprod.5c00740. ",
+        "bbox": [
+            518,
+            171,
+            914,
+            198
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "General information of fermentation；HR-ESIMS and HR-ESIMS/MS； $^ { 1 } \\mathrm { H } , \\ ^ { 1 3 } \\mathrm { C } ,$ and bidimensional NMR, COSY, TOCSY,NOESY,HSQC,and HMBC correlations; LC-MS results from the Marfey's analysis, $\\mathrm { I C } _ { 5 0 }$ tables of antimicrobial activities (PDF) ",
+        "bbox": [
+            556,
+            207,
+            915,
+            275
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "AUTHOR INFORMATION ",
+        "text_level": 1,
+        "bbox": [
+            520,
+            301,
+            728,
+            315
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Corresponding Authors Ignacio Fernandez-Pastor- Fundacion MEDINA,Parque Tecnologico Ciencias de la Salud,18016 Granada,Espana; D orcid.0rg/0000-0003-1729-0860; Email: ignacio.fernandez@medinaandalucia.es Fernando Reyes-Fundacion MEDINA, Parque Tecnológico Ciencias de la Salud, 18016 Granada,Espana; $\\textcircled { 1 0 }$ orcid.org/ 0000-0003-1607-5106; Email: fernando.reyes@ medinaandalucia.es ",
+        "bbox": [
+            517,
+            322,
+            915,
+            446
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Authors ",
+        "text_level": 1,
+        "bbox": [
+            518,
+            458,
+            573,
+            471
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Victor Gonzalez-Menéndez - Fundacion MEDINA, Parque Tecnológico Ciencias de la Salud, 18016 Granada, Espana   \nIgnacio Gonzalez - Fundacion MEDINA, Parque Tecnológico Ciencias de la Salud,18016 Granada,Espana   \nPilar Sanchez - Fundacion MEDINA,Parque Tecnológico Ciencias de la Salud,18016 Granada,Espana; $\\textcircled { \\scriptsize { 1 } }$ orcid.org/ 0000-0002-6034-1857   \nRachel Serrano - Fundacion MEDINA, Parque Tecnológico Ciencias de la Salud,18016 Granada,Espana   \nThomas A Mackenzie - Fundacion MEDiNA, Parque Tecnologico Ciencias de la Salud,18016 Granada, Espana   \nDaniel Oves-Costales - Fundacion MEDINA, Parque Tecnológico Ciencias de la Salud,18016 Granada, Espana   \nManuel Casares Porcel - Departamento de Botanica, Facultad de Farmacia,Universidad de Granada,18071 Granada, Espana   \nOlga Genilloud - Fundacion MEDINA, Parque Tecnológico Ciencias de la Salud,18016 Granada,Espana;orcid.org/ 0000-0002-4202-1219 ",
+        "bbox": [
+            532,
+            475,
+            915,
+            733
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Complete contact information is available at: https://pubs.acs.org/10.1021/acs.jnatprod.5c00740 ",
+        "bbox": [
+            517,
+            741,
+            846,
+            767
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Funding ",
+        "text_level": 1,
+        "bbox": [
+            518,
+            783,
+            576,
+            796
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Financial support was received from the Junta de Andalucia through grant number PY18-RE-0027.The polarimeter,HPLC, IR, NMR equipment,and plate reader used in this work were purchased via grants for scientific and technological infrastructures from the Ministerio de Ciencia e Innovacion [Grant Nos. PCT-010000-2010-4 (NMR)，INP-2011-0016-PCT010000 ACT6 (polarimeter，HPLC，and IR)，and PCT01000-ACT7,2011-13 (plate reader)]. ",
+        "bbox": [
+            518,
+            798,
+            914,
+            908
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Notes ",
+        "text_level": 1,
+        "bbox": [
+            518,
+            913,
+            558,
+            926
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The authors declare no competing financial interest. ",
+        "bbox": [
+            518,
+            928,
+            853,
+            942
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "■ KEFEKENLES",
+        "text_level": 1,
+        "bbox": [
+            84,
+            71,
+            207,
+            86
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "(1）Patel,S.；Ahmed,S.; Eswari,J.S.WorldJicrobiol Biotechnol2015,31 (8), 1177-1193.  \n(2)Piri, G.; Giuliani,A.; Nicoletto,S.F.; Pizzuto,L.; Rinaldi,A. C.Cent Eur J Biol 2009,4 (3),258-273.  \n(3) Cochrane,S.A.; Vederas,J. C. Med Res Rev 2016,36 (1),4-31.(4) Bodanszky,M.; Sigler, G.F.; Bodanszky,A.J Am Chem Soc 1973,95 (7),2352-2357.  \n(S) Baltz,R H.; Miao,V.; Wrigley,S.KNat Prod Rep2005,22 (6),717-741.  \n(6) Hover, B.M.; Kim, S.H.; Katz,M.; Charlop-Powers, Z.; Owen,J. G.; Ternei,.Aaniko,J; Estrela,A.B. Molina,H;arkS;Perlin,D.S.; Brady, S.F.Nature Microbiology 2018,3 (4),415-422.(7) Zhang S.; Chen,Y.; Zhu, J; Lu, $\\mathrm { Q . } ;$ Cryle, M. J.; Zhang, Y.; Yan,F. Nat Prod Rep 2023,40 (3),557-594.  \n(8)Zhao,H; Shao,D.; Jiang,C.;Shi,J; Li, $\\mathrm { Q . } ;$ Huang, $\\mathrm { Q . ; }$ Rajoka,R;Yang,H.;Jnpplicroioliotecho7951.(9) Frankmolle, W.P.; Larsen,L. K.; Caplan, F.R.; Patterson, G. M.L.; Knubel, G.; Levine,I.A.; Moore,R. E.J Antibiot (Tokyo) 1992,45(9), 1451-1457.  \n(10)Kakinuma,A.；Hori, M.； Sugino,H.； Yoshida,I.； Isono,M.;Tamura,G.; Arima, K. Agric Biol Chem 1969,33 (10),1523-1524.(11)Neuhof, T.; Schmieder,P.; Preussel, K.; Dieckmann, R.; Pham,H.; Bartl,F.; VonDohren,H.JNat Prod2005,68 (S),695-700.(12) Schwartz, R.E.; Giacobbe,R.A.; Bland,J.A.; Monaghan, R.L.J Antibiot (Tokyo） 1989,42,163.  \n(13) Bionda,N.; Pitteloud,J.P.; Cudic,P.Future Med Chem 2013,5(11),1311-1330.  \n(14）Fewer,D.P.; Jokela,J.；Heinila,L.； Aesoy，R.； Sivonen,K.;Galica,T.；Hrouzek,P.；Herfindal,L.Physiol Plant 2021,173 (2),639-650.  \n(15）Silverman,J.A.; Perlmutter, N. G.； Shapiro,H. M. AntimicrobAgents Chemother 2003,47 (8),2538.  \n(16)PogliJ;,;lnJ.ceiol4(17), 4494.  \n(17) Fewer，D.P.;Jokela, J.;Heinila,L.；AesoyR； Sivonen,K;Galica,T.；Hrouzek,P.；Herfindal,L.Physiol Plant 2021,173 (2),639-650.  \n(18） Strieker，M.； Marahiel, M.A. ChemBioChem 2009，10 (4),607-616.  \n(19)Lakey,J. H.; Maget-Dana, R； Ptak, M. Biochim Biophys Acta1989,985 (1), 60-66.  \n(20) Kleijn,L.H.J.; Vlieg,H. C.; Wood,T.M.; Sastre ToranoJ;Janssen,B.J.C.;Martin,N.I.Angewandte Chemie-InternationalEdition 2017,56 (52),16546-16549.  \n(21)Wu,C.； Shang, Z.; Lemetre,C.; Ternei, M.A.; Brady,S. F.JAm Chem Soc 2019,141 (9),3910-3919.  \n(22）Honrubia,M.; Cano,A.； Molina-Ninirola, C.Persoonia 1992,14, 647.  \n(23）Menéndez-Serra，M.；Triadó-Margarit，X.；Castaneda，C.;Herrero, J.; Casamayor,E. O.Science of The Total Environment2019,650,343-353.  \n(24)Pelaez,F.; Collado,J.; Arenal,F.; Basilio,A.; Cabello,A.; DiezMatas，M. T.； Garcia, J.B.； Gonzalez Del ValA.；Gonzalez, V.;Gorrochategui, J.； Hernandez,P.；Martin,L； Platas，G.；Vicente,F.Mycol Res 1998,102 (6),755-761.  \n(25）Wierzchos,J.; De Los Rios,A.； Ascaso, C. INTERNATIONALMICROBIOLOGY 2012,15,173-183.  \n(26) Ziko,L; Adel,M.; Malash,M.N.; Siam,R MarineDrugs 2019,17 (5), 273.  \n(27) Roy，B.；Maitra，D.； Ghosh,J.；Mitra，A.K.Microbes andMicrobial Btechnology forGreenRemediation22,7304.(28)Tse,C.aKGandallegesinologndoteolgy2016, 1, 1-46.  \n(29) Kong,F.; Carter, G. T.J Antibiot (Tokyo) 2003,56 (6), 557-564.  \n(30） CHEMnetBASE.https://dnp.chemnetbase.com/chemical/ChemicalSearch.xhtml?dswid=6603 (accessed 2023-10-18).(31) Sorokina，M.；Merseburger,P.； Kajan,K.； Yirik,M.A.;Steinbeck, C.J. Cheminf.2021,13(1),2.  \n(32) Wang,M.; Carver,J.J.; Phelan,V.V.; Sanchez,L. M.; Garg,N.;Peng, Y.; Nguyen,D.D.; Watrous,J.; Kapono,C.A;LuzzatoKnaanT.; Porto, C.; Bouslimani, A.; Melnik, A. V.; Meehan, M. J.; Liu,W.T.；Crusemann，M.；Boudreau，P.D.；Esquenazi，E.；Sandoval-Calder6n, M.; Kersten, R. D.; Pace, L. A.; Quinn, R. A.; Duncan, K.R.;Hsu, C.C.; Floros,D.J.; Gavilan, R. G.; Kleigrewe,K.; Northen,T.; Duton,RJ.; Parrot,D.; Carlson,E.E.; Aigle, B.; Michelsen, C.F.;Jelsbak,L.Sohlenkamp,C.; Pevner,P.; Edlund,A.;McLeanJ;iel,J; Murphy, B. T.; Gerwick, L.; Liaw, C. C.； Yang,Y.L.; Humpf,H.U.；Maansson， M.；Keyzers，R.A.； Sims，A. C.； Johnson,A. R.;Sidebottom, A. M.; Sedio,B.E.; Klitgaard,A.; Larson, C.B.; Boya, C.A. P.; Torres-Mendoza,D.; Gonzalez, D.J.； Silva, D. B.; Marques,L.M;Demarqe,D.P.;oiute,E.Oeil,E.C.;rid,E.;echE. J.N.；Granatosky，E.A.；Glukhov，E.；Ryffel,F.；Houson，H.;Mohimani,H; KharbushJ.J;Zeng,Y.;Vorholt,J.A.;KuritaKLCharusanti,P.; McPhail,K.L.; Nielsen,K.F.; Vuong,L.; Elfeki,M.;Traxler,M.F.; Engene,N.; Koyama,N.; Vining,O.B.; Baric, ${ \\mathrm { R } } _ { \\mathrm { { \\dot { \\rho } } } }$ Silva,R.R.;Mascuch, S.J.; Tomasi, S.; Jenkins,S.; Macherla, V.; Hoffman,T.； Agarwal,V.；Williams，P.G.；Dai, J.；Neupane，R.；Gurr,J.;Rodriguez,A. M. C.; Lamsa,A; Zhang, C.; Dorrestein, K.; Dugan, B.M.; Almaliti, J.;Allard, P.M.; Phapale,P.; Nothias,L.F.; Alexandrov,T.;Litaudon.;WolenderJ.L;Kyle,J.E.;etz,T.O.;eryeaT.;Nguyen,D.T.; VanLeer,D.; Shinn,P.; Jadhav,A.; Muller,R; Waters,K. M.; Shi, W; Liu X; Zhang,L;Knight,R;Jensen,P.R; PalssonB.；Pogliano，K.；Linington，R.G.；Gutierrez，M.； Lopes，N. P.;Gerwick, W.H.; oore,B.S.;Dorsten,P.C.; Badeira,N.atureBiotechnology 2016,34 (8), 828-837.  \n(33）Borders,D.B.；Leese,R.A.； Jarolmen,H.； Francis,N.D.;Fantini, A.A.;Falla,T.; Fides,J. C.; AumelasA.JNat Prod 2007,70(3),443-446.  \n(34)Kesser,H.Angewandte Chemie International Edition in English1982, 21 (7), 512-523.  \n(35) Zhou, C.C.; Stewart,K. D.; Dhaon, M. K. Magnetic Resonancein Chemistry 2005,43 (1),41-46.  \n(36) Lin,Z.; Flores,M.; Forteza,L; Henriksen, N.M.; ConcepcionG. P.; Rosenberg,G.; Haygood, M. G.; Olivera, B. M.; Light,A. R.;Cheatham, T.E.; Schmidt,E.W.J Nat Prod 2012,75 (4),644-649.(37)Lu, Z.; Van Wagoner,R M.； Harper,M.K.； Baker，H.L.;Hooper, J. N.A.; Bewley, C.A.; Ireland, C.M.J Nat Prod 2011,74(2),185-193.  \n(38) Tyurin, A.P.;Alferova, V.A.; Paramonov,A. S.; Shuvalov, M.V.；Malanicheva, I. A.；Grammatikova, N.E.； Solyev,P.N.； Liu，S.;Sun，C.；Prokhorenko，I.A.；Efimenko，T.A.；Terekhova，L.P.;Efremenkova, O.V.; Shenkarev, Z. O.; Korshun, V.A. Medchemcomm2018,9 (4), 667-675.  \n(39) Wang, Y.; Chen, Y.; Shen, Q; Yin, X. Gene 2011, 483 (1-2),11-21.  \n(40) Corcilus,L.; Eias,N.T.; Ochoa,J.L.; Linington,R G.; Paye,R.J. Journal of Organic Chemistry 2017,82 (23),12778-12785.(41) van den Berg,F.; Paveley,N.D.;van den Bosch,F.Plant Pathol2016,65 (8), 1380-1389.  \n(42)Corcilius,L.; Elias,N.T.;Ochoa,J.L; Linngton,R G.; PayeR. J. Journal of Organic Chemistry 2017,82 (23),i2778-12785.(43) Wood, T.M.; Martin, N.I. Medchemcomm 2019,10 (5),634-646.  \n(44) Yin, N.;LiJ.; He,Y.; Herrdura,P.; Pearson,A.; Meseh,M.F.;Mascio, C. T.;Howland,K.; Steenbergen,J.; Thorne,G..；CitronD.； VanPragh，A.D.G.； Mortin,L.L； KeithD.； Silverman,J;Metcalf, C.J Med Chem 2015,58 (12),5137-5142.  \n(45）D'Costa，V. M.；Mukhtar，T.A.； Patel，T.；Koteva，K.;Waglechner，N.；Hughes，D.W.； Wright, G. D.； De Pascale， G.Antimicrob Agents Chemother 2012, 56 (2),757.  \n(46)Chiou,S.-L.； Chang, C.-Y.； Chu, J. ChemMedChem 2025,20,e202400498.  \n(47) ChalitaM.; Kim,Y.O.; Park, S.; Oh,H.S.; Cho,J. H.; Moon,J.; Baek, N.; Moon, C.; Lee,K.; Yang,J.; Nam, G. G.; Jung,Y.; Na, S.I; Bailey,M.J.;Chun,J. IntJSyst Evol Microbiol 2024,74 (6),6421.(48）Kieser, T.；Bibb,M.； Chater,K.；Butter,M.；Hopwood,D;Bittner, M.; Buttner,M. Practical Streptomyces Genetics: ALaboratoryManual; 2000.  \n(49）Mackenzie, T.A.； Tormo, J.R.； Cautain,B.； Martinez,G.;Sänchez, I.；Genilloud, O.; Vicente,F.; Ramos,M.C. SLAS Technol2024,29 (3),No.100111.",
+        "bbox": [
+            82,
+            77,
+            481,
+            946
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            517,
+            76,
+            915,
+            941
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            82,
+            71,
+            482,
+            146
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "CASBIOFINDER DISCOVERYPLATFORMTM CAS BIOFINDER HELPSYOUFIND YOUR NEXT BREAKTHROUGH FASTER ",
+        "bbox": [
+            640,
+            645,
+            887,
+            771
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Navigate pathways,targets, and diseases with precision ",
+        "bbox": [
+            642,
+            775,
+            873,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Explore CAS BioFinder ",
+        "bbox": [
+            645,
+            811,
+            899,
+            840
+        ],
+        "page_idx": 10
+    }
+]
