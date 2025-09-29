@@ -13820,7 +13820,7 @@
                                                 69
                                             ],
                                             "score": 0.48,
-                                            "content": "{ \\pmb 6 } ^ { \\pmb { a } }",
+                                            "content": "{ \\pmb 6 } ^ { a }",
                                             "type": "inline_equation"
                                         }
                                     ],
@@ -14755,7 +14755,7 @@
                                                 69
                                             ],
                                             "score": 0.48,
-                                            "content": "{ \\pmb 6 } ^ { \\pmb { a } }",
+                                            "content": "{ \\pmb 6 } ^ { a }",
                                             "type": "inline_equation"
                                         }
                                     ],

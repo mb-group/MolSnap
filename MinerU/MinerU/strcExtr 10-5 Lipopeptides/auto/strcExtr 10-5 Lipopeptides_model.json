@@ -14266,7 +14266,7 @@
                     1998
                 ],
                 "score": 0.67,
-                "latex": "\\texttt { c }"
+                "latex": "\\textcircled{ c}"
             },
             {
                 "category_id": 13,
@@ -14401,7 +14401,7 @@
                     1948
                 ],
                 "score": 0.5,
-                "latex": "\\ast _ { \\mathsf { C } }"
+                "latex": "^ * \\mathtt { C }"
             },
             {
                 "category_id": 13,

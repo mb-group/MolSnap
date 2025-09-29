@@ -402,7 +402,7 @@
         "type": "table",
         "img_path": "images/1207ba48e176013ee9b90fc57d11c12725798a14751e15f01c0ac7af95f1c29e.jpg",
         "table_caption": [
-            "Table 2.CaSR Agonist Activities and MM/GBSA Scores of Peptides 5a-5h with Modifications at Positions 2,4,and ${ \\pmb 6 } ^ { \\pmb { a } }$ "
+            "Table 2.CaSR Agonist Activities and MM/GBSA Scores of Peptides 5a-5h with Modifications at Positions 2,4,and ${ \\pmb 6 } ^ { a }$ "
         ],
         "table_footnote": [],
         "table_body": "<table><tr><td></td><td>X O SH</td><td>H H H HN</td><td>X4 NH HN</td><td>X NH NH2 N</td><td>NH2 NH N NH2</td><td></td><td></td></tr><tr><td>Peptides</td><td>X</td><td></td><td>X4 HNNH</td><td></td><td>X6</td><td>EC50 (μM)</td><td>Score (kcal/mol)</td></tr><tr><td>4b</td><td>的</td><td></td><td>N</td><td>的</td><td></td><td>0.27</td><td>-68.61</td></tr><tr><td>5a</td><td>H2NNH NH 的</td><td></td><td>新</td><td>有</td><td></td><td>0.30</td><td>-71.70</td></tr><tr><td>5b</td><td>HzNNH NH 的</td><td></td><td>Y</td><td>的</td><td></td><td>0.41</td><td>-60.55</td></tr><tr><td>5c</td><td>的</td><td></td><td>HNNH NH Y</td><td></td><td></td><td>0.53</td><td>-77.59</td></tr><tr><td>5d</td><td>H2NNH NH 品</td><td>3</td><td>X</td><td>HO 茶</td><td></td><td>0.71</td><td>-78.45</td></tr><tr><td>5e</td><td>H2NNH NH</td><td></td><td>m</td><td>的</td><td></td><td>0.50</td><td>-65.52</td></tr><tr><td>5f</td><td>都 HzNNH _NH </td><td>8</td><td>名</td><td>的</td><td></td><td>0.44</td><td>-70.44</td></tr><tr><td>5g</td><td>H2NNH N</td><td></td><td>福</td><td>的</td><td></td><td>0.89</td><td>-66.32</td></tr><tr><td>5h</td><td>有 茶</td><td></td><td>HNNH N 武 Y</td><td>的</td><td>1.17</td><td></td><td></td></tr></table>",

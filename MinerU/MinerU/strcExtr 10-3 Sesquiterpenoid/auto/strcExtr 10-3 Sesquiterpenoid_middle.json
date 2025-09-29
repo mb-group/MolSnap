@@ -14473,7 +14473,7 @@
                                         549
                                     ],
                                     "score": 0.8,
-                                    "content": "{ \\bar { \\mathrm { H } } } { - } 3 ^ { \\prime \\prime }",
+                                    "content": "\\bar { \\mathrm { H } } { - } 3 ^ { \\prime \\prime }",
                                     "type": "inline_equation"
                                 }
                             ],
@@ -17355,7 +17355,7 @@
                                         549
                                     ],
                                     "score": 0.8,
-                                    "content": "{ \\bar { \\mathrm { H } } } { - } 3 ^ { \\prime \\prime }",
+                                    "content": "\\bar { \\mathrm { H } } { - } 3 ^ { \\prime \\prime }",
                                     "type": "inline_equation"
                                 }
                             ],
@@ -18300,7 +18300,7 @@
                                         478
                                     ],
                                     "score": 0.87,
-                                    "content": "\\mathbb { R } , ^ { 1 3 }",
+                                    "content": "\\mathrm { R } , ^ { 1 3 }",
                                     "type": "inline_equation",
                                     "cross_page": true
                                 },
@@ -20672,7 +20672,7 @@
                                         478
                                     ],
                                     "score": 0.87,
-                                    "content": "\\mathbb { R } , ^ { 1 3 }",
+                                    "content": "\\mathrm { R } , ^ { 1 3 }",
                                     "type": "inline_equation"
                                 },
                                 {
@@ -30282,7 +30282,7 @@
                                         311
                                     ],
                                     "score": 0.88,
-                                    "content": "\\mathrm { B } ^ { 2 1 }",
+                                    "content": "\\mathbf { B } ^ { 2 1 }",
                                     "type": "inline_equation"
                                 },
                                 {
@@ -34137,7 +34137,7 @@
                                         311
                                     ],
                                     "score": 0.88,
-                                    "content": "\\mathrm { B } ^ { 2 1 }",
+                                    "content": "\\mathbf { B } ^ { 2 1 }",
                                     "type": "inline_equation"
                                 },
                                 {
@@ -69313,7 +69313,7 @@
                                         601
                                     ],
                                     "score": 0.41,
-                                    "content": "\\circledcirc",
+                                    "content": "\\textcircled { 1 }",
                                     "type": "inline_equation"
                                 },
                                 {
@@ -72571,7 +72571,7 @@
                                         601
                                     ],
                                     "score": 0.41,
-                                    "content": "\\circledcirc",
+                                    "content": "\\textcircled { 1 }",
                                     "type": "inline_equation"
                                 },
                                 {
