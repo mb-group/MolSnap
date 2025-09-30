@@ -50,6 +50,7 @@ To predict SMILES from a single image file (png and jpg supported), interface as
 ```python
 from ML_model import prediction
 
-results = prediction.predict_from_image_file('1.png','checkpoints/molnextr_best.pth')
+results = prediction.predict_from_image_files(['1.png','2.png'],'checkpoints/molnextr_best.pth')
+
 
 ```
