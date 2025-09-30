@@ -411,8 +411,9 @@ def train_loop(args, train_df, valid_df, aux_df, tokenizer, save_path):
             SUMMARY.add_scalar('train/decoder_lr', decoder_lr, global_step)
             for key in scores:
                 SUMMARY.add_scalar(f'valid/{key}', scores[key], global_step)
-        if args.Llocal_rank == 0:
-            wandb.log({"train/loss": avg_loss, "encoder_lr": encoder_lr, "decoder_lr": decoder_lr, **{f"valid/{key}": scores[key] for key in scores}}, step=global_step)
+        if args.local_rank == 0:
+            wandb.log({"train/loss": avg_loss, "encoder_lr": encoder_lr, "decoder_lr": decoder_lr, **{f"valid/{key}": scores[key] for key in scores},"epoch":epoch},
+                      step=global_step)
             
         if score >= best_score:
             best_score = score
