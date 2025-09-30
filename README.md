@@ -3,6 +3,14 @@
 # ML Modelling
 The implementation of the ML model to predict SMILES strings from single images is located in the ML_model subfolder.
 
+# Installation
+```bash
+conda env create -n molsnap python=3.10
+
+conda activate molsnap
+pip3 install -r requirements.txt
+
+```
 ## Model checkpoint 
 Download the model checkpoint from https://zenodo.org/records/13304899/files/molnextr_best.pth?download=1
 
