@@ -20,14 +20,71 @@ import {
   ArrowBack
 } from '@mui/icons-material';
 
+import PdfViewer from "@components/PdfViewer";
+
+import { Document } from 'react-pdf'
+
+import Guidelines from "@components/Guidelines";
+
+import { pdfjs } from 'react-pdf';
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.min?url';
+import { FormControl, InputLabel, Select, MenuItem, CircularProgress } from "@mui/material";
+import { useNavigate } from "react-router";
+import { mockConvertToSMILES, type ConversionResult } from "../utils/mockConversion";
+import LoadingPredictions from "@components/Loading/LoadingPredictions";
+
+import { useResultsContext } from "@context/Results";
+import { useLoadingContext } from "../context/Loading";
+
+pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+
 interface UploadPageProps {
   onBack: () => void;
   onUpload: (file: File) => void;
 }
 
-export function UploadPage({ onBack, onUpload }: UploadPageProps) {
+const UploadPage = () => {
+
+  const navigate = useNavigate();
+  const { dispatch: dispatchForResults } = useResultsContext();
+  const { isLoading, data:loadingData, dispatch: dispatchForLoading } = useLoadingContext();
+  // const [isProcessing, setIsProcessing] = useState(false);
+  // const [results, setResults] = useState<ConversionResult[]>([]);
+
+  const onBack = () => {
+    // Navigate to landing page
+    navigate('/');
+  }
+
+  const onUpload = async (file: File) => {
+    // setIsProcessing(true);
+    dispatchForLoading({ type: 'LOADING.UPDATE', payload: { isLoading: true, data: {} } });
+    try {
+      const result = await mockConvertToSMILES(file);
+      console.log('Conversion result:', result);
+      // setResults([result]);
+      dispatchForResults({ type: 'RESULTS.UPDATE', payload: [result] });
+    } catch (error) {
+      console.error('Conversion failed:', error);
+      // In a real app, you'd show an error message here
+    } finally {
+      dispatchForLoading({ type: 'LOADING.UPDATE', payload: { isLoading: false, data: {} } });
+      navigate('/results');
+    }
+  };
+
+  // const onUpload = (file: File) => {
+  //   // Navigate to results page after upload
+  //   navigate('/results');
+  // }
+
+
   const [dragActive, setDragActive] = useState(false);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
+
+  const [startPage, setStartPage] = useState(1);
+  const [endPage, setEndPage] = useState(1);
+  const [parsing, setParsing] = useState(false);
 
   const handleDrag = useCallback((e: React.DragEvent) => {
     e.preventDefault();
@@ -46,7 +103,7 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
 
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
       const file = e.dataTransfer.files[0];
-      if (file.type.startsWith('image/')) {
+      if (file.type.startsWith('image/') || file.type === 'application/pdf') {
         setSelectedFile(file);
       }
     }
@@ -55,7 +112,7 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
   const handleFileInput = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       const file = e.target.files[0];
-      if (file.type.startsWith('image/')) {
+      if (file.type.startsWith('image/') || file.type === 'application/pdf') {
         setSelectedFile(file);
       }
     }
@@ -67,6 +124,23 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
       onUpload(selectedFile);
     }
   };
+
+
+
+  const handleStartPageChange = (e: any) => setStartPage(Number(e.target.value));
+  const handleEndPageChange = (e: any) => setEndPage(Number(e.target.value));
+
+  const handleParseNow = () => {
+    setParsing(true);
+    // Simulate parsing delay
+    setTimeout(() => setParsing(false), 2000);
+  };
+
+  if (isLoading) {
+    return (
+      <LoadingPredictions />
+    )
+  }
 
   return (
     <Box sx={{ minHeight: '100vh', bgcolor: 'grey.50' }}>
@@ -88,7 +162,7 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
 
         <Grid container spacing={4}>
           {/* Upload Area */}
-          <Grid item xs={12} lg={6}>
+          <Grid size={{ xs: 12 }}>
             <Paper elevation={2} sx={{ p: 3 }}>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
                 <CloudUpload />
@@ -122,7 +196,7 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
               >
                 <input
                   type="file"
-                  accept="image/*"
+                  accept="image/*,application/pdf"
                   onChange={handleFileInput}
                   style={{
                     position: 'absolute',
@@ -133,7 +207,7 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
                     cursor: 'pointer'
                   }}
                 />
-                
+
                 {selectedFile ? (
                   <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
                     <Paper
@@ -148,7 +222,11 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
                         justifyContent: 'center'
                       }}
                     >
-                      <Image sx={{ color: 'success.main', fontSize: 32 }} />
+                      {selectedFile.type === 'application/pdf' ? (
+                        <Description sx={{ color: 'success.main', fontSize: 32 }} />
+                      ) : (
+                        <Image sx={{ color: 'success.main', fontSize: 32 }} />
+                      )}
                     </Paper>
                     <Box sx={{ textAlign: 'center' }}>
                       <Typography variant="subtitle1" sx={{ fontWeight: 500 }}>
@@ -164,7 +242,7 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
                       fullWidth
                       sx={{ mt: 1 }}
                     >
-                      Convert to SMILES
+                      Parse Chemical Images
                     </Button>
                   </Box>
                 ) : (
@@ -184,14 +262,11 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
                       <CloudUpload sx={{ color: 'text.disabled', fontSize: 32 }} />
                     </Paper>
                     <Box sx={{ textAlign: 'center' }}>
-                      <Typography variant="h6">Drop your image here</Typography>
+                      <Typography variant="h6">Drop your image or PDF here</Typography>
                       <Typography variant="body2" color="text.secondary">
                         or click to browse files
                       </Typography>
                     </Box>
-                    <Button variant="outlined">
-                      Choose File
-                    </Button>
                   </Box>
                 )}
               </Paper>
@@ -201,119 +276,104 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
                   Supported formats:
                 </Typography>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                  <Chip label="PDF" size="small" />
                   <Chip label="PNG" size="small" />
                   <Chip label="JPG" size="small" />
                   <Chip label="JPEG" size="small" />
-                  <Chip label="GIF" size="small" />
-                  <Chip label="BMP" size="small" />
-                  <Chip label="WEBP" size="small" />
                 </Box>
               </Box>
             </Paper>
           </Grid>
 
-          {/* Guidelines */}
-          <Grid item xs={12} lg={6}>
-            <Paper elevation={2} sx={{ p: 3, height: 'fit-content' }}>
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
-                <Description />
-                <Typography variant="h6">Upload Guidelines</Typography>
-              </Box>
-              <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-                Follow these tips for best conversion results
+
+          {/* Parse pdf configuration */}
+          {/* <Grid size={{ xs: 12 }}>
+            <Paper elevation={2} sx={{ p: 3 }}>
+              <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                Parse Configuration
               </Typography>
 
-              <Box sx={{ mb: 3 }}>
-                <Typography variant="subtitle2" sx={{ mb: 2 }}>
-                  Image Quality
-                </Typography>
-                <List dense sx={{ pl: 1 }}>
-                  <ListItem disablePadding>
-                    <ListItemText 
-                      primary="• Use high-resolution images (minimum 300 DPI)" 
-                      primaryTypographyProps={{ variant: 'body2', color: 'text.secondary' }}
-                    />
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemText 
-                      primary="• Ensure clear, sharp chemical structures" 
-                      primaryTypographyProps={{ variant: 'body2', color: 'text.secondary' }}
-                    />
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemText 
-                      primary="• Avoid blurry or pixelated images" 
-                      primaryTypographyProps={{ variant: 'body2', color: 'text.secondary' }}
-                    />
-                  </ListItem>
-                </List>
-              </Box>
 
-              <Box sx={{ mb: 3 }}>
-                <Typography variant="subtitle2" sx={{ mb: 2 }}>
-                  Structure Requirements
-                </Typography>
-                <List dense sx={{ pl: 1 }}>
-                  <ListItem disablePadding>
-                    <ListItemText 
-                      primary="• Clean, uncluttered chemical drawings" 
-                      primaryTypographyProps={{ variant: 'body2', color: 'text.secondary' }}
-                    />
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemText 
-                      primary="• Clear bond connections and atom labels" 
-                      primaryTypographyProps={{ variant: 'body2', color: 'text.secondary' }}
-                    />
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemText 
-                      primary="• Proper stereochemical annotations" 
-                      primaryTypographyProps={{ variant: 'body2', color: 'text.secondary' }}
-                    />
-                  </ListItem>
-                </List>
-              </Box>
-
-              <Box sx={{ mb: 3 }}>
-                <Typography variant="subtitle2" sx={{ mb: 2 }}>
-                  Background
-                </Typography>
-                <List dense sx={{ pl: 1 }}>
-                  <ListItem disablePadding>
-                    <ListItemText 
-                      primary="• White or light-colored backgrounds work best" 
-                      primaryTypographyProps={{ variant: 'body2', color: 'text.secondary' }}
-                    />
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemText 
-                      primary="• Remove unnecessary text or labels" 
-                      primaryTypographyProps={{ variant: 'body2', color: 'text.secondary' }}
-                    />
-                  </ListItem>
-                  <ListItem disablePadding>
-                    <ListItemText 
-                      primary="• Crop image to focus on the structure" 
-                      primaryTypographyProps={{ variant: 'body2', color: 'text.secondary' }}
-                    />
-                  </ListItem>
-                </List>
-              </Box>
-
-              <Alert severity="info" sx={{ mt: 3 }}>
-                <Typography variant="body2" sx={{ fontWeight: 500, mb: 1 }}>
-                  Pro Tip
-                </Typography>
-                <Typography variant="body2">
-                  For best results, use structures exported from ChemDraw, 
-                  ChemSketch, or similar chemical drawing software.
-                </Typography>
-              </Alert>
+              <FormControl sx={{ mr: 2, minWidth: 120 }}>
+                <InputLabel id="start-page-label">Start Page</InputLabel>
+                <Select
+                  labelId="start-page-label"
+                  value={startPage}
+                  label="Start Page"
+                  onChange={handleStartPageChange}
+                >
+                  {[...Array(20)].map((_, i) => (
+                    <MenuItem key={i + 1} value={i + 1}>{i + 1}</MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+              <FormControl sx={{ mr: 2, minWidth: 120 }}>
+                <InputLabel id="end-page-label">End Page</InputLabel>
+                <Select
+                  labelId="end-page-label"
+                  value={endPage}
+                  label="End Page"
+                  onChange={handleEndPageChange}
+                >
+                  {[...Array(20)].map((_, i) => (
+                    <MenuItem key={i + 1} value={i + 1}>{i + 1}</MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={handleParseNow}
+                disabled={parsing}
+              >
+                Parse Now
+              </Button>
+              {parsing && (
+                <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
+                  <CircularProgress size={24} sx={{ mr: 1 }} />
+                  <Typography>Parsing document...</Typography>
+                </Box>
+              )}
             </Paper>
+          </Grid> */}
+
+          {/* Guidelines or Selected Image Preview */}
+          <Grid size={{ xs: 12 }}>
+            {selectedFile ? (
+              <Paper elevation={2} sx={{ p: 3 }}>
+                <Box>
+                  <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                    Document Preview
+                  </Typography>
+                  <Typography variant="body1" color="text.secondary">
+                    Review the selected document before parsing
+                  </Typography>
+                </Box>
+                {selectedFile.type === 'application/pdf' ? (
+                  <Box sx={{ mt: 2 }}>
+                    {/* PDF Preview using react-pdf */}
+                    <PdfViewer file={selectedFile} initialScale={1.0} />
+                  </Box>
+                ) : (
+                  <img
+                    src={URL.createObjectURL(selectedFile)}
+                    alt={selectedFile.name}
+                    style={{ maxWidth: '100%', maxHeight: 400, borderRadius: 8 }}
+                  />
+                )}
+              </Paper>
+            ) : (
+              <Guidelines />
+            )}
           </Grid>
+
+
+
+
         </Grid>
       </Container>
     </Box>
   );
 }
+
+export default UploadPage;

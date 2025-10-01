@@ -47,7 +47,7 @@ const UploadPage = () => {
 
   const navigate = useNavigate();
   const { dispatch: dispatchForResults } = useResultsContext();
-  const { isLoading, data:loadingData, dispatch: dispatchForLoading } = useLoadingContext();
+  const { isLoading, data: loadingData, dispatch: dispatchForLoading } = useLoadingContext();
   // const [isProcessing, setIsProcessing] = useState(false);
   // const [results, setResults] = useState<ConversionResult[]>([]);
 
@@ -85,6 +85,7 @@ const UploadPage = () => {
   const [startPage, setStartPage] = useState(1);
   const [endPage, setEndPage] = useState(1);
   const [parsing, setParsing] = useState(false);
+  const [isParseSettingsOpen, setIsParseSettingsOpen] = useState(false);
 
   const handleDrag = useCallback((e: React.DragEvent) => {
     e.preventDefault();
@@ -135,6 +136,10 @@ const UploadPage = () => {
     // Simulate parsing delay
     setTimeout(() => setParsing(false), 2000);
   };
+
+  const handleOpenParseSettings = () => {
+    setIsParseSettingsOpen(true);
+  }
 
   if (isLoading) {
     return (
@@ -236,14 +241,23 @@ const UploadPage = () => {
                         {(selectedFile.size / 1024 / 1024).toFixed(2)} MB
                       </Typography>
                     </Box>
-                    <Button
+                    {/* <Button
                       variant="contained"
-                      onClick={handleUpload}
+                      onClick={handleOpenParseSettings}
                       fullWidth
                       sx={{ mt: 1 }}
                     >
-                      Parse Chemical Images
-                    </Button>
+                      Preview and Parse
+                    </Button> */}
+                    <Box sx={{ textAlign: 'center' }}>
+                      <Typography variant="h6" color="text.secondary">
+                        Preview your file and adjust parse settings below
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">Want to upload a different file?</Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        Drag and drop a new image or PDF, or click to browse
+                      </Typography>
+                    </Box>
                   </Box>
                 ) : (
                   <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
@@ -287,55 +301,64 @@ const UploadPage = () => {
 
 
           {/* Parse pdf configuration */}
-          {/* <Grid size={{ xs: 12 }}>
-            <Paper elevation={2} sx={{ p: 3 }}>
-              <Typography variant="h6" sx={{ fontWeight: 600 }}>
-                Parse Configuration
+          {selectedFile && (
+            <Grid size={{ xs: 12 }}>
+                <Paper elevation={2} sx={{ p: 3 }}>
+                <Typography variant="h6" sx={{ fontWeight: 600, mb: 2 }}>
+                  Parse Configuration
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
+                Drag and drop your chemical structure image or click to browse
               </Typography>
 
-
-              <FormControl sx={{ mr: 2, minWidth: 120 }}>
-                <InputLabel id="start-page-label">Start Page</InputLabel>
-                <Select
-                  labelId="start-page-label"
-                  value={startPage}
-                  label="Start Page"
-                  onChange={handleStartPageChange}
-                >
-                  {[...Array(20)].map((_, i) => (
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 2 }}>
+                  <FormControl sx={{ minWidth: 120, height: 40 }}>
+                  <InputLabel id="start-page-label">Start Page</InputLabel>
+                  <Select
+                    labelId="start-page-label"
+                    value={startPage}
+                    label="Start Page"
+                    onChange={handleStartPageChange}
+                    sx={{ height: 40, '& .MuiSelect-select': { height: 40, display: 'flex', alignItems: 'center' } }}
+                  >
+                    {[...Array(20)].map((_, i) => (
                     <MenuItem key={i + 1} value={i + 1}>{i + 1}</MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
-              <FormControl sx={{ mr: 2, minWidth: 120 }}>
-                <InputLabel id="end-page-label">End Page</InputLabel>
-                <Select
-                  labelId="end-page-label"
-                  value={endPage}
-                  label="End Page"
-                  onChange={handleEndPageChange}
-                >
-                  {[...Array(20)].map((_, i) => (
+                    ))}
+                  </Select>
+                  </FormControl>
+                  <FormControl sx={{ minWidth: 120, height: 40 }}>
+                  <InputLabel id="end-page-label">End Page</InputLabel>
+                  <Select
+                    labelId="end-page-label"
+                    value={endPage}
+                    label="End Page"
+                    onChange={handleEndPageChange}
+                    sx={{ height: 40, '& .MuiSelect-select': { height: 40, display: 'flex', alignItems: 'center' } }}
+                  >
+                    {[...Array(20)].map((_, i) => (
                     <MenuItem key={i + 1} value={i + 1}>{i + 1}</MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={handleParseNow}
-                disabled={parsing}
-              >
-                Parse Now
-              </Button>
-              {parsing && (
-                <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
+                    ))}
+                  </Select>
+                  </FormControl>
+                  <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={handleParseNow}
+                  disabled={parsing}
+                  sx={{ height: 40, minWidth: 180 }}
+                  >
+                  Parse Chemical Images
+                  </Button>
+                </Box>
+                {parsing && (
+                  <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
                   <CircularProgress size={24} sx={{ mr: 1 }} />
                   <Typography>Parsing document...</Typography>
-                </Box>
-              )}
-            </Paper>
-          </Grid> */}
+                  </Box>
+                )}
+                </Paper>
+            </Grid>
+          )}
 
           {/* Guidelines or Selected Image Preview */}
           <Grid size={{ xs: 12 }}>
