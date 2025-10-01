@@ -2,30 +2,31 @@ import { createContext, type JSXElementConstructor, type ReactElement, type Reac
 import dummyResults from './results.json';
 import { API_ENDPOINTS } from '@constants';
 
-const initialResults = [
-    {
-        "id": "yvl4us2cg",
-        "fileName": "MolSnap.png",
-        "imageUrl": "blob:http://localhost:5173/c7a4e28b-1cf5-4a1c-b2d4-4afcba188b77",
-        "smiles": "Nc1ccc(cc1)C(=O)O",
-        "selfies": "[N][c][c][c][c][Branch1][=Branch1][c][c][Ring1][=Branch1][C][=Branch1][C][=O][O]",
-        "confidence": 92,
-        "format": "SMILES",
-        "status": "success",
-        "processingTime": 2.2
-    },
-    {
-        "id": "yvl4us2cg",
-        "fileName": "MolSnap.png",
-        "imageUrl": "blob:http://localhost:5173/c7a4e28b-1cf5-4a1c-b2d4-4afcba188b77",
-        "smiles": "Nc1ccc(cc1)C(=O)O",
-        "selfies": "[N][c][c][c][c][Branch1][=Branch1][c][c][Ring1][=Branch1][C][=Branch1][C][=O][O]",
-        "confidence": 92,
-        "format": "SMILES",
-        "status": "success",
-        "processingTime": 2.2
-    }
-];
+// const initialResults = [
+//     {
+//         "id": "yvl4us2cg",
+//         "fileName": "MolSnap.png",
+//         "imageUrl": "blob:http://localhost:5173/c7a4e28b-1cf5-4a1c-b2d4-4afcba188b77",
+//         "smiles": "Nc1ccc(cc1)C(=O)O",
+//         "selfies": "[N][c][c][c][c][Branch1][=Branch1][c][c][Ring1][=Branch1][C][=Branch1][C][=O][O]",
+//         "confidence": 92,
+//         "format": "SMILES",
+//         "status": "success",
+//         "processingTime": 2.2
+//     },
+//     {
+//         "id": "yvl4us2cg",
+//         "fileName": "MolSnap.png",
+//         "imageUrl": "blob:http://localhost:5173/c7a4e28b-1cf5-4a1c-b2d4-4afcba188b77",
+//         "smiles": "Nc1ccc(cc1)C(=O)O",
+//         "selfies": "[N][c][c][c][c][Branch1][=Branch1][c][c][Ring1][=Branch1][C][=Branch1][C][=O][O]",
+//         "confidence": 92,
+//         "format": "SMILES",
+//         "status": "success",
+//         "processingTime": 2.2
+//     }
+// ];
+const initialResults: never[] = [];
 
 // 1. Create a context to hold the state
 const ResultsContext = createContext<{ results: any; dispatch: React.Dispatch<{ type: any, payload: any }> }>({

@@ -450,7 +450,7 @@ const UploadPage = () => {
           {parsed.length > 0 && <ImageSelector images={parsed} onSelectionChange={handleImageSelectionChange} />}
 
 
-          {checkpoints?.files?.length > 0 && (
+          {parsed.length > 0 &&checkpoints?.files?.length > 0 && (
             <Box sx={{ my: 2, display: 'flex', alignItems: 'center', gap: 2 }}>
               <FormControl sx={{ flex: 1, minWidth: 220 }}>
                 <InputLabel id="model-select-label">Select Model</InputLabel>
