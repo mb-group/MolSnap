@@ -1,2 +1,4 @@
-fastapi dev main.py
-uvicorn main:app --reload
+# Run this from the root directory
+uvicorn "molsnap-api.main:app" --reload
+
+uvicorn main:app --host 0.0.0.0 --port 8001 --reload
