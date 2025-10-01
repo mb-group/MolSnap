@@ -50,7 +50,7 @@ async def pdf_extract(pdf, segments):
     src_doc.close()
     return output_path
 
-def run_extraction(input_path, output_dir=None, startPage=1, endPage=1):
+def run_extraction(input_path, startPage=1, endPage=1):
     """
     Run the extraction process on the specified PDF document.
     """

@@ -22,17 +22,18 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.mount("/output", StaticFiles(directory="output"), name="output")
+os.makedirs("images", exist_ok=True)
+app.mount("/images", StaticFiles(directory="images"), name="images")
 
 async def get_prediction_results(uploaded_files, checkpoint_path='checkpoints/molnextr_best.pth'):
     return prediction.predict_from_image_files(uploaded_files, checkpoint_path)
 
 @app.get("/")
 async def read_root():
-    files = run_segmentation('test_pages_1-4.pdf', output_dir='output')
+    # files = run_segmentation('test_pages_1-4.pdf', output_dir='output')
     return JSONResponse(content={
         "message": "Hello, World!",
-        "files": files
+        "files": "files"
     })
     #return {"message": "Hello, World!", "files": files}
     
@@ -58,13 +59,13 @@ async def upload_and_run_segmentation(
         
         # Run extraction on this file with startPage and endPage
         try:
-            trimmed_pdf_path = await run_extraction(file_path, output_dir='output', startPage=startPage, endPage=endPage)
+            trimmed_pdf_path = await run_extraction(file_path, startPage=startPage, endPage=endPage)
         except Exception as e:
             return {"message": f"There was an error during extraction: {str(e)}"}
         
         # Run segmentation on this file with startPage and endPage
         try:
-            files = run_segmentation(str(trimmed_pdf_path), output_dir='output')
+            files = run_segmentation(str(trimmed_pdf_path), output_dir='images')
         except Exception as e:
             return {"message": f"There was an error during segmentation: {str(e)}"}
         #

@@ -32,10 +32,12 @@ import { FormControl, InputLabel, Select, MenuItem, CircularProgress } from "@mu
 import { useNavigate } from "react-router";
 import { mockConvertToSMILES, type ConversionResult } from "../utils/mockConversion";
 import LoadingPredictions from "@components/Loading/LoadingPredictions";
+import ImageSelector from "@components/ImageSelector";
 
 import { useResultsContext } from "@context/Results";
 import { useLoadingContext } from "../context/Loading";
 import { useUploadContext } from "../context/Upload";
+import { API_ENDPOINTS } from "../constants";
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
@@ -49,7 +51,7 @@ const UploadPage = () => {
   const navigate = useNavigate();
   const { dispatch: dispatchForResults } = useResultsContext();
   const { isLoading, data: loadingData, dispatch: dispatchForLoading } = useLoadingContext();
-  const { preview, dispatch: dispatchUpload } = useUploadContext();
+  const { preview, parsed, dispatch: dispatchUpload } = useUploadContext();
   // const [isProcessing, setIsProcessing] = useState(false);
   // const [results, setResults] = useState<ConversionResult[]>([]);
 
@@ -134,14 +136,46 @@ const UploadPage = () => {
   const handleEndPageChange = (e: any) => setEndPage(Number(e.target.value));
 
   const handleParseNow = () => {
+
     setParsing(true);
-    // Simulate parsing delay
-    setTimeout(() => setParsing(false), 2000);
+
+    if (selectedFile) {
+      const formData = new FormData();
+      formData.append('file', selectedFile);
+      formData.append('startPage', String(startPage));
+      formData.append('endPage', String(endPage));
+
+      fetch(API_ENDPOINTS.CHEMICAL_IMAGE_UPLOAD_PARSE, {
+        method: 'POST',
+        body: formData,
+      })
+        .then(async (response) => {
+          if (!response.ok) throw new Error('Failed to parse document');
+          const data = await response.json();
+          dispatchUpload({ type: 'UPLOAD.PARSED.UPDATE', payload: data.images });
+          console.log('Parsed chemical images:', data);
+          setParsing(false);
+          // You can dispatch results or navigate as needed here
+        })
+        .catch((error) => {
+          console.error('Error parsing document:', error);
+          setParsing(false);
+          // Handle error UI here if needed
+        });
+    }
+
+    
+    // // Simulate parsing delay
+    // setTimeout(() => setParsing(false), 2000);
   };
 
   const handleOpenParseSettings = () => {
     setIsParseSettingsOpen(true);
   }
+
+  const handleImageSelectionChange = (selected: string[]) => {
+    console.log("Parent got selection:", selected);
+  };
 
   if (isLoading) {
     return (
@@ -368,6 +402,8 @@ const UploadPage = () => {
               </Paper>
             </Grid>
           )}
+
+         {parsed.length > 0 && <ImageSelector images={parsed} onSelectionChange={handleImageSelectionChange} />}
 
           {/* Guidelines or Selected Image Preview */}
           <Grid size={{ xs: 12 }}>
