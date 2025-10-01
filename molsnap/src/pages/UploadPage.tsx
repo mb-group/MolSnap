@@ -447,37 +447,42 @@ const UploadPage = () => {
             </Grid>
           )}
 
-          {parsed.length > 0 && <ImageSelector images={parsed} onSelectionChange={handleImageSelectionChange} />}
+          {parsed.length > 0 && (
+            <>
+              <ImageSelector images={parsed} onSelectionChange={handleImageSelectionChange} />
 
-
-          {parsed.length > 0 &&checkpoints?.files?.length > 0 && (
-            <Box sx={{ my: 2, display: 'flex', alignItems: 'center', gap: 2 }}>
-              <FormControl sx={{ flex: 1, minWidth: 220 }}>
-                <InputLabel id="model-select-label">Select Model</InputLabel>
-                <Select
-                  labelId="model-select-label"
-                  value={selected.model}
-                  label="Select Model"
-                  onChange={handleModelSelectionChange}
-                  sx={{ minWidth: 220 }}
-                >
-                  {checkpoints.files.map((model: string) => (
-                    <MenuItem key={model} value={model}>
-                      {model}
-                    </MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
-              <Button
-                variant="contained"
-                color="secondary"
-                onClick={handleGetSmiles}
-                sx={{ marginTop: 0, height: 56 }}
-                disabled={selected.images.length === 0}
-              >
-                Get SMILES {selected.images.length > 0 ? `(${selected.images.length})` : ""}
-              </Button>
-            </Box>
+              {checkpoints?.files?.length > 0 && (
+                <Grid size={{ xs: 12 }}>
+                  <Box sx={{ my: 2, display: 'flex', alignItems: 'flex-start', gap: 2, maxWidth: 500 }}>
+                    <FormControl sx={{ flex: 1, minWidth: 220 }}>
+                      <InputLabel id="model-select-label">Select Model</InputLabel>
+                      <Select
+                        labelId="model-select-label"
+                        value={selected.model}
+                        label="Select Model"
+                        onChange={handleModelSelectionChange}
+                        sx={{ minWidth: 220 }}
+                      >
+                        {checkpoints.files.map((model: string) => (
+                          <MenuItem key={model} value={model}>
+                            {model}
+                          </MenuItem>
+                        ))}
+                      </Select>
+                    </FormControl>
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      onClick={handleGetSmiles}
+                      sx={{ marginTop: 0, height: 56 }}
+                      disabled={selected.images.length === 0}
+                    >
+                      Get SMILES {selected.images.length > 0 ? `(${selected.images.length})` : ""}
+                    </Button>
+                  </Box>
+                </Grid>
+              )}
+            </>
           )}
 
 
