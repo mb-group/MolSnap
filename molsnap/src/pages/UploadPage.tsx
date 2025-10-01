@@ -330,7 +330,7 @@ const UploadPage = () => {
                       onChange={handleStartPageChange}
                       sx={{ height: 40, '& .MuiSelect-select': { height: 40, display: 'flex', alignItems: 'center' } }}
                     >
-                      {[...Array(startPageSetting)].map((_, i) => (
+                      {[...Array(endPageSetting)].map((_, i) => (
                         <MenuItem key={i + 1} value={i + 1}>{i + 1}</MenuItem>
                       ))}
                     </Select>
