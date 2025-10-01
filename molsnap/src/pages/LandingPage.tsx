@@ -114,8 +114,8 @@ const LandingPage = () => {
                                     fontWeight: 600
                                 }}
                             >
-                                Chemical image to<br />
-                                SMILES converter<br />
+                                Easy SMILES extraction 
+                                <br />
                             </Typography>
                             <Typography
                                 variant="body1"
@@ -127,10 +127,7 @@ const LandingPage = () => {
                                     mb: 4
                                 }}
                             >
-                                MolSnap simplifies workflows for cheminformatics experts, medicinal chemists,
-                                and researchers in chemistry and chemical biology. Automatically scan and interpret
-                                images of chemical structures from research articles and convert them into
-                                SMILES, SELFIES, or SDF formats with stereochemical precision.
+                               MolSnap is an interactive cheminformatics tools to seamlessly extract, convert and export lists of chemical structures from multi-page documents.
                             </Typography>
                             <Button
                                 variant="contained"
@@ -181,18 +178,18 @@ const LandingPage = () => {
                         {[
                             {
                                 step: "1",
-                                title: "Upload Image",
-                                desc: "Upload chemical structure images from research articles, drawings, or screenshots",
+                                title: "Upload Document",
+                                desc: "Upload PDF from chemical structure diagrams.",
                             },
                             {
                                 step: "2",
-                                title: "AI Processing",
-                                desc: "Our deep learning model analyzes the structure with stereochemical precision",
+                                title: "Select images & AI model",
+                                desc: "Choose from our specialized deep learning models for complex classes",
                             },
                             {
                                 step: "3",
-                                title: "Get Results",
-                                desc: "Receive accurate SMILES, SELFIES, or SDF format output ready for your workflow",
+                                title: "Convert images to SMILES",
+                                desc: "Export results in tabular form, with associated confidence metrics.",
                             },
                         ].map((process, index) => (
                             <Grid sx={{ xs: 12, sm: 4 }} key={index}>

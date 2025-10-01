@@ -28,7 +28,7 @@ def chunk_list(lst, chunk_size):
         yield lst[i:i + chunk_size]
 
 all_results = []
-for batch in chunk_list(image_paths, 100):
+for batch in chunk_list(image_paths, 1000):
     print(len(batch))
     print('running')
     #results = prediction.predict_from_image_files(batch, '../MolNexTR/checkpoints/molnextr_best.pth')
