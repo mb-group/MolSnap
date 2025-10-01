@@ -34,12 +34,11 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ images, onSelectionChange
 
     // Select / Deselect all
     const handleSelectAll = () => {
-        const fullUrls = images.map((url) => API_ENDPOINTS.DECIMER_API_URL + '/' + url);
         let newSelection: string[];
-        if (selectedImages.length === fullUrls.length) {
+        if (selectedImages.length === images.length) {
             newSelection = [];
         } else {
-            newSelection = [...fullUrls];
+            newSelection = [...images];
         }
         setSelectedImages(newSelection);
         if (onSelectionChange) {
@@ -54,18 +53,26 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ images, onSelectionChange
 
     return (
         <div style={{ padding: 20 }}>
-            <Button
-                variant="contained"
-                color="primary"
-                onClick={handleSelectAll}
-                style={{ marginBottom: 20 }}
-            >
-                {selectedImages.length === images.length ? "Deselect All" : "Select All"}
-            </Button>
+            <div style={{ display: "flex", gap: 16, marginBottom: 20 }}>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={handleSelectAll}
+                >
+                    {selectedImages.length === images.length ? "Deselect All" : "Select All"}
+                </Button>
+                {/* <Button
+                    variant="contained"
+                    color="secondary"
+                    onClick={handleSubmit}
+                >
+                    Get SMILES 
+                </Button> */}
+            </div>
 
             <Grid container spacing={2}>
                 {images.map((url, index) => {
-                    url = API_ENDPOINTS.DECIMER_API_URL + '/' + url; // prepend base URL
+                    const fullUrl = API_ENDPOINTS.DECIMER_API_URL + '/' + url; // prepend base URL
                     return (
                         <Grid sx={{xs:12, sm: 6, md: 4, lg: 3}} key={index}>
                             <Card
@@ -82,7 +89,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ images, onSelectionChange
                                 <CardMedia
                                     component="img"
                                     height="160"
-                                    image={url}
+                                    image={fullUrl}
                                     alt={`img-${index}`}
                                 />
                                 <CardActions sx={{ justifyContent: "center" }}>
@@ -104,8 +111,9 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ images, onSelectionChange
                 color="secondary"
                 onClick={handleSubmit}
                 sx={{ marginTop: 3 }}
+                disabled={selectedImages.length === 0}
             >
-                Log Selected Images
+                Get SMILES {selectedImages.length > 0 ? `(${selectedImages.length})` : ""}
             </Button>
         </div>
     );
