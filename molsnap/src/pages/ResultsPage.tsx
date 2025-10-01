@@ -25,18 +25,9 @@ import {
   Warning,
   Error as ErrorIcon
 } from '@mui/icons-material';
-
-interface ConversionResult {
-  id: string;
-  fileName: string;
-  imageUrl: string;
-  smiles: string;
-  selfies: string;
-  confidence: number;
-  format: 'SMILES' | 'SELFIES' | 'SDF';
-  status: 'success' | 'warning' | 'error';
-  processingTime: number;
-}
+import { useNavigate } from "react-router";
+import { mockConvertToSMILES, type ConversionResult } from "../utils/mockConversion";
+import { useResultsContext } from "@context/Results";
 
 interface ResultsPageProps {
   onBack: () => void;
@@ -44,7 +35,22 @@ interface ResultsPageProps {
   results: ConversionResult[];
 }
 
-export function ResultsPage({ onBack, onNewUpload, results }: ResultsPageProps) {
+const ResultsPage = () => {
+
+  const navigate = useNavigate();
+  // const [results, setResults] = useState<ConversionResult[]>([]);
+  const { results, dispatch: dispatchForResults } = useResultsContext<ConversionResult>();
+
+  const onBack = () => {
+    // Navigate to landing page
+    navigate('/upload');
+  }
+
+  const onNewUpload = () => {
+    // Navigate to upload page
+    navigate('/upload');
+  }
+
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
   const copyToClipboard = async (text: string, id: string) => {
@@ -58,12 +64,12 @@ export function ResultsPage({ onBack, onNewUpload, results }: ResultsPageProps) 
   };
 
   const downloadResults = () => {
-    const csvContent = "data:text/csv;charset=utf-8," 
+    const csvContent = "data:text/csv;charset=utf-8,"
       + "File Name,SMILES,SELFIES,Confidence,Processing Time\n"
-      + results.map(result => 
-          `"${result.fileName}","${result.smiles}","${result.selfies}",${result.confidence},${result.processingTime}`
-        ).join("\n");
-    
+      + results.map(result =>
+        `"${result.fileName}","${result.smiles}","${result.selfies}",${result.confidence},${result.processingTime}`
+      ).join("\n");
+
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
@@ -98,6 +104,9 @@ export function ResultsPage({ onBack, onNewUpload, results }: ResultsPageProps) 
         return <Chip label="Unknown" size="small" />;
     }
   };
+
+
+  console.log('res..here', results);
 
   return (
     <Box sx={{ minHeight: '100vh', bgcolor: 'grey.50' }}>
@@ -159,7 +168,7 @@ export function ResultsPage({ onBack, onNewUpload, results }: ResultsPageProps) 
                     Successful
                   </Typography>
                   <Typography variant="h4" sx={{ fontWeight: 600, color: 'success.main' }}>
-                    {results.filter(r => r.status === 'success').length}
+                    {results && results.filter(r => r.status === 'success').length}
                   </Typography>
                 </Box>
                 <Avatar sx={{ bgcolor: 'success.light' }}>
@@ -177,7 +186,7 @@ export function ResultsPage({ onBack, onNewUpload, results }: ResultsPageProps) 
                     Avg Confidence
                   </Typography>
                   <Typography variant="h4" sx={{ fontWeight: 600 }}>
-                    {Math.round(results.reduce((sum, r) => sum + r.confidence, 0) / results.length)}%
+                    {results && Math.round(results.reduce((sum, r) => sum + r.confidence, 0) / results.length)}%
                   </Typography>
                 </Box>
                 <Avatar sx={{ bgcolor: 'info.light' }}>
@@ -195,7 +204,7 @@ export function ResultsPage({ onBack, onNewUpload, results }: ResultsPageProps) 
                     Avg Time
                   </Typography>
                   <Typography variant="h4" sx={{ fontWeight: 600 }}>
-                    {(results.reduce((sum, r) => sum + r.processingTime, 0) / results.length).toFixed(1)}s
+                    {results && (results.reduce((sum, r) => sum + r.processingTime, 0) / results.length).toFixed(1)}s
                   </Typography>
                 </Box>
                 <Avatar sx={{ bgcolor: 'warning.light' }}>
@@ -231,7 +240,7 @@ export function ResultsPage({ onBack, onNewUpload, results }: ResultsPageProps) 
                 </TableRow>
               </TableHead>
               <TableBody>
-                {results.map((result) => (
+                {results && results.map((result) => (
                   <TableRow key={result.id} hover>
                     <TableCell>
                       <Box
@@ -335,7 +344,7 @@ export function ResultsPage({ onBack, onNewUpload, results }: ResultsPageProps) 
             What's Next?
           </Typography>
           <Typography variant="body1" color="text.secondary" sx={{ mb: 3, maxWidth: 600, mx: 'auto' }}>
-            Your chemical structures have been successfully converted. You can now use these SMILES codes 
+            Your chemical structures have been successfully converted. You can now use these SMILES codes
             in your cheminformatics workflows, molecular databases, or chemical analysis tools.
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }}>
@@ -351,3 +360,5 @@ export function ResultsPage({ onBack, onNewUpload, results }: ResultsPageProps) 
     </Box>
   );
 }
+
+export default ResultsPage;

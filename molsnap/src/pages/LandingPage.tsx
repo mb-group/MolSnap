@@ -31,12 +31,16 @@ import {
     GetApp
 } from '@mui/icons-material';
 import molsnap from '../assets/molsnap.png';
+import { useNavigate } from "react-router";
 
-interface LandingPageProps {
-    onGetStarted: () => void;
-}
+const LandingPage = () => {
+    const navigate = useNavigate();
 
-export function LandingPage({ onGetStarted }: LandingPageProps) {
+    const onGetStarted = () => {
+        // Navigate to upload page
+        navigate('/upload');
+    }
+
     return (
         <Box sx={{ minHeight: '100vh', bgcolor: 'background.default' }}>
             {/* Navigation */}
@@ -254,3 +258,5 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
         </Box>
     );
 }
+
+export default LandingPage;

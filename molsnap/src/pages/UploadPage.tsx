@@ -20,15 +20,21 @@ import {
   ArrowBack
 } from '@mui/icons-material';
 
-import PdfViewer from "./PdfViewer/PdfViewer";
+import PdfViewer from "@components/PdfViewer";
 
 import { Document } from 'react-pdf'
 
-import Guidelines from "./Guidelines";
+import Guidelines from "@components/Guidelines";
 
 import { pdfjs } from 'react-pdf';
 import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.min?url';
 import { FormControl, InputLabel, Select, MenuItem, CircularProgress } from "@mui/material";
+import { useNavigate } from "react-router";
+import { mockConvertToSMILES, type ConversionResult } from "../utils/mockConversion";
+import LoadingPredictions from "@components/Loading/LoadingPredictions";
+
+import { useResultsContext } from "@context/Results";
+import { useLoadingContext } from "../context/Loading";
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
@@ -37,7 +43,42 @@ interface UploadPageProps {
   onUpload: (file: File) => void;
 }
 
-export function UploadPage({ onBack, onUpload }: UploadPageProps) {
+const UploadPage = () => {
+
+  const navigate = useNavigate();
+  const { dispatch: dispatchForResults } = useResultsContext();
+  const { isLoading, data:loadingData, dispatch: dispatchForLoading } = useLoadingContext();
+  // const [isProcessing, setIsProcessing] = useState(false);
+  // const [results, setResults] = useState<ConversionResult[]>([]);
+
+  const onBack = () => {
+    // Navigate to landing page
+    navigate('/');
+  }
+
+  const onUpload = async (file: File) => {
+    // setIsProcessing(true);
+    dispatchForLoading({ type: 'LOADING.UPDATE', payload: { isLoading: true, data: {} } });
+    try {
+      const result = await mockConvertToSMILES(file);
+      console.log('Conversion result:', result);
+      // setResults([result]);
+      dispatchForResults({ type: 'RESULTS.UPDATE', payload: [result] });
+    } catch (error) {
+      console.error('Conversion failed:', error);
+      // In a real app, you'd show an error message here
+    } finally {
+      dispatchForLoading({ type: 'LOADING.UPDATE', payload: { isLoading: false, data: {} } });
+      navigate('/results');
+    }
+  };
+
+  // const onUpload = (file: File) => {
+  //   // Navigate to results page after upload
+  //   navigate('/results');
+  // }
+
+
   const [dragActive, setDragActive] = useState(false);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
@@ -94,6 +135,12 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
     // Simulate parsing delay
     setTimeout(() => setParsing(false), 2000);
   };
+
+  if (isLoading) {
+    return (
+      <LoadingPredictions />
+    )
+  }
 
   return (
     <Box sx={{ minHeight: '100vh', bgcolor: 'grey.50' }}>
@@ -328,3 +375,5 @@ export function UploadPage({ onBack, onUpload }: UploadPageProps) {
     </Box>
   );
 }
+
+export default UploadPage;

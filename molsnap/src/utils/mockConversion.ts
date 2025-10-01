@@ -57,7 +57,7 @@ const handleUpload = async (selectedFile: string | Blob) => {
       },
     });
     console.log('Upload successful:', response.data);
-    alert('File uploaded successfully!');
+    // alert('File uploaded successfully!');
   } catch (error) {
     console.error('Error uploading file:', error);
     alert('Error uploading file.');
