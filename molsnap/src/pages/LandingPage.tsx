@@ -45,7 +45,7 @@ const LandingPage = () => {
         <Box sx={{ minHeight: '100vh', bgcolor: 'background.default' }}>
             {/* Navigation */}
             <AppBar position="static" elevation={0} sx={{ bgcolor: 'transparent' }}>
-                <Container maxWidth="xl">
+                <Container maxWidth="xl" >
                     <Toolbar sx={{ justifyContent: 'space-between', py: 2 }}>
                         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                             <Box
@@ -99,7 +99,7 @@ const LandingPage = () => {
             </AppBar>
 
             {/* Main Content */}
-            <Container maxWidth="xl" sx={{ py: 8 }}>
+            <Container maxWidth="xl" sx={{ py: 8, paddingLeft: { md: 6 }, paddingRight: { md: 6 } }}>
                 <Grid container spacing={8} alignItems="center">
                     {/* Left Content */}
                     <Grid size={{ xs: 12, lg: 6 }}>
@@ -171,7 +171,15 @@ const LandingPage = () => {
             <Container maxWidth="lg" sx={{ py: 6 }}>
                 {/* How It Works */}
                 <Box sx={{ textAlign: "center", mt: 10 }}>
-                    <Typography variant="h5" fontWeight="bold" gutterBottom>
+                    <Typography
+                                variant="h2"
+                                sx={{
+                                    fontSize: { xs: '2rem', md: '2rem' },
+                                    lineHeight: 1.2,
+                                    mb: 3,
+                                    fontWeight: 600
+                                }}
+                            >
                         How It Works
                     </Typography>
                     <Grid container spacing={6} justifyContent="center" sx={{ mt: 4 }}>
@@ -235,7 +243,15 @@ const LandingPage = () => {
                         textAlign: "center",
                     }}
                 >
-                    <Typography variant="h6" fontWeight="bold" gutterBottom>
+                   <Typography
+                                variant="h2"
+                                sx={{
+                                    fontSize: { xs: '2rem', md: '2rem' },
+                                    lineHeight: 1.2,
+                                    mb: 3,
+                                    fontWeight: 600
+                                }}
+                            >
                         Ready to Transform Your Workflow?
                     </Typography>
                     <Typography variant="body2" color="text.secondary" gutterBottom>
