@@ -103,7 +103,7 @@ const LandingPage = () => {
                 <Grid container spacing={8} alignItems="center">
                     {/* Left Content */}
                     <Grid size={{ xs: 12, lg: 6 }}>
-                        <Box sx={{ mb: 4 }}>
+                        <Box sx={{ mb: 2 }}>
                             <Typography
                                 variant="h2"
                                 sx={{
@@ -151,7 +151,7 @@ const LandingPage = () => {
 
                     {/* Right Content - Workflow Diagram */}
                     <Grid size={{ xs: 12, lg: 6 }} >
-                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: { xs: 240, md: 320 } }}>
+                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <img
                                 src={molsnap}
                                 alt="MolSnap workflow"
@@ -159,7 +159,7 @@ const LandingPage = () => {
                                     maxWidth: '100%',
                                     maxHeight: '100%',
                                     borderRadius: 16,
-                                    boxShadow: '0 4px 24px rgba(0,0,0,0.08)'
+                                    // boxShadow: '0 4px 24px rgba(0,0,0,0.08)'
                                 }}
                             />
                         </Box>
