@@ -46,11 +46,6 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ images, onSelectionChange
         }
     };
 
-    // Log selected images
-    const handleSubmit = () => {
-        console.log("Selected Images:", selectedImages);
-    };
-
     return (
         <div style={{ padding: 20 }}>
             <div style={{ display: "flex", gap: 16, marginBottom: 20 }}>
@@ -105,16 +100,6 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ images, onSelectionChange
                     );
                 })}
             </Grid>
-
-            <Button
-                variant="contained"
-                color="secondary"
-                onClick={handleSubmit}
-                sx={{ marginTop: 3 }}
-                disabled={selectedImages.length === 0}
-            >
-                Get SMILES {selectedImages.length > 0 ? `(${selectedImages.length})` : ""}
-            </Button>
         </div>
     );
 };

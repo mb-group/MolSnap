@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 from fastapi.responses import JSONResponse
 
-from segment import run_segmentation, run_extraction
+from segment import list_checkpoint_files, run_segmentation, run_extraction
 from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
@@ -68,10 +68,16 @@ async def upload_and_run_segmentation(
             files = run_segmentation(str(trimmed_pdf_path), output_dir='images')
         except Exception as e:
             return {"message": f"There was an error during segmentation: {str(e)}"}
-        #
+
+        try:
+            checkpoints = list_checkpoint_files()
+        except Exception as e:
+            return {"message": f"There was an error listing checkpoint files: {str(e)}"}
+
         # return files
         return JSONResponse(content={
-            "images": files
+            "images": files,
+            "checkpoints": checkpoints
         })
     except Exception as e:
         return {"message": f"There was an error uploading the file: {str(e)}"}

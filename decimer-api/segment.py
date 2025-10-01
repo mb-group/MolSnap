@@ -11,6 +11,28 @@ import pymupdf  # PyMuPDF
 from pathlib import Path
 from decimer_segmentation import segment_chemical_structures_from_file
 from decimer_segmentation import save_images, get_bnw_image, get_square_image
+import json
+
+def list_checkpoint_files(checkpoints_dir="../ML_model/checkpoints"):
+    """
+    Lists all files in the specified checkpoints directory, counts them,
+    and returns the result as a JSON string.
+
+    Args:
+        checkpoints_dir (str): Path to the checkpoints directory.
+
+    Returns:
+        str: JSON string with file count and list of filenames.
+    """
+    if not os.path.isdir(checkpoints_dir):
+        return json.dumps({"count": 0, "files": []})
+
+    files = [f for f in os.listdir(checkpoints_dir) if os.path.isfile(os.path.join(checkpoints_dir, f))]
+    result = {
+        "count": len(files),
+        "files": files
+    }
+    return result
 
 async def pdf_extract(pdf, segments):
     """

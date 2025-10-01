@@ -1,8 +1,12 @@
 import { createContext, type JSXElementConstructor, type ReactElement, type ReactNode, type ReactPortal, useContext, useReducer } from 'react';
 
 // 1. Create a context to hold the state
-const UploadContext = createContext<{ data: any; preview: any; parsed: any, dispatch: React.Dispatch<{ type: any, payload: any }> }>({
+const UploadContext = createContext<{ data: any; selected:any, preview: any; parsed: any, checkpoints: any, dispatch: React.Dispatch<{ type: any, payload: any }> }>({
     data: {},
+        selected: {
+        model: 'molnextr_best.pth',
+        images: []
+    },
     preview: {
         filetype: '',
         startPage: 1,
@@ -24,14 +28,25 @@ const UploadContext = createContext<{ data: any; preview: any; parsed: any, disp
         "images/segments/fmicb-10-00952_20251001033112_extracted_orig_12.png",
         "images/segments/fmicb-10-00952_20251001033112_extracted_orig_13.png",
         "images/segments/fmicb-10-00952_20251001033112_extracted_orig_14.png",
-        "images/segments/fmicb-10-00952_20251001033112_extracted_orig_15.png"
+        "images/segments/fmicb-10-00952_20251001033112_extracted_orig_15.png",
     ],
+    checkpoints: {
+        count: 2,
+        files: [
+            "molnextr_best.pth",
+            "molnextr_v2.pth"
+        ]
+    },
     dispatch: () => { },
 });
 
 // 2. Define the initial state
 const initialState = {
     data: {},
+    selected: {
+        model: 'molnextr_best.pth',
+        images: []
+    },
     preview: {
         filetype: '',
         startPage: 1,
@@ -55,10 +70,17 @@ const initialState = {
         "images/segments/fmicb-10-00952_20251001033112_extracted_orig_14.png",
         "images/segments/fmicb-10-00952_20251001033112_extracted_orig_15.png"
     ],
+    checkpoints: {
+        count: 2,
+        files: [
+            "molnextr_best.pth",
+            "molnextr_v2.pth"
+        ]
+    }
 }
 
 // 3. Define the reducer function to handle state transitions
-const reducer = (state: { data: any; preview: any; parsed: any; }, action: { type: any; payload: any }) => {
+const reducer = (state: { data: any; selected: any; preview: any; parsed: any; checkpoints: any }, action: { type: any; payload: any }) => {
     const { type, payload } = action;
     switch (type) {
         case 'UPLOAD.UPDATE':
@@ -67,6 +89,12 @@ const reducer = (state: { data: any; preview: any; parsed: any; }, action: { typ
             return { ...state, preview: { ...state.preview, ...payload } };
         case 'UPLOAD.PARSED.UPDATE':
             return { ...state, parsed: [...state.parsed, ...payload] };
+        case 'UPLOAD.CHECKPOINTS.UPDATE':
+            return { ...state, checkpoints: { ...state.checkpoints, ...payload } };
+        case 'UPLOAD.SELECTED.IMAGE.UPDATE':
+            return { ...state, selected: { ...state.selected, images: payload } };
+        case 'UPLOAD.SELECTED.MODEL.UPDATE':
+            return { ...state, selected: { ...state.selected, model: payload } };
         default:
             throw new Error();
     }

@@ -51,7 +51,7 @@ const UploadPage = () => {
   const navigate = useNavigate();
   const { dispatch: dispatchForResults } = useResultsContext();
   const { isLoading, data: loadingData, dispatch: dispatchForLoading } = useLoadingContext();
-  const { preview, parsed, dispatch: dispatchUpload } = useUploadContext();
+  const { preview, selected, parsed, checkpoints, dispatch: dispatchUpload } = useUploadContext();
   // const [isProcessing, setIsProcessing] = useState(false);
   // const [results, setResults] = useState<ConversionResult[]>([]);
 
@@ -153,6 +153,8 @@ const UploadPage = () => {
           if (!response.ok) throw new Error('Failed to parse document');
           const data = await response.json();
           dispatchUpload({ type: 'UPLOAD.PARSED.UPDATE', payload: data.images });
+          dispatchUpload({ type: 'UPLOAD.CHECKPOINTS.UPDATE', payload: data.checkpoints });
+
           console.log('Parsed chemical images:', data);
           setParsing(false);
           // You can dispatch results or navigate as needed here
@@ -164,7 +166,7 @@ const UploadPage = () => {
         });
     }
 
-    
+
     // // Simulate parsing delay
     // setTimeout(() => setParsing(false), 2000);
   };
@@ -174,7 +176,17 @@ const UploadPage = () => {
   }
 
   const handleImageSelectionChange = (selected: string[]) => {
-    console.log("Parent got selection:", selected);
+    // console.log("Parent got selection:", selected);
+    dispatchUpload({ type: 'UPLOAD.SELECTED.IMAGE.UPDATE', payload: selected });
+  };
+
+  const handleModelSelectionChange = (e: any) => {
+    dispatchUpload({ type: 'UPLOAD.SELECTED.MODEL.UPDATE', payload: e.target.value });
+  }
+
+  const handleGetSmiles = () => {
+    // Implement the logic to get SMILES for the selected images
+    console.log("Getting SMILES for:", selected);
   };
 
   if (isLoading) {
@@ -403,7 +415,40 @@ const UploadPage = () => {
             </Grid>
           )}
 
-         {parsed.length > 0 && <ImageSelector images={parsed} onSelectionChange={handleImageSelectionChange} />}
+          {parsed.length > 0 && <ImageSelector images={parsed} onSelectionChange={handleImageSelectionChange} />}
+
+
+          {checkpoints?.files?.length > 0 && (
+            <Box sx={{ my: 2, display: 'flex', alignItems: 'center', gap: 2 }}>
+              <FormControl sx={{ flex: 1, minWidth: 220 }}>
+                <InputLabel id="model-select-label">Select Model</InputLabel>
+                <Select
+                  labelId="model-select-label"
+                  value={selected.model}
+                  label="Select Model"
+                  onChange={handleModelSelectionChange}
+                  sx={{ minWidth: 220 }}
+                >
+                  {checkpoints.files.map((model: string) => (
+                    <MenuItem key={model} value={model}>
+                      {model}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={handleGetSmiles}
+                sx={{ marginTop: 0, height: 56 }}
+                disabled={selected.images.length === 0}
+              >
+                Get SMILES {selected.images.length > 0 ? `(${selected.images.length})` : ""}
+              </Button>
+            </Box>
+          )}
+
+
 
           {/* Guidelines or Selected Image Preview */}
           <Grid size={{ xs: 12 }}>

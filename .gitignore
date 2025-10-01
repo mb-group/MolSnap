@@ -25,3 +25,4 @@ checkpoints/*
 decimer-api/output/segments/*
 decimer-api/uploads/*
 decimer-api/images/*
+ML_model/checkpoints/
