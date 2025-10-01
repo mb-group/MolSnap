@@ -65,9 +65,9 @@ const ResultsPage = () => {
 
   const downloadResults = () => {
     const csvContent = "data:text/csv;charset=utf-8,"
-      + "File Name,SMILES,SELFIES,Confidence,Processing Time\n"
+      + "File Name,SMILES,Confidence,Processing Time\n"
       + results.map(result =>
-        `"${result.fileName}","${result.smiles}","${result.selfies}",${result.confidence},${result.processingTime}`
+        `"${result.fileName}","${result.smiles}",${result.confidence},${result.processingTime}`
       ).join("\n");
 
     const encodedUri = encodeURI(csvContent);
@@ -258,7 +258,9 @@ const ResultsPage = () => {
                     </TableCell>
                     <TableCell>
                       <Typography variant="subtitle2" sx={{ fontWeight: 500 }}>
-                        {result.fileName}
+                        {result.fileName.length > 150
+                          ? result.fileName.slice(0, 75) + '...' + result.fileName.slice(-72)
+                          : result.fileName}
                       </Typography>
                     </TableCell>
                     <TableCell>
