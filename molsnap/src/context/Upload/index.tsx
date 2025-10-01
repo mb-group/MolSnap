@@ -1,5 +1,4 @@
 import { createContext, type JSXElementConstructor, type ReactElement, type ReactNode, type ReactPortal, useContext, useReducer } from 'react';
-
 // 1. Create a context to hold the state
 const UploadContext = createContext<{ data: any; selected:any, preview: any; parsed: any, checkpoints: any, dispatch: React.Dispatch<{ type: any, payload: any }> }>({
     data: {},
@@ -76,7 +75,7 @@ const initialState = {
             "molnextr_best.pth",
             "molnextr_v2.pth"
         ]
-    }
+    },
 }
 
 // 3. Define the reducer function to handle state transitions

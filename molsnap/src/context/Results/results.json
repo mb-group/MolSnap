@@ -1,0 +1,400 @@
+[
+    {
+        "filename": "fmicb-10-00952_20251001033112_extracted_orig_9.png",
+        "filepath": "images/segments/fmicb-10-00952_20251001033112_extracted_orig_9.png",
+        "predicted_smiles": "O=c1[nH]cnc2[nH]cnc12",
+        "predicted_molfile": "\n     RDKit          2D\n\n 10 11  0  0  0  0  0  0  0  0999 V2000\n   -3.5736    1.2902    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.1470    1.7537    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.8351    3.2209    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.4086    3.6844    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7062    2.6807    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.3943    1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2760    0.0000    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.3943   -1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0323   -0.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0323    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  2  0\n  2  3  1  0\n  3  4  1  0\n  4  5  2  0\n  5  6  1  0\n  6  7  1  0\n  7  8  1  0\n  8  9  2  0\n  9 10  1  0\n 10  2  1  0\n 10  6  2  0\nM  END\n",
+        "atom_sets": [
+            {
+                "atom_number": "0",
+                "atom_symbol": "C",
+                "coords": [
+                    0.175,
+                    0.571
+                ],
+                "confidence": 0.9167135953903198
+            },
+            {
+                "atom_number": "1",
+                "atom_symbol": "N",
+                "coords": [
+                    0.27,
+                    0.714
+                ],
+                "confidence": 0.9072859287261963
+            },
+            {
+                "atom_number": "2",
+                "atom_symbol": "C",
+                "coords": [
+                    0.444,
+                    0.667
+                ],
+                "confidence": 0.905703604221344
+            },
+            {
+                "atom_number": "3",
+                "atom_symbol": "N",
+                "coords": [
+                    0.587,
+                    0.762
+                ],
+                "confidence": 0.9120469093322754
+            },
+            {
+                "atom_number": "4",
+                "atom_symbol": "C",
+                "coords": [
+                    0.73,
+                    0.667
+                ],
+                "confidence": 0.9090179800987244
+            },
+            {
+                "atom_number": "5",
+                "atom_symbol": "N",
+                "coords": [
+                    0.73,
+                    0.476
+                ],
+                "confidence": 0.910673975944519
+            },
+            {
+                "atom_number": "6",
+                "atom_symbol": "C",
+                "coords": [
+                    0.587,
+                    0.397
+                ],
+                "confidence": 0.9072675108909607
+            },
+            {
+                "atom_number": "7",
+                "atom_symbol": "O",
+                "coords": [
+                    0.587,
+                    0.206
+                ],
+                "confidence": 0.9093450307846069
+            },
+            {
+                "atom_number": "8",
+                "atom_symbol": "C",
+                "coords": [
+                    0.444,
+                    0.476
+                ],
+                "confidence": 0.9085301756858826
+            },
+            {
+                "atom_number": "9",
+                "atom_symbol": "N",
+                "coords": [
+                    0.27,
+                    0.429
+                ],
+                "confidence": 0.9080743193626404
+            }
+        ],
+        "bond_sets": [
+            {
+                "atom_number": "0",
+                "bond_type": "single",
+                "endpoints": [
+                    0,
+                    1
+                ],
+                "confidence": 0.9999991059303284
+            },
+            {
+                "atom_number": "0",
+                "bond_type": "double",
+                "endpoints": [
+                    0,
+                    9
+                ],
+                "confidence": 0.9999957084655762
+            },
+            {
+                "atom_number": "1",
+                "bond_type": "single",
+                "endpoints": [
+                    1,
+                    2
+                ],
+                "confidence": 1.0
+            },
+            {
+                "atom_number": "2",
+                "bond_type": "single",
+                "endpoints": [
+                    2,
+                    3
+                ],
+                "confidence": 1.0
+            },
+            {
+                "atom_number": "2",
+                "bond_type": "double",
+                "endpoints": [
+                    2,
+                    8
+                ],
+                "confidence": 0.9999997615814209
+            },
+            {
+                "atom_number": "3",
+                "bond_type": "double",
+                "endpoints": [
+                    3,
+                    4
+                ],
+                "confidence": 1.0
+            },
+            {
+                "atom_number": "4",
+                "bond_type": "single",
+                "endpoints": [
+                    4,
+                    5
+                ],
+                "confidence": 0.9999997615814209
+            },
+            {
+                "atom_number": "5",
+                "bond_type": "single",
+                "endpoints": [
+                    5,
+                    6
+                ],
+                "confidence": 0.9999998807907104
+            },
+            {
+                "atom_number": "6",
+                "bond_type": "double",
+                "endpoints": [
+                    6,
+                    7
+                ],
+                "confidence": 0.9999999403953552
+            },
+            {
+                "atom_number": "6",
+                "bond_type": "single",
+                "endpoints": [
+                    6,
+                    8
+                ],
+                "confidence": 1.0
+            },
+            {
+                "atom_number": "8",
+                "bond_type": "single",
+                "endpoints": [
+                    8,
+                    9
+                ],
+                "confidence": 0.9999998807907104
+            }
+        ]
+    },
+    {
+        "filename": "fmicb-10-00952_20251001033112_extracted_orig_10.png",
+        "filepath": "images/segments/fmicb-10-00952_20251001033112_extracted_orig_10.png",
+        "predicted_smiles": "S=c1[nH]cnc2[nH]cnc12",
+        "predicted_molfile": "\n     RDKit          2D\n\n 10 11  0  0  0  0  0  0  0  0999 V2000\n   -3.5736    1.2902    0.0000 S   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.1470    1.7537    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.8351    3.2209    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.4086    3.6844    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7062    2.6807    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.3943    1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2760    0.0000    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.3943   -1.2135    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0323   -0.7500    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0323    0.7500    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  2  0\n  2  3  1  0\n  3  4  1  0\n  4  5  2  0\n  5  6  1  0\n  6  7  1  0\n  7  8  1  0\n  8  9  2  0\n  9 10  1  0\n 10  2  1  0\n 10  6  2  0\nM  END\n",
+        "atom_sets": [
+            {
+                "atom_number": "0",
+                "atom_symbol": "C",
+                "coords": [
+                    0.175,
+                    0.571
+                ],
+                "confidence": 0.9172940254211426
+            },
+            {
+                "atom_number": "1",
+                "atom_symbol": "N",
+                "coords": [
+                    0.27,
+                    0.714
+                ],
+                "confidence": 0.9068726897239685
+            },
+            {
+                "atom_number": "2",
+                "atom_symbol": "C",
+                "coords": [
+                    0.444,
+                    0.667
+                ],
+                "confidence": 0.9056907296180725
+            },
+            {
+                "atom_number": "3",
+                "atom_symbol": "N",
+                "coords": [
+                    0.587,
+                    0.762
+                ],
+                "confidence": 0.9107356071472168
+            },
+            {
+                "atom_number": "4",
+                "atom_symbol": "C",
+                "coords": [
+                    0.73,
+                    0.667
+                ],
+                "confidence": 0.9089181423187256
+            },
+            {
+                "atom_number": "5",
+                "atom_symbol": "N",
+                "coords": [
+                    0.73,
+                    0.476
+                ],
+                "confidence": 0.9103311896324158
+            },
+            {
+                "atom_number": "6",
+                "atom_symbol": "C",
+                "coords": [
+                    0.587,
+                    0.397
+                ],
+                "confidence": 0.9064933657646179
+            },
+            {
+                "atom_number": "7",
+                "atom_symbol": "S",
+                "coords": [
+                    0.587,
+                    0.206
+                ],
+                "confidence": 0.7355824708938599
+            },
+            {
+                "atom_number": "8",
+                "atom_symbol": "C",
+                "coords": [
+                    0.444,
+                    0.476
+                ],
+                "confidence": 0.9086177349090576
+            },
+            {
+                "atom_number": "9",
+                "atom_symbol": "N",
+                "coords": [
+                    0.286,
+                    0.429
+                ],
+                "confidence": 0.9069861769676208
+            }
+        ],
+        "bond_sets": [
+            {
+                "atom_number": "0",
+                "bond_type": "single",
+                "endpoints": [
+                    0,
+                    1
+                ],
+                "confidence": 0.9999990463256836
+            },
+            {
+                "atom_number": "0",
+                "bond_type": "double",
+                "endpoints": [
+                    0,
+                    9
+                ],
+                "confidence": 0.9999962449073792
+            },
+            {
+                "atom_number": "1",
+                "bond_type": "single",
+                "endpoints": [
+                    1,
+                    2
+                ],
+                "confidence": 1.0
+            },
+            {
+                "atom_number": "2",
+                "bond_type": "single",
+                "endpoints": [
+                    2,
+                    3
+                ],
+                "confidence": 1.0
+            },
+            {
+                "atom_number": "2",
+                "bond_type": "double",
+                "endpoints": [
+                    2,
+                    8
+                ],
+                "confidence": 0.9999997615814209
+            },
+            {
+                "atom_number": "3",
+                "bond_type": "double",
+                "endpoints": [
+                    3,
+                    4
+                ],
+                "confidence": 1.0
+            },
+            {
+                "atom_number": "4",
+                "bond_type": "single",
+                "endpoints": [
+                    4,
+                    5
+                ],
+                "confidence": 0.9999999403953552
+            },
+            {
+                "atom_number": "5",
+                "bond_type": "single",
+                "endpoints": [
+                    5,
+                    6
+                ],
+                "confidence": 0.9999998211860657
+            },
+            {
+                "atom_number": "6",
+                "bond_type": "double",
+                "endpoints": [
+                    6,
+                    7
+                ],
+                "confidence": 1.0
+            },
+            {
+                "atom_number": "6",
+                "bond_type": "single",
+                "endpoints": [
+                    6,
+                    8
+                ],
+                "confidence": 1.0
+            },
+            {
+                "atom_number": "8",
+                "bond_type": "single",
+                "endpoints": [
+                    8,
+                    9
+                ],
+                "confidence": 1.0
+            }
+        ]
+    }
+]

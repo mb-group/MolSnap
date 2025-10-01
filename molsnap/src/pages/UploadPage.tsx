@@ -187,6 +187,38 @@ const UploadPage = () => {
   const handleGetSmiles = () => {
     // Implement the logic to get SMILES for the selected images
     console.log("Getting SMILES for:", selected);
+
+    dispatchForLoading({ type: 'LOADING.UPDATE', payload: { isLoading: true, data: {} } });
+    // navigate('/results');
+
+    if (selected.images.length !== 0) {
+      const formData = new FormData();
+      formData.append('images', JSON.stringify(selected.images));
+      formData.append('model', String(selected.model));
+
+      fetch(API_ENDPOINTS.PREDICTION_ONLY, {
+        method: 'POST',
+        body: formData,
+      })
+        .then(async (response) => {
+          if (!response.ok) throw new Error('Failed to parse document');
+          const data = await response.json();
+
+          dispatchForResults({ type: 'RESULTS.UPDATE', payload: data.results });
+          dispatchForLoading({ type: 'LOADING.UPDATE', payload: { isLoading: false, data: {} } });
+          navigate('/results');
+
+          // console.log('Parsed chemical images:', data);
+          // setParsing(false);
+          // You can dispatch results or navigate as needed here
+        })
+        .catch((error) => {
+          console.error('Error parsing document:', error);
+          dispatchForLoading({ type: 'LOADING.UPDATE', payload: { isLoading: false, data: {} } });
+          // setParsing(false);
+          // Handle error UI here if needed
+        });
+    }
   };
 
   if (isLoading) {

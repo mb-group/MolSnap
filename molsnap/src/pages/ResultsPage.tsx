@@ -232,10 +232,10 @@ const ResultsPage = () => {
                   <TableCell>Image</TableCell>
                   <TableCell>File Name</TableCell>
                   <TableCell>SMILES</TableCell>
-                  <TableCell>SELFIES</TableCell>
+                  {/* <TableCell>SELFIES</TableCell> */}
                   <TableCell>Confidence</TableCell>
                   <TableCell>Status</TableCell>
-                  <TableCell>Time</TableCell>
+                  {/* <TableCell>Time</TableCell> */}
                   <TableCell>Actions</TableCell>
                 </TableRow>
               </TableHead>
@@ -266,7 +266,7 @@ const ResultsPage = () => {
                         variant="body2"
                         sx={{
                           fontFamily: 'monospace',
-                          maxWidth: 200,
+                          maxWidth: 300,
                           overflow: 'hidden',
                           textOverflow: 'ellipsis',
                           whiteSpace: 'nowrap'
@@ -276,7 +276,7 @@ const ResultsPage = () => {
                         {result.smiles}
                       </Typography>
                     </TableCell>
-                    <TableCell>
+                    {/* <TableCell>
                       <Typography
                         variant="body2"
                         sx={{
@@ -290,7 +290,7 @@ const ResultsPage = () => {
                       >
                         {result.selfies}
                       </Typography>
-                    </TableCell>
+                    </TableCell> */}
                     <TableCell>
                       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                         {getStatusIcon(result.status)}
@@ -300,9 +300,9 @@ const ResultsPage = () => {
                     <TableCell>
                       {getStatusChip(result.status)}
                     </TableCell>
-                    <TableCell>
+                    {/* <TableCell>
                       <Typography variant="body2">{result.processingTime}s</Typography>
-                    </TableCell>
+                    </TableCell> */}
                     <TableCell>
                       <Box sx={{ display: 'flex', gap: 1 }}>
                         <Tooltip title="Copy SMILES">
@@ -317,7 +317,7 @@ const ResultsPage = () => {
                             )}
                           </IconButton>
                         </Tooltip>
-                        <Tooltip title="Copy SELFIES">
+                        {/* <Tooltip title="Copy SELFIES">
                           <IconButton
                             size="small"
                             onClick={() => copyToClipboard(result.selfies, result.id + '-selfies')}
@@ -328,7 +328,7 @@ const ResultsPage = () => {
                               <ContentCopy sx={{ fontSize: 16 }} />
                             )}
                           </IconButton>
-                        </Tooltip>
+                        </Tooltip> */}
                       </Box>
                     </TableCell>
                   </TableRow>

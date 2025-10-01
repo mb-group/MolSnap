@@ -1,4 +1,6 @@
 import { createContext, type JSXElementConstructor, type ReactElement, type ReactNode, type ReactPortal, useContext, useReducer } from 'react';
+import dummyResults from './results.json';
+import { API_ENDPOINTS } from '@constants';
 
 const initialResults = [
     {
@@ -36,12 +38,28 @@ const initialState = {
     results: initialResults,
 };
 
-// 3. Define the reducer function to handle state transitions
 const reducer = (state: { results: any; }, action: { type: any; payload: any }) => {
     const { type, payload } = action;
     switch (type) {
         case 'RESULTS.UPDATE':
-            return { ...state, results: payload };
+            const formattedResults = payload.map((item: any) => {
+                const confidences = item.atom_sets?.map((a: any) => a.confidence) ?? [];
+                const meanConfidence = confidences.length
+                    ? Math.round(confidences.reduce((sum: number, val: number) => sum + val, 0) / confidences.length * 100)
+                    : undefined;
+                return {
+                    id: item.filename,
+                    fileName: item.filename,
+                    imageUrl: `${API_ENDPOINTS.DECIMER_API_URL}/${item.filepath}`,
+                    smiles: item.predicted_smiles,
+                    selfies: item.predicted_smiles,
+                    confidence: meanConfidence,
+                    format: 'SMILES',
+                    status: 'success',
+                    processingTime: item.processing_time,
+                };
+            });
+            return { ...state, results: formattedResults };
         default:
             throw new Error();
     }
