@@ -5,6 +5,7 @@ from datetime import datetime
 
 from ML_model import prediction
 from fastapi.responses import JSONResponse
+import ast
 
 app = FastAPI()
 
@@ -28,8 +29,39 @@ async def get_prediction_results(uploaded_files, checkpoint_path='checkpoints/mo
 def read_root():
     return {"message": "Hello, World!"}
 
+@app.post("/prediction-only",status_code=status.HTTP_200_OK)
+async def run_prediction(model: str = Form(...), images: str = Form(...)):
+    # now we need to call the predition function from ML_model
+    images_list = [os.path.join("decimer-api", img) for img in ast.literal_eval(images)]
+    checkpoint_path = os.path.join("ML_Model/checkpoints", model)
+    
+    start_time = datetime.now()
+    results = await get_prediction_results(images_list, checkpoint_path=checkpoint_path)
+    end_time = datetime.now()
+    
+    processing_time = (end_time - start_time).total_seconds()
+    results = await get_prediction_results(images_list, checkpoint_path=checkpoint_path)
+    
+    results_with_files = [
+        {
+            "filename": os.path.basename(image_path),
+            "filepath": image_path,
+            "processing_time": processing_time,
+            **res
+        }
+        for image_path, res in zip(ast.literal_eval(images), results)
+    ]
+    return JSONResponse(content={
+        "results": results_with_files
+    })
+    # return JSONResponse(content={
+    #     # "file_paths": images_list,
+    #     # "message": "Files uploaded successfully" + checkpoint_path,
+    #     "results": results
+    # })
+
 @app.post("/prediction",status_code=status.HTTP_200_OK)
-async def run_prediction(file: UploadFile = File(...)):
+async def upload_and_run_prediction(file: UploadFile = File(...)):
     uploaded_file = []
     try:
         contents = await file.read()
@@ -57,7 +89,7 @@ async def run_prediction(file: UploadFile = File(...)):
     })
     
 @app.post("/predictions",status_code=status.HTTP_200_OK)
-async def run_predictions(files: list[UploadFile]=File(...)):
+async def upload_and_run_predictions(files: list[UploadFile]=File(...)):
     uploaded_files = []
     for file in files:
         try:
