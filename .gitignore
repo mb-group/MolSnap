@@ -22,4 +22,4 @@ dist/
 .DS_Store
 molsnap-api/uploads/*
 checkpoints/*
-decimer-api/output/*
+decimer-api/output/segment/*
