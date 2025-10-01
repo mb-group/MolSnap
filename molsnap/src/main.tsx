@@ -13,15 +13,18 @@ import UploadPage from '@pages/UploadPage.tsx';
 
 import { ResultsProvider } from '@context/Results';
 import { LoadingProvider } from '@context/Loading';
+import { UploadProvider } from '@context/Upload';
 
 
 const AppProviders = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <LoadingProvider>
-        <ResultsProvider>
-          {children}
-        </ResultsProvider>
+        <UploadProvider>
+          <ResultsProvider>
+            {children}
+          </ResultsProvider>
+        </UploadProvider>
       </LoadingProvider>
     </>
   );

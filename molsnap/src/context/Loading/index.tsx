@@ -1,7 +1,4 @@
 import { createContext, type JSXElementConstructor, type ReactElement, type ReactNode, type ReactPortal, useContext, useReducer } from 'react';
-import { data } from 'react-router';
-
-
 
 // 1. Create a context to hold the state
 const LoadingContext = createContext<{ isLoading: boolean; data: any; dispatch: React.Dispatch<{ type: any, payload: any }> }>({

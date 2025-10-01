@@ -5,8 +5,9 @@ import { Document, Page, pdfjs } from "react-pdf";
 import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.min?url';
 import "./PdfViewer.css";
 
-pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+import { useUploadContext } from "@context/Upload";
 
+pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 type PdfViewerProps = {
   file: File | string | ArrayBuffer | null;
@@ -27,6 +28,8 @@ export default function PdfViewer({
   const [rotate, setRotate] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+
+  const { preview, dispatch:dispatchUpload } = useUploadContext();
 
   // track file identity so when file changes we reset UI
   const fileRef = useRef(null);
@@ -63,6 +66,10 @@ export default function PdfViewer({
   const onDocumentLoadSuccess = useCallback(
     (doc) => {
       setNumPages(doc.numPages);
+
+      // update preview context with total pages
+      dispatchUpload({ type: 'UPLOAD.PREVIEW.UPDATE', payload: { filetype: 'pdf', startPage: 1, endPage: doc.numPages } });
+
       setLoading(false);
       setError(null);
       if (typeof onLoadSuccess === "function") {
