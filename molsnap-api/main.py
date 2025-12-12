@@ -6,13 +6,15 @@ from datetime import datetime
 from ML_model import prediction
 from fastapi.responses import JSONResponse
 import ast
+from time import time
+from dotenv import load_dotenv
 
 app = FastAPI()
 
-origins = [
-    "http://localhost:5173",
-    "http://localhost:8080",
-]
+load_dotenv()
+
+origins = os.getenv("CORS_ORIGINS", "").split(",")
+origins = [o.strip() for o in origins if o.strip()]
 
 app.add_middleware(
     CORSMiddleware,
@@ -40,7 +42,9 @@ async def run_prediction(model: str = Form(...), images: str = Form(...)):
     end_time = datetime.now()
     
     processing_time = (end_time - start_time).total_seconds()
-    results = await get_prediction_results(images_list, checkpoint_path=checkpoint_path)
+    
+    
+    # results = await get_prediction_results(images_list, checkpoint_path=checkpoint_path)
     
     results_with_files = [
         {
@@ -81,11 +85,24 @@ async def upload_and_run_prediction(file: UploadFile = File(...)):
     
     # now we need to call the predition function from ML_model
     results = await get_prediction_results(uploaded_file, checkpoint_path='checkpoints/molnextr_best.pth')
+    processing_time = 0
+    if uploaded_file:
+        start_time = time()
+        # results already computed above
+        end_time = time()
+        processing_time = end_time - start_time
+
+    results_with_files = [
+        {
+            "filename": os.path.basename(image_path),
+            "filepath": image_path,
+            "processing_time": processing_time,
+            **res
+        }
+        for image_path, res in zip(uploaded_file, results)
+    ]
     return JSONResponse(content={
-        "filename": new_filename,
-        "file_paths": uploaded_file,
-        "message": "File uploaded successfully",
-        "results": results
+        "results": results_with_files
     })
     
 @app.post("/predictions",status_code=status.HTTP_200_OK)

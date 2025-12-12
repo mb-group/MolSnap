@@ -7,12 +7,14 @@ from fastapi.responses import JSONResponse
 from segment import list_checkpoint_files, run_segmentation, run_extraction
 from fastapi.staticfiles import StaticFiles
 
+from dotenv import load_dotenv
+
 app = FastAPI()
 
-origins = [
-    "http://localhost:5173",
-    "http://localhost:8080",
-]
+load_dotenv()
+
+origins = os.getenv("CORS_ORIGINS", "").split(",")
+origins = [o.strip() for o in origins if o.strip()]
 
 app.add_middleware(
     CORSMiddleware,
