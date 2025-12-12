@@ -25,6 +25,7 @@ app.add_middleware(
 )
 
 async def get_prediction_results(uploaded_files, checkpoint_path='checkpoints/molnextr_best.pth'):
+    print("Getting prediction results...", uploaded_files, checkpoint_path)
     return prediction.predict_from_image_files(uploaded_files, checkpoint_path)
 
 @app.get("/")
