@@ -36,7 +36,7 @@ def read_root():
 async def run_prediction(model: str = Form(...), images: str = Form(...)):
     # now we need to call the predition function from ML_model
     images_list = [os.path.join("decimer-api", img) for img in ast.literal_eval(images)]
-    checkpoint_path = os.path.join("ML_Model/checkpoints", model)
+    checkpoint_path = os.path.join("ML_model/checkpoints", model)
     
     start_time = datetime.now()
     results = await get_prediction_results(images_list, checkpoint_path=checkpoint_path)
