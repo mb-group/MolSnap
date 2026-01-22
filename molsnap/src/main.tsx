@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { useEffect, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -16,6 +16,13 @@ import { LoadingProvider } from '@context/Loading';
 import { UploadProvider } from '@context/Upload';
 
 
+declare global {
+  interface Window {
+    _mtm?: any[];
+  }
+}
+
+
 const AppProviders = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
@@ -31,6 +38,30 @@ const AppProviders = ({ children }: { children: React.ReactNode }) => {
 }
 
 const Main = () => {
+
+  const { protocol, hostname } = window.location;
+
+  useEffect(() => {
+    window._mtm = window._mtm || [];
+    window._mtm.push({
+      "mtm.startTime": new Date().getTime(),
+      event: "mtm.Start",
+    });
+
+    const d = document;
+    const g = d.createElement("script");
+    const s = d.getElementsByTagName("script")[0];
+
+    g.async = true;
+
+    // THIS IS MOTOMO CONTAINER URL
+    g.src = `${protocol}//${hostname}:8004/js/container_GFc2xMyk.js`;
+
+    if (s?.parentNode) {
+      s.parentNode.insertBefore(g, s);
+    }
+  }, []);
+
   return (
     <StrictMode>
       <ThemeProvider theme={theme}>
