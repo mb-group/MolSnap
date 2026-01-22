@@ -58,6 +58,7 @@ const Main = () => {
     // const defaultContainer = 'j0M0XEK0';
     const molsnapContainer = 'GFc2xMyk';
     g.src = `${protocol}//${hostname}:8004/js/container_${molsnapContainer}.js`;
+    console.log("Loading Matomo script from:", g.src);
 
     if (s?.parentNode) {
       s.parentNode.insertBefore(g, s);
