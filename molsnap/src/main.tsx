@@ -55,7 +55,9 @@ const Main = () => {
     g.async = true;
 
     // THIS IS MOTOMO CONTAINER URL
-    g.src = `${protocol}//${hostname}:8004/js/container_j0M0XEK0.js.js`;
+    // const defaultContainer = 'j0M0XEK0';
+    const molsnapContainer = 'GFc2xMyk';
+    g.src = `${protocol}//${hostname}:8004/js/container_${molsnapContainer}.js`;
 
     if (s?.parentNode) {
       s.parentNode.insertBefore(g, s);
