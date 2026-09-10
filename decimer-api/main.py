@@ -58,16 +58,24 @@ async def upload_and_run_segmentation(
         with open(file_path, "wb") as f:
             f.write(contents)
         uploaded_file.append(file_path)
-        
-        # Run extraction on this file with startPage and endPage
+
+        is_pdf = ext.lower() == ".pdf"
+
+        if is_pdf:
+            # PDFs support page ranges — trim to the requested pages first.
+            try:
+                trimmed_pdf_path = await run_extraction(file_path, startPage=startPage, endPage=endPage)
+            except Exception as e:
+                return {"message": f"There was an error during extraction: {str(e)}"}
+            segmentation_input_path = str(trimmed_pdf_path)
+        else:
+            # Plain images (PNG/JPG/JPEG) have no pages to trim — segment the
+            # uploaded image directly.
+            segmentation_input_path = file_path
+
+        # Run segmentation on the (optionally trimmed) file
         try:
-            trimmed_pdf_path = await run_extraction(file_path, startPage=startPage, endPage=endPage)
-        except Exception as e:
-            return {"message": f"There was an error during extraction: {str(e)}"}
-        
-        # Run segmentation on this file with startPage and endPage
-        try:
-            files = run_segmentation(str(trimmed_pdf_path), output_dir='images')
+            files = run_segmentation(segmentation_input_path, output_dir='images') or []
         except Exception as e:
             return {"message": f"There was an error during segmentation: {str(e)}"}
 

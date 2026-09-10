@@ -1,6 +1,6 @@
 import { createContext, type JSXElementConstructor, type ReactElement, type ReactNode, type ReactPortal, useContext, useReducer } from 'react';
 // 1. Create a context to hold the state
-const UploadContext = createContext<{ data: any; selected:any, preview: any; parsed: any, checkpoints: any, dispatch: React.Dispatch<{ type: any, payload: any }> }>({
+const UploadContext = createContext<{ data: any; selected:any, preview: any; parsed: any, checkpoints: any, files: any, activeFileId: any, parseSettings: any, parsedByFile: any, dispatch: React.Dispatch<{ type: any, payload: any }> }>({
     data: {},
         selected: {
         model: 'molnextr_best.pth',
@@ -36,6 +36,12 @@ const UploadContext = createContext<{ data: any; selected:any, preview: any; par
             "molnextr_v2.pth"
         ]
     },
+    // Multi-file upload state (lifted from UploadPage so it survives navigation
+    // to /results and back, instead of resetting on unmount).
+    files: [],
+    activeFileId: null,
+    parseSettings: {},
+    parsedByFile: {},
     dispatch: () => { },
 });
 
@@ -59,10 +65,14 @@ const initialState = {
             "molnextr_v2.pth"
         ]
     },
+    files: [],
+    activeFileId: null,
+    parseSettings: {},
+    parsedByFile: {},
 }
 
 // 3. Define the reducer function to handle state transitions
-const reducer = (state: { data: any; selected: any; preview: any; parsed: any; checkpoints: any }, action: { type: any; payload: any }) => {
+const reducer = (state: { data: any; selected: any; preview: any; parsed: any; checkpoints: any; files: any; activeFileId: any; parseSettings: any; parsedByFile: any }, action: { type: any; payload: any }) => {
     const { type, payload } = action;
     switch (type) {
         case 'UPLOAD.UPDATE':
@@ -71,12 +81,39 @@ const reducer = (state: { data: any; selected: any; preview: any; parsed: any; c
             return { ...state, preview: { ...state.preview, ...payload } };
         case 'UPLOAD.PARSED.UPDATE':
             return { ...state, parsed: [...state.parsed, ...payload] };
+        case 'UPLOAD.PARSED.REPLACE':
+            return { ...state, parsed: [...payload] };
         case 'UPLOAD.CHECKPOINTS.UPDATE':
             return { ...state, checkpoints: { ...state.checkpoints, ...payload } };
         case 'UPLOAD.SELECTED.IMAGE.UPDATE':
             return { ...state, selected: { ...state.selected, images: payload } };
         case 'UPLOAD.SELECTED.MODEL.UPDATE':
             return { ...state, selected: { ...state.selected, model: payload } };
+        case 'UPLOAD.FILES.ADD':
+            return { ...state, files: [...state.files, ...payload] };
+        case 'UPLOAD.FILES.REMOVE': {
+            const files = state.files.filter((f: any) => f.id !== payload);
+            const { [payload]: _removedSettings, ...parseSettings } = state.parseSettings;
+            const { [payload]: _removedParsed, ...parsedByFile } = state.parsedByFile;
+            const activeFileId = state.activeFileId === payload
+                ? (files.length > 0 ? files[0].id : null)
+                : state.activeFileId;
+            return { ...state, files, parseSettings, parsedByFile, activeFileId };
+        }
+        case 'UPLOAD.ACTIVE_FILE.SET':
+            return { ...state, activeFileId: payload };
+        case 'UPLOAD.PARSE_SETTINGS.UPDATE':
+            return {
+                ...state,
+                parseSettings: {
+                    ...state.parseSettings,
+                    [payload.id]: { ...state.parseSettings[payload.id], ...payload.settings }
+                }
+            };
+        case 'UPLOAD.PARSED_BY_FILE.SET':
+            return { ...state, parsedByFile: { ...state.parsedByFile, [payload.id]: payload.images } };
+        case 'UPLOAD.RESET':
+            return { ...initialState };
         default:
             throw new Error();
     }

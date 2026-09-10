@@ -90,7 +90,7 @@ def run_segmentation(input_path, output_dir=None):
 
         if not raw_segments:
             print("No chemical structures found in the document.")
-            return
+            return []
 
         # Determine output directory
         if output_dir:
