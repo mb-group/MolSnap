@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Grid from "@mui/material/Grid";
 import {
     Card,
@@ -21,6 +21,7 @@ export interface ImageGroup {
 
 interface ImageSelectorProps {
     images: string[];
+    selectedImages: string[];
     /** Optional per-document grouping. When provided, images render under a
      *  heading per document (with its own "Select all") while selection is
      *  still tracked as one flat list across all documents. */
@@ -28,52 +29,27 @@ interface ImageSelectorProps {
     onSelectionChange?: (selected: string[]) => void; // optional callback
 }
 
-const ImageSelector: React.FC<ImageSelectorProps> = ({ images, groups, onSelectionChange }) => {
-    const [selectedImages, setSelectedImages] = useState<string[]>([]);
-
-    // Drop any selected images that no longer exist (e.g. a document was removed)
-    useEffect(() => {
-        setSelectedImages((prev) => {
-            const stillValid = prev.filter((url) => images.includes(url));
-            if (stillValid.length !== prev.length) {
-                onSelectionChange?.(stillValid);
-                return stillValid;
-            }
-            return prev;
-        });
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [images]);
-
+const ImageSelector: React.FC<ImageSelectorProps> = ({ images, selectedImages, groups, onSelectionChange }) => {
     // Toggle individual selection
     const handleToggle = (url: string) => {
-        setSelectedImages((prev) => {
-            const newSelection = prev.includes(url)
-                ? prev.filter((img) => img !== url)
-                : [...prev, url];
-
-            if (onSelectionChange) {
-                onSelectionChange(newSelection);
-            }
-            return newSelection;
-        });
+        const newSelection = selectedImages.includes(url)
+            ? selectedImages.filter((img) => img !== url)
+            : [...selectedImages, url];
+        onSelectionChange?.(newSelection);
     };
 
     // Select / Deselect all (across every document)
     const handleSelectAll = () => {
         const newSelection = selectedImages.length === images.length ? [] : [...images];
-        setSelectedImages(newSelection);
         onSelectionChange?.(newSelection);
     };
 
     // Select / Deselect all images within a single document group
     const handleSelectAllInGroup = (groupImages: string[]) => {
         const allSelected = groupImages.every((url) => selectedImages.includes(url));
-        setSelectedImages((prev) => {
-            const withoutGroup = prev.filter((url) => !groupImages.includes(url));
-            const newSelection = allSelected ? withoutGroup : [...withoutGroup, ...groupImages];
-            onSelectionChange?.(newSelection);
-            return newSelection;
-        });
+        const withoutGroup = selectedImages.filter((url) => !groupImages.includes(url));
+        const newSelection = allSelected ? withoutGroup : [...withoutGroup, ...groupImages];
+        onSelectionChange?.(newSelection);
     };
 
     const renderImageCard = (url: string, index: number) => {

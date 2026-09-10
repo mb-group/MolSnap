@@ -173,7 +173,13 @@ const UploadPage = () => {
 
   // Keep the shared context in sync: aggregate parsed images from all files
   useEffect(() => {
-    dispatchUpload({ type: 'UPLOAD.PARSED.REPLACE', payload: Object.values(parsedByFile).flat() });
+    const nextParsed = Object.values(parsedByFile).flat() as string[];
+    dispatchUpload({ type: 'UPLOAD.PARSED.REPLACE', payload: nextParsed });
+
+    const validSelection = selected.images.filter((image: string) => nextParsed.includes(image));
+    if (validSelection.length !== selected.images.length) {
+      dispatchUpload({ type: 'UPLOAD.SELECTED.IMAGE.UPDATE', payload: validSelection });
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [parsedByFile]);
 
@@ -516,17 +522,38 @@ const UploadPage = () => {
                                 label={parsedByFile[f.id].length}
                               />
                             )}
-                            <IconButton
-                              size="small"
+                            {/* Plain element (not IconButton) to avoid nesting a <button>
+                                inside the Tab's own <button> element, which is invalid HTML
+                                and triggers a React hydration warning. */}
+                            <Box
+                              component="span"
+                              role="button"
+                              tabIndex={0}
                               aria-label={`Remove ${f.file.name}`}
                               onClick={(e) => {
                                 e.stopPropagation();
                                 removeFile(f.id);
                               }}
-                              sx={{ p: 0.25 }}
+                              onKeyDown={(e) => {
+                                if (e.key === 'Enter' || e.key === ' ') {
+                                  e.stopPropagation();
+                                  e.preventDefault();
+                                  removeFile(f.id);
+                                }
+                              }}
+                              sx={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                width: 20,
+                                height: 20,
+                                borderRadius: '50%',
+                                cursor: 'pointer',
+                                '&:hover': { bgcolor: 'action.hover' },
+                              }}
                             >
                               <Close sx={{ fontSize: 14 }} />
-                            </IconButton>
+                            </Box>
                           </Box>
                         }
                       />
@@ -661,7 +688,12 @@ const UploadPage = () => {
           {parsed.length > 0 && (
             <>
               <Box ref={imageSelectorRef} sx={{ width: '100%' }}>
-                <ImageSelector images={parsed} groups={imageGroups} onSelectionChange={handleImageSelectionChange} />
+                <ImageSelector
+                  images={parsed}
+                  selectedImages={selected.images}
+                  groups={imageGroups}
+                  onSelectionChange={handleImageSelectionChange}
+                />
               </Box>
 
               {checkpoints?.files?.length > 0 && (

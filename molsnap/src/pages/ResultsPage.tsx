@@ -86,7 +86,23 @@ const ResultsPage = () => {
 
   const copyToClipboard = async (text: string, id: string) => {
     try {
-      await navigator.clipboard.writeText(text);
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        // Fallback for non-secure contexts (e.g. served over plain HTTP) or
+        // browsers without the Clipboard API — use a hidden textarea + execCommand.
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        textarea.style.left = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        const successful = document.execCommand('copy');
+        document.body.removeChild(textarea);
+        if (!successful) throw new Error('execCommand copy failed');
+      }
       setCopiedId(id);
       setTimeout(() => setCopiedId(null), 2000);
     } catch (err) {
