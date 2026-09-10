@@ -19,9 +19,16 @@ import { UploadProvider } from '@context/Upload';
 declare global {
   interface Window {
     _mtm?: any[];
+    __matomoInjected?: boolean;
   }
 }
 
+// Initialize Matomo data layer once at module load, before the container script runs.
+window._mtm = window._mtm || [];
+window._mtm.push({
+  "mtm.startTime": new Date().getTime(),
+  event: "mtm.Start",
+});
 
 const AppProviders = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -42,11 +49,10 @@ const Main = () => {
   const { protocol, hostname } = window.location;
 
   useEffect(() => {
-    window._mtm = window._mtm || [];
-    window._mtm.push({
-      "mtm.startTime": new Date().getTime(),
-      event: "mtm.Start",
-    });
+    // Prevent double-injection under React StrictMode, which can cause the
+    // Matomo container script to load twice and corrupt its internal state.
+    if (window.__matomoInjected) return;
+    window.__matomoInjected = true;
 
     const d = document;
     const g = d.createElement("script");

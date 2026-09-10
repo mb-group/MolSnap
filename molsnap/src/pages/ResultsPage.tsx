@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import SmilesDrawer from "smiles-drawer";
 import {
   Box,
   Container,
@@ -15,7 +16,8 @@ import {
   Chip,
   IconButton,
   Avatar,
-  Tooltip
+  Tooltip,
+  Modal
 } from '@mui/material';
 import {
   ArrowBack,
@@ -23,6 +25,7 @@ import {
   ContentCopy,
   CheckCircle,
   Warning,
+  Close,
   Error as ErrorIcon
 } from '@mui/icons-material';
 import { useNavigate } from "react-router";
@@ -34,6 +37,32 @@ interface ResultsPageProps {
   onNewUpload: () => void;
   results: ConversionResult[];
 }
+
+// Renders a SMILES string as an SVG structure using smiles-drawer
+const MoleculeStructure = ({ smiles, width, height }: { smiles: string; width: number; height: number }) => {
+  const svgRef = useRef<SVGSVGElement>(null);
+
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+    svg.innerHTML = '';
+    SmilesDrawer.parse(smiles, (tree) => {
+      const drawer = new SmilesDrawer.SvgDrawer({ width, height });
+      drawer.draw(tree, svg, 'light', false);
+    }, (err) => {
+      console.error('Failed to parse SMILES:', smiles, err);
+    });
+  }, [smiles, width, height]);
+
+  return (
+    <svg
+      ref={svgRef}
+      width={width}
+      height={height}
+      style={{ display: 'block' }}
+    />
+  );
+};
 
 const ResultsPage = () => {
 
@@ -52,6 +81,8 @@ const ResultsPage = () => {
   }
 
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [previewImage, setPreviewImage] = useState<ConversionResult | null>(null);
+  const [compareResult, setCompareResult] = useState<ConversionResult | null>(null);
 
   const copyToClipboard = async (text: string, id: string) => {
     try {
@@ -64,19 +95,30 @@ const ResultsPage = () => {
   };
 
   const downloadResults = () => {
-    const csvContent = "data:text/csv;charset=utf-8,"
-      + "File Name,SMILES,Confidence,Processing Time\n"
-      + results.map(result =>
-        `"${result.fileName}","${result.smiles}",${result.confidence},${result.processingTime}`
-      ).join("\n");
+    // Quote fields and escape embedded quotes so commas/newlines in values stay intact
+    const csvField = (value: string | number) => `"${String(value ?? '').replace(/"/g, '""')}"`;
 
-    const encodedUri = encodeURI(csvContent);
+    const header = ["File Name", "SMILES", "Confidence", "Processing Time"]
+      .map(csvField)
+      .join(",");
+    const rows = results.map(result =>
+      [result.fileName, result.smiles, result.confidence, result.processingTime]
+        .map(csvField)
+        .join(",")
+    );
+    const csvContent = [header, ...rows].join("\r\n");
+
+    // Use a Blob instead of a data: URI — encodeURI doesn't escape '#', which
+    // appears in SMILES triple bonds (e.g. "C#N") and truncated the CSV there.
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
-    link.setAttribute("href", encodedUri);
-    link.setAttribute("download", "chemical_conversion_results.csv");
+    link.href = url;
+    link.download = "chemical_conversion_results.csv";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    URL.revokeObjectURL(url);
   };
 
   const getStatusIcon = (status: string) => {
@@ -232,6 +274,7 @@ const ResultsPage = () => {
                   <TableCell>Image</TableCell>
                   <TableCell>File Name</TableCell>
                   <TableCell>SMILES</TableCell>
+                  <TableCell>Structure</TableCell>
                   {/* <TableCell>SELFIES</TableCell> */}
                   <TableCell>Confidence</TableCell>
                   <TableCell>Status</TableCell>
@@ -243,24 +286,37 @@ const ResultsPage = () => {
                 {results && results.map((result) => (
                   <TableRow key={result.id} hover>
                     <TableCell>
-                      <Box
-                        component="img"
-                        src={result.imageUrl}
-                        alt={result.fileName}
-                        sx={{
-                          width: 64,
-                          height: 64,
-                          objectFit: 'cover',
-                          borderRadius: 2,
-                          bgcolor: 'grey.100'
-                        }}
-                      />
+                      <Tooltip title="Click to enlarge">
+                        <Box
+                          component="img"
+                          src={result.imageUrl}
+                          alt={result.fileName}
+                          onClick={() => setPreviewImage(result)}
+                          sx={{
+                            width: 64,
+                            height: 64,
+                            objectFit: 'cover',
+                            borderRadius: 2,
+                            bgcolor: 'grey.100',
+                            cursor: 'zoom-in',
+                            '&:hover': { opacity: 0.85 }
+                          }}
+                        />
+                      </Tooltip>
                     </TableCell>
                     <TableCell>
-                      <Typography variant="subtitle2" sx={{ fontWeight: 500 }}>
-                        {result.fileName.length > 150
-                          ? result.fileName.slice(0, 75) + '...' + result.fileName.slice(-72)
-                          : result.fileName}
+                      <Typography
+                        variant="body2"
+                        sx={{
+                          fontWeight: 500,
+                          maxWidth: 220,
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap'
+                        }}
+                        title={result.fileName}
+                      >
+                        {result.fileName}
                       </Typography>
                     </TableCell>
                     <TableCell>
@@ -268,15 +324,34 @@ const ResultsPage = () => {
                         variant="body2"
                         sx={{
                           fontFamily: 'monospace',
-                          maxWidth: 300,
-                          overflow: 'hidden',
-                          textOverflow: 'ellipsis',
-                          whiteSpace: 'nowrap'
+                          wordBreak: 'break-all'
                         }}
-                        title={result.smiles}
                       >
                         {result.smiles}
                       </Typography>
+                    </TableCell>
+                    <TableCell>
+                      <Tooltip title="Click to compare original vs predicted">
+                        <Box
+                          onClick={() => setCompareResult(result)}
+                          sx={{
+                            width: 96,
+                            height: 72,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            borderRadius: 1,
+                            border: '1px solid',
+                            borderColor: 'divider',
+                            bgcolor: 'common.white',
+                            cursor: 'zoom-in',
+                            overflow: 'hidden',
+                            '&:hover': { borderColor: 'primary.main', bgcolor: 'primary.light' }
+                          }}
+                        >
+                          <MoleculeStructure smiles={result.smiles} width={92} height={68} />
+                        </Box>
+                      </Tooltip>
                     </TableCell>
                     {/* <TableCell>
                       <Typography
@@ -358,6 +433,164 @@ const ResultsPage = () => {
             </Button>
           </Box>
         </Paper>
+
+        {/* Image preview modal */}
+        <Modal
+          open={previewImage !== null}
+          onClose={() => setPreviewImage(null)}
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            outline: 'none'
+          }}
+        >
+          <Box
+            onClick={() => setPreviewImage(null)}
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: 1,
+              p: 2,
+              bgcolor: 'background.paper',
+              borderRadius: 2,
+              cursor: 'zoom-out',
+              maxWidth: '90vw',
+              maxHeight: '90vh'
+            }}
+          >
+            {previewImage && (
+              <>
+                <Box
+                  component="img"
+                  src={previewImage.imageUrl}
+                  alt={previewImage.fileName}
+                  sx={{
+                    maxWidth: '85vw',
+                    maxHeight: '75vh',
+                    objectFit: 'contain',
+                    borderRadius: 1
+                  }}
+                />
+                <Typography variant="body2" color="text.secondary" sx={{ wordBreak: 'break-all' }}>
+                  {previewImage.fileName}
+                </Typography>
+              </>
+            )}
+          </Box>
+        </Modal>
+
+        {/* Original vs predicted comparison modal */}
+        <Modal
+          open={compareResult !== null}
+          onClose={() => setCompareResult(null)}
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            outline: 'none'
+          }}
+        >
+          <Box
+            sx={{
+              p: 3,
+              bgcolor: 'background.paper',
+              borderRadius: 2,
+              maxWidth: '95vw',
+              maxHeight: '92vh',
+              overflow: 'auto'
+            }}
+          >
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 2 }}>
+              <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                Original vs Predicted
+              </Typography>
+              <IconButton size="small" onClick={() => setCompareResult(null)}>
+                <Close />
+              </IconButton>
+            </Box>
+
+            {compareResult && (
+              <>
+                <Box
+                  sx={{
+                    display: 'flex',
+                    gap: 3,
+                    flexDirection: { xs: 'column', sm: 'row' },
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}
+                >
+                  <Box sx={{ textAlign: 'center' }}>
+                    <Typography variant="subtitle2" sx={{ mb: 1, fontWeight: 600 }}>
+                      Original
+                    </Typography>
+                    <Box
+                      component="img"
+                      src={compareResult.imageUrl}
+                      alt={compareResult.fileName}
+                      sx={{
+                        width: 320,
+                        height: 280,
+                        objectFit: 'contain',
+                        borderRadius: 1,
+                        border: '1px solid',
+                        borderColor: 'divider',
+                        bgcolor: 'grey.100'
+                      }}
+                    />
+                  </Box>
+
+                  <Box sx={{ textAlign: 'center' }}>
+                    <Typography variant="subtitle2" sx={{ mb: 1, fontWeight: 600 }}>
+                      Predicted
+                    </Typography>
+                    <Box
+                      sx={{
+                        width: 320,
+                        height: 280,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        borderRadius: 1,
+                        border: '1px solid',
+                        borderColor: 'divider',
+                        bgcolor: 'common.white'
+                      }}
+                    >
+                      <MoleculeStructure smiles={compareResult.smiles} width={316} height={276} />
+                    </Box>
+                  </Box>
+                </Box>
+
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 0.5, mt: 2 }}>
+                  <Typography
+                    variant="body2"
+                    sx={{ fontFamily: 'monospace', wordBreak: 'break-all', textAlign: 'center' }}
+                  >
+                    {compareResult.smiles}
+                  </Typography>
+                  <Tooltip title={copiedId === compareResult.id + '-compare-smiles' ? 'Copied!' : 'Copy SMILES'}>
+                    <IconButton
+                      size="small"
+                      onClick={() => copyToClipboard(compareResult.smiles, compareResult.id + '-compare-smiles')}
+                    >
+                      {copiedId === compareResult.id + '-compare-smiles' ? (
+                        <CheckCircle sx={{ fontSize: 16, color: 'success.main' }} />
+                      ) : (
+                        <ContentCopy sx={{ fontSize: 16 }} />
+                      )}
+                    </IconButton>
+                  </Tooltip>
+                </Box>
+                <Typography variant="body2" color="text.secondary" sx={{ wordBreak: 'break-all', textAlign: 'center' }}>
+                  {compareResult.fileName}
+                </Typography>
+              </>
+            )}
+          </Box>
+        </Modal>
       </Container>
     </Box>
   );
